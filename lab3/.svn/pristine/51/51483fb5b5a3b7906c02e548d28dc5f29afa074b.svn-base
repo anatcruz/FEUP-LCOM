@@ -1,0 +1,55 @@
+#include "keyboard.h"
+#include "kbc.h"
+
+int keyboard_hook_id = KEYBOARD_HOOK_ID;
+
+bool two_byte_scancode = false;
+
+uint8_t bytes[2];
+
+void (kbc_ih)(void) {
+    uint8_t kbc_status;
+    uint8_t scancode;
+
+    kbc_read_status(&kbc_status);
+    util_sys_inb(KBC_OUT_BUF, &scancode);//The byte must be read regardless of whether or not there was an error
+
+    if (((kbc_status & (KBC_IBF | KBC_OBF)) != 0) && (kbc_status & KBC_AUX) == 1) {//It's either an error or something we don't want
+        two_byte_scancode = false;
+        return;
+    }
+
+    if (scancode == KEYBOARD_TWO_BYTES_MSB) {//Its a two byte scancode, wait for the next interrupt
+        two_byte_scancode = true;
+        return;
+    }
+
+    if (two_byte_scancode) {
+        bool make = (scancode & 0x80) == 0;
+        bytes[0] = KEYBOARD_TWO_BYTES_MSB;
+        bytes[1] = scancode;
+        keyboard_user_callback(make, 2, bytes);
+    } else {
+        bool make = (scancode & 0x80) == 0;
+        bytes[0] = scancode;
+        keyboard_user_callback(make, 1, bytes);
+    }
+
+    two_byte_scancode = false;
+}
+
+int keyboard_ih_subscribe() {
+    return sys_irqsetpolicy(KEYBOARD_IRQ, IRQ_REENABLE | IRQ_EXCLUSIVE, &keyboard_hook_id);
+}
+
+int keyboard_ih_unsubscribe() {
+    return sys_irqrmpolicy(&keyboard_hook_id);
+}
+
+int keyboard_ih_disable() {
+    return sys_irqdisable(&keyboard_hook_id);
+}
+
+int keyboard_ih_enable() {
+    return sys_irqenable(&keyboard_hook_id);
+}

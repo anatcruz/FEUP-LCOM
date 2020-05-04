@@ -1,0 +1,14 @@
+#include "utils.h"
+
+
+int util_sys_inb(int port, uint8_t *value) {
+  
+  uint8_t space[4];
+  printf("(util_sys_inb) call: port %d\n", port);
+  if (sys_inb(port, (uint_fast32_t*)space) == EINVAL)
+    return 1;
+
+  *value = space[0];
+
+  return 0;
+}
