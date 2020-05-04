@@ -1,0 +1,15 @@
+#ifndef VIDEO_CARD
+#define VIDEO_CARD
+
+#include <lcom/lcf.h>
+
+#define BIOS_VIDEO_CALL 0x10
+#define VBE_CALL        0x4f
+#define MODE_INF        0x01
+#define SET_VBE_MODE    0x02
+#define CONTROLLER_INF  0x00
+#define LINER_FRAMEBUFFER (0x1<<14)
+
+
+
+#endif

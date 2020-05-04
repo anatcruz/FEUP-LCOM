@@ -1,0 +1,31 @@
+#ifndef VIDEO_CARD
+#define VIDEO_CARD
+
+#include <lcom/lcf.h>
+
+#define BIOS_VIDEO_CALL 0x10
+#define VBE_CALL        0x4f
+#define MODE_INF        0x01
+#define SET_VBE_MODE    0x02
+#define CONTROLLER_INF  0x00
+#define LINER_FRAMEBUFFER (0x1<<14)
+
+
+
+void *(vg_init)(uint16_t mode);
+
+int (vg_draw_hline)(uint16_t x, uint16_t y, uint16_t len, uint32_t color);
+  
+int (vg_draw_rectangle)(uint16_t x, uint16_t y, uint16_t width, uint16_t height, uint32_t color);
+  
+int (vg_exit)(void);
+  
+int (vg_display_vbe_contr_info)(struct vg_vbe_contr_info *info_p);
+  
+
+
+
+
+
+
+#endif
