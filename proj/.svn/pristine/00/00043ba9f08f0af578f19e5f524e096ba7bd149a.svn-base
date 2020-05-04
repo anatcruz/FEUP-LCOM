@@ -1,0 +1,71 @@
+\hypertarget{group__numbers}{}\section{numbers}
+\label{group__numbers}\index{numbers@{numbers}}
+
+
+Number drawing utilities.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__numbers_ga25023eab36552ec9843c325b07ba20f8}{N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH}~56
+\item 
+\#define \hyperlink{group__numbers_ga9950e4d72e16c9672a3f936a47d2897c}{N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT}~32
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__numbers_ga957a3e5ec5d985ee4c890b5f34ac9511}{draw\+\_\+numbers} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n})
+\begin{DoxyCompactList}\small\item\em Draws a two-\/digit number on the given buffer at the given coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Number drawing utilities. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__numbers_ga9950e4d72e16c9672a3f936a47d2897c}\label{group__numbers_ga9950e4d72e16c9672a3f936a47d2897c}} 
+\index{numbers@{numbers}!N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT@{N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT}}
+\index{N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT@{N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT}!numbers@{numbers}}
+\subsubsection{\texorpdfstring{N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT}{NUMBERS\_HEIGHT}}
+{\footnotesize\ttfamily \#define N\+U\+M\+B\+E\+R\+S\+\_\+\+H\+E\+I\+G\+HT~32}
+
+\mbox{\Hypertarget{group__numbers_ga25023eab36552ec9843c325b07ba20f8}\label{group__numbers_ga25023eab36552ec9843c325b07ba20f8}} 
+\index{numbers@{numbers}!N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH@{N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH}}
+\index{N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH@{N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH}!numbers@{numbers}}
+\subsubsection{\texorpdfstring{N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH}{NUMBERS\_LENGTH}}
+{\footnotesize\ttfamily \#define N\+U\+M\+B\+E\+R\+S\+\_\+\+L\+E\+N\+G\+TH~56}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__numbers_ga957a3e5ec5d985ee4c890b5f34ac9511}\label{group__numbers_ga957a3e5ec5d985ee4c890b5f34ac9511}} 
+\index{numbers@{numbers}!draw\+\_\+numbers@{draw\+\_\+numbers}}
+\index{draw\+\_\+numbers@{draw\+\_\+numbers}!numbers@{numbers}}
+\subsubsection{\texorpdfstring{draw\+\_\+numbers()}{draw\_numbers()}}
+{\footnotesize\ttfamily void draw\+\_\+numbers (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+
+Draws a two-\/digit number on the given buffer at the given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the two-\/digit image (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the two-\/digit image (counting rightwards from the left) \\
+\hline
+{\em n} & The two-\/digit number \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__numbers_ga957a3e5ec5d985ee4c890b5f34ac9511_cgraph}
+\end{center}
+\end{figure}

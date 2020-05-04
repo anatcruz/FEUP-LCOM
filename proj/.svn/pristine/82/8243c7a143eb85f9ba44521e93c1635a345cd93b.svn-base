@@ -1,0 +1,8 @@
+<map id="shooting" name="shooting">
+<area shape="rect" id="node2" href="$group__player.html#gab297abc01f8234e00c40e1a2aa9b76dd" title="get_player" alt="" coords="160,5,243,32"/>
+<area shape="rect" id="node3" href="$group__core__game__settings.html#gaf19a3bae554ca2a2ae3213aef7f9f208" title="get_infinite_ammo" alt="" coords="137,56,265,83"/>
+<area shape="rect" id="node4" href="$group__core__game__settings.html#ga10fcc8a3f6a22ea214e0b5e9f28362f8" title="get_projectile_shooting\l_cooldown" alt="" coords="124,107,279,149"/>
+<area shape="rect" id="node5" href="$group__core__game__loop.html#ga7ffe05c55466ca7e6c94b73b63c22927" title="Spawns a projectile in front of p, with a given velocity. " alt="" coords="153,173,249,200"/>
+<area shape="rect" id="node6" href="$group__core__game__settings.html#ga15eb947de263d29d6c97bae746737fa8" title="get_projectile_shooting\l_speed" alt="" coords="327,137,481,178"/>
+<area shape="rect" id="node7" href="$group__projectiles.html#ga1dcccbbcaf5fbc336ec52666ff0960ac" title="Spawns a new projectile with the given position and velocity. " alt="" coords="351,203,457,229"/>
+</map>

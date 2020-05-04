@@ -1,0 +1,46 @@
+#include "teresa_debug.h"
+#include <stdio.h>
+#include "circle.h"
+#include "player.h"
+#include "video_card.h"
+#include "triangle.h"
+
+
+extern void wait_for_enter();
+void t_main() {
+    player *p1 = get_player(1);
+    p1->state.position.x = get_hres()/2;
+    p1->state.position.y = get_vres()/2;
+    p1->direction = 30;
+    get_triangle(p1);
+    //codigo para debug
+    FILE *fp;
+    fp = fopen("/home/lcom/labs/proj/debug.txt", "a");
+    fprintf(fp, "Hi\n");
+    fprintf(fp, "%d %d %d %d %d %d\n", p1->p1x, p1->p1y, p1->p2x, p1->p2y, p1->p3x, p1->p3y);
+    fclose(fp);
+    //////////////
+    //triangle_draw(get_buffer_base_ptr(), 10,  10,  10,  100, 100, 10,  1234); //This triangle draws on screen
+    //triangle_draw(get_buffer_base_ptr(), 578, 451, 556, 426, 592, 421, 1234); //This triangle doesn't :(
+    //////////////
+    for (int i = 0; i < 200; i++) {
+        get_triangle(p1);
+        clean_screen();
+        triangle_draw(get_buffer_base_ptr(),p1->p1x,p1->p1y,p1->p2x,p1->p2y,p1->p3x,p1->p3y,6565685);
+        p1->direction += 0.01;
+        kbc_delay(1000);
+    }
+    
+    //draw_circle(get_buffer_base_ptr(),200,200,40,2222222);
+    wait_for_enter();
+}
+//codigo para debug
+  // FILE *fp;
+            // fp = fopen("/home/lcom/labs/proj/debug.txt", "w+");
+            // fprintf(fp, "%d\n", j);
+            // fclose(fp);
+
+
+
+
+

@@ -1,0 +1,17 @@
+#include "core_game_settings.h"
+
+bool bouncy_walls = false;
+bool get_bouncy_walls() {return bouncy_walls;}
+void set_bouncy_walls(bool bouncy) {bouncy_walls = bouncy;}
+
+bool disable_gravity = false;
+bool get_disable_gravity() {return disable_gravity;}
+void set_disable_gravity(bool disable) {disable_gravity = disable;}
+
+bool infinite_ammo = false;
+bool get_infinite_ammo() {return infinite_ammo;}
+void set_infinite_ammo(bool infinite) {infinite_ammo = infinite;}
+
+bool disable_wall_damage = false;
+bool get_disable_wall_damage() {return disable_wall_damage;}
+void set_disable_wall_damage(bool damage) {disable_wall_damage = damage;}

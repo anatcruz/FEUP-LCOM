@@ -1,0 +1,19 @@
+<map id="drawMainMenu" name="drawMainMenu">
+<area shape="rect" id="node2" href="$group__core__game__loop.html#gac82e7d55ed069f5d0c396c20b97337e9" title="Loads the XPMs, if they have not been already loaded. " alt="" coords="191,5,277,32"/>
+<area shape="rect" id="node3" href="$group___menu.html#gaa59cc81964587bdbe8dcd981e8e6fd08" title="Loads the XPMs for the menus, if they have not been already loaded. " alt="" coords="175,157,293,184"/>
+<area shape="rect" id="node4" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="398,107,470,133"/>
+<area shape="rect" id="node5" href="$group__video__card.html#gad5999dee7ae30ea14b13e2e2e5a92c88" title="get_vres" alt="" coords="398,208,470,235"/>
+<area shape="rect" id="node6" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="564,208,703,235"/>
+<area shape="rect" id="node7" href="$group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12" title="Draws the given xpm image on the given buffer at the given coordinates. " alt="" coords="377,461,491,488"/>
+<area shape="rect" id="node9" href="$group__core__game__loop.html#ga33240cb1f9e3570ad230d7e081888dd6" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="352,360,516,387"/>
+<area shape="rect" id="node10" href="$group___menu.html#ga730cfddc7cb680e1b1d4ad54d4a8be30" title="It draws the frame of a rectangle, used for buttons. " alt="" coords="164,360,304,387"/>
+<area shape="rect" id="node12" href="$group__numbers.html#ga957a3e5ec5d985ee4c890b5f34ac9511" title="Draws a two&#45;digit number on the given buffer at the given coordinates. " alt="" coords="181,259,287,285"/>
+<area shape="rect" id="node15" href="$group__rtc.html#ga94b0c84824555e206801ea5a59eaa8fb" title="rtc_get_hour" alt="" coords="187,461,281,488"/>
+<area shape="rect" id="node16" href="$group__rtc.html#ga045f10751f73dcf26ec496d24332e067" title="rtc_get_minute" alt="" coords="180,512,288,539"/>
+<area shape="rect" id="node17" href="$group__rtc.html#ga900a6f54c5751abfa35460384278ec84" title="rtc_get_second" alt="" coords="179,563,289,589"/>
+<area shape="rect" id="node18" href="$group__video__card.html#ga461fb4a3b5536b3de26e342444394ddd" title="get_buffer_base_ptr" alt="" coords="165,613,303,640"/>
+<area shape="rect" id="node8" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="596,385,671,412"/>
+<area shape="rect" id="node11" href="$group__video__card.html#ga88795d0238c894e7d54c134b69305976" title="Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to th..." alt="" coords="384,411,484,437"/>
+<area shape="rect" id="node13" href="$numbers_8c.html#a86a2fa94e8ef96cf36a0a0b82cc3ec31" title="load_nums" alt="" coords="391,309,477,336"/>
+<area shape="rect" id="node14" href="$numbers_8c.html#a66139241d81ad95a26d9474fcc17e943" title="draw_number" alt="" coords="384,259,484,285"/>
+</map>

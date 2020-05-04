@@ -1,0 +1,82 @@
+\hypertarget{daniel__debug_8c}{}\section{daniel\+\_\+debug.\+c File Reference}
+\label{daniel__debug_8c}\index{daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}}
+{\ttfamily \#include \char`\"{}daniel\+\_\+debug.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}keyboard.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}timer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector2.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gravity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}projectiles.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+loop.\+h\char`\"{}}\newline
+Include dependency graph for daniel\+\_\+debug.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{daniel__debug_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{daniel__debug_8c_ac6060b211635122cb0483274bc4e2b9b}{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}~0x81
+\item 
+\#define \hyperlink{daniel__debug_8c_a5400b1f2028d38732e4377be4f32b255}{D\+E\+L\+T\+A\+\_\+T}~0.\+03333333333
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{daniel__debug_8c_ab7f567d83251b999426cb5d5a2337e92}{d\+\_\+main} ()
+\item 
+void \hyperlink{daniel__debug_8c_a43819b2d249c3e47ca768501fa0be598}{wait\+\_\+for\+\_\+enter} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{daniel__debug_8c_ac6060b211635122cb0483274bc4e2b9b}\label{daniel__debug_8c_ac6060b211635122cb0483274bc4e2b9b}} 
+\index{daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}!B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY@{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}}
+\index{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY@{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}!daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}{BREAK\_ESC\_KEY}}
+{\footnotesize\ttfamily \#define B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY~0x81}
+
+\mbox{\Hypertarget{daniel__debug_8c_a5400b1f2028d38732e4377be4f32b255}\label{daniel__debug_8c_a5400b1f2028d38732e4377be4f32b255}} 
+\index{daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}!D\+E\+L\+T\+A\+\_\+T@{D\+E\+L\+T\+A\+\_\+T}}
+\index{D\+E\+L\+T\+A\+\_\+T@{D\+E\+L\+T\+A\+\_\+T}!daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{D\+E\+L\+T\+A\+\_\+T}{DELTA\_T}}
+{\footnotesize\ttfamily \#define D\+E\+L\+T\+A\+\_\+T~0.\+03333333333}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{daniel__debug_8c_ab7f567d83251b999426cb5d5a2337e92}\label{daniel__debug_8c_ab7f567d83251b999426cb5d5a2337e92}} 
+\index{daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}!d\+\_\+main@{d\+\_\+main}}
+\index{d\+\_\+main@{d\+\_\+main}!daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{d\+\_\+main()}{d\_main()}}
+{\footnotesize\ttfamily void d\+\_\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{daniel__debug_8c_ab7f567d83251b999426cb5d5a2337e92_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{daniel__debug_8c_a43819b2d249c3e47ca768501fa0be598}\label{daniel__debug_8c_a43819b2d249c3e47ca768501fa0be598}} 
+\index{daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}!wait\+\_\+for\+\_\+enter@{wait\+\_\+for\+\_\+enter}}
+\index{wait\+\_\+for\+\_\+enter@{wait\+\_\+for\+\_\+enter}!daniel\+\_\+debug.\+c@{daniel\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{wait\+\_\+for\+\_\+enter()}{wait\_for\_enter()}}
+{\footnotesize\ttfamily void wait\+\_\+for\+\_\+enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{daniel__debug_8c_a43819b2d249c3e47ca768501fa0be598_cgraph}
+\end{center}
+\end{figure}

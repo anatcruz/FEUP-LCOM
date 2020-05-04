@@ -1,0 +1,89 @@
+\hypertarget{ammo_8c}{}\section{ammo.\+c File Reference}
+\label{ammo_8c}\index{ammo.\+c@{ammo.\+c}}
+{\ttfamily \#include \char`\"{}ammo.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}bullet.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}circle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+settings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for ammo.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ammo_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structammo}{ammo} $\ast$ \hyperlink{group__ammo_gafd32649160360f67e00c8dc8186edeef}{get\+\_\+ammo} (uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n})
+\item 
+void \hyperlink{ammo_8c_afeab7f4d0245826cf8d0314728091a76}{draw\+\_\+1ammo} (uint8\+\_\+t $\ast$base\+\_\+ptr, \hyperlink{structammo}{ammo} $\ast$b)
+\item 
+void \hyperlink{group__ammo_ga4d649b8b03319d3a2cdc2f171f9112ea}{draw\+\_\+ammo} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the ammo \char`\"{}balls\char`\"{} (that are active) on the given buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__ammo_gac8e56296d8320fc25379a842c74fd72e}{spawn\+\_\+ammo} ()
+\begin{DoxyCompactList}\small\item\em Spawns an ammo \char`\"{}ball\char`\"{}. \end{DoxyCompactList}\item 
+bool \hyperlink{group__ammo_ga05181ac613d5d6d1d1070031b5461191}{ammo\+\_\+hits\+\_\+top} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_gaec2edee56f7204786a3640973e4f8f7f}{ammo\+\_\+hits\+\_\+bottom} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_ga23525b3b56d7c2217da8179045d80db6}{ammo\+\_\+hits\+\_\+left} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_gabab3a68eb48f6e4f339c648f6cec5522}{ammo\+\_\+hits\+\_\+right} (\hyperlink{structammo}{ammo} $\ast$b)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{ammo_8c_a199f48d46f7d3f9bc67fee2edda1e78a}{bullet\+\_\+img}
+\item 
+\hyperlink{structammo}{ammo} \hyperlink{ammo_8c_acb009cae92a97fb7b3ebe7e2cd3c7678}{bronze} = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00cd7f32, .\+edge\+\_\+color = 0x00905923, .\+n\+\_\+bullets = 5\}
+\item 
+\hyperlink{structammo}{ammo} \hyperlink{ammo_8c_a18431f02d88e08c1e65eac03e58d9083}{silver} = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00c0c0c0, .\+edge\+\_\+color = 0x009a9a9a, .\+n\+\_\+bullets = 10\}
+\item 
+\hyperlink{structammo}{ammo} \hyperlink{ammo_8c_a37684dc811c704a30b2f577c911084bc}{gold} = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00ffd700, .\+edge\+\_\+color = 0x00ccac00, .\+n\+\_\+bullets = 20\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ammo_8c_afeab7f4d0245826cf8d0314728091a76}\label{ammo_8c_afeab7f4d0245826cf8d0314728091a76}} 
+\index{ammo.\+c@{ammo.\+c}!draw\+\_\+1ammo@{draw\+\_\+1ammo}}
+\index{draw\+\_\+1ammo@{draw\+\_\+1ammo}!ammo.\+c@{ammo.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+1ammo()}{draw\_1ammo()}}
+{\footnotesize\ttfamily void draw\+\_\+1ammo (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{\hyperlink{structammo}{ammo} $\ast$}]{b }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ammo_8c_afeab7f4d0245826cf8d0314728091a76_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ammo_8c_acb009cae92a97fb7b3ebe7e2cd3c7678}\label{ammo_8c_acb009cae92a97fb7b3ebe7e2cd3c7678}} 
+\index{ammo.\+c@{ammo.\+c}!bronze@{bronze}}
+\index{bronze@{bronze}!ammo.\+c@{ammo.\+c}}
+\subsubsection{\texorpdfstring{bronze}{bronze}}
+{\footnotesize\ttfamily \hyperlink{structammo}{ammo} bronze = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00cd7f32, .\+edge\+\_\+color = 0x00905923, .\+n\+\_\+bullets = 5\}}
+
+\mbox{\Hypertarget{ammo_8c_a199f48d46f7d3f9bc67fee2edda1e78a}\label{ammo_8c_a199f48d46f7d3f9bc67fee2edda1e78a}} 
+\index{ammo.\+c@{ammo.\+c}!bullet\+\_\+img@{bullet\+\_\+img}}
+\index{bullet\+\_\+img@{bullet\+\_\+img}!ammo.\+c@{ammo.\+c}}
+\subsubsection{\texorpdfstring{bullet\+\_\+img}{bullet\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t bullet\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{ammo_8c_a37684dc811c704a30b2f577c911084bc}\label{ammo_8c_a37684dc811c704a30b2f577c911084bc}} 
+\index{ammo.\+c@{ammo.\+c}!gold@{gold}}
+\index{gold@{gold}!ammo.\+c@{ammo.\+c}}
+\subsubsection{\texorpdfstring{gold}{gold}}
+{\footnotesize\ttfamily \hyperlink{structammo}{ammo} gold = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00ffd700, .\+edge\+\_\+color = 0x00ccac00, .\+n\+\_\+bullets = 20\}}
+
+\mbox{\Hypertarget{ammo_8c_a18431f02d88e08c1e65eac03e58d9083}\label{ammo_8c_a18431f02d88e08c1e65eac03e58d9083}} 
+\index{ammo.\+c@{ammo.\+c}!silver@{silver}}
+\index{silver@{silver}!ammo.\+c@{ammo.\+c}}
+\subsubsection{\texorpdfstring{silver}{silver}}
+{\footnotesize\ttfamily \hyperlink{structammo}{ammo} silver = \{ .active = false, .radius = 20, .inner\+\_\+radius = 16 , .color = 0x00c0c0c0, .\+edge\+\_\+color = 0x009a9a9a, .\+n\+\_\+bullets = 10\}}
+

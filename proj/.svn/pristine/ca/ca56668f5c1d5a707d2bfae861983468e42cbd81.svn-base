@@ -1,0 +1,120 @@
+\hypertarget{group__projectiles}{}\section{projectiles}
+\label{group__projectiles}\index{projectiles@{projectiles}}
+
+
+projectile-\/related functions  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structprojectile}{projectile}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structprojectile}{projectile} \hyperlink{group__projectiles_ga0ecdecffd31e7e21a2db68fb1aef8f23}{projectile}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__projectiles_ga5694db4d07322ea0cb9792dd0409dcd6}{get\+\_\+n\+\_\+projectiles} ()
+\item 
+\hyperlink{structprojectile}{projectile} $\ast$ \hyperlink{group__projectiles_ga83c71feca8610bd78396e078b96c7607}{get\+\_\+proj\+\_\+array} ()
+\item 
+void \hyperlink{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}{projectile\+\_\+alloc} (uint8\+\_\+t \hyperlink{projectiles_8c_a72f6a4ef5d831709c1c10ff632d608ec}{n\+\_\+projectiles})
+\item 
+void \hyperlink{group__projectiles_ga1dcccbbcaf5fbc336ec52666ff0960ac}{new\+\_\+projectile} (\hyperlink{structvector2}{vector2} pos, \hyperlink{structvector2}{vector2} speed)
+\begin{DoxyCompactList}\small\item\em Spawns a new projectile with the given position and velocity. \end{DoxyCompactList}\item 
+void \hyperlink{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19}{draw\+\_\+projectiles} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the projectiles on the given buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+projectile-\/related functions 
+
+The bullets that you see on screen while playing are allocated here (when you call \hyperlink{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}{projectile\+\_\+alloc(uint8\+\_\+t n\+\_\+projectiles)}) as an array of n\+\_\+projectiles elements. This array is, in the context of this module, a circular buffer. When projectile\+\_\+alloc is called, all the projectiles are initialized with the atribute \char`\"{}active\char`\"{} set as false. As the function new\+\_\+projectile is called, the \char`\"{}active\char`\"{} atribute of more and more elements get set to true. When you want to \char`\"{}delete\char`\"{} a projectile, you simply set that projectile\textquotesingle{}s \char`\"{}active\char`\"{} attribute to false. 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__projectiles_ga0ecdecffd31e7e21a2db68fb1aef8f23}\label{group__projectiles_ga0ecdecffd31e7e21a2db68fb1aef8f23}} 
+\index{projectiles@{projectiles}!projectile@{projectile}}
+\index{projectile@{projectile}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{projectile}{projectile}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structprojectile}{projectile}  \hyperlink{structprojectile}{projectile}}
+
+
+
+Struct that represents one of our game\textquotesingle{}s bullets. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19}\label{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19}} 
+\index{projectiles@{projectiles}!draw\+\_\+projectiles@{draw\+\_\+projectiles}}
+\index{draw\+\_\+projectiles@{draw\+\_\+projectiles}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{draw\+\_\+projectiles()}{draw\_projectiles()}}
+{\footnotesize\ttfamily void draw\+\_\+projectiles (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Draws the projectiles on the given buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__projectiles_ga5694db4d07322ea0cb9792dd0409dcd6}\label{group__projectiles_ga5694db4d07322ea0cb9792dd0409dcd6}} 
+\index{projectiles@{projectiles}!get\+\_\+n\+\_\+projectiles@{get\+\_\+n\+\_\+projectiles}}
+\index{get\+\_\+n\+\_\+projectiles@{get\+\_\+n\+\_\+projectiles}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{get\+\_\+n\+\_\+projectiles()}{get\_n\_projectiles()}}
+{\footnotesize\ttfamily uint8\+\_\+t get\+\_\+n\+\_\+projectiles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The size of the projectile array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__projectiles_ga83c71feca8610bd78396e078b96c7607}\label{group__projectiles_ga83c71feca8610bd78396e078b96c7607}} 
+\index{projectiles@{projectiles}!get\+\_\+proj\+\_\+array@{get\+\_\+proj\+\_\+array}}
+\index{get\+\_\+proj\+\_\+array@{get\+\_\+proj\+\_\+array}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{get\+\_\+proj\+\_\+array()}{get\_proj\_array()}}
+{\footnotesize\ttfamily \hyperlink{structprojectile}{projectile}$\ast$ get\+\_\+proj\+\_\+array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+A pointer to the beginning of the projectile array 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__projectiles_ga1dcccbbcaf5fbc336ec52666ff0960ac}\label{group__projectiles_ga1dcccbbcaf5fbc336ec52666ff0960ac}} 
+\index{projectiles@{projectiles}!new\+\_\+projectile@{new\+\_\+projectile}}
+\index{new\+\_\+projectile@{new\+\_\+projectile}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{new\+\_\+projectile()}{new\_projectile()}}
+{\footnotesize\ttfamily void new\+\_\+projectile (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{pos,  }\item[{\hyperlink{structvector2}{vector2}}]{speed }\end{DoxyParamCaption})}
+
+
+
+Spawns a new projectile with the given position and velocity. 
+
+It overwrites a projectile in buffer with the new position and speed, and sets \char`\"{}active\char`\"{} to true
+
+
+\begin{DoxyParams}{Parameters}
+{\em pos} & The position of the new projectile \\
+\hline
+{\em speed} & The speed of the new projectile \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}\label{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}} 
+\index{projectiles@{projectiles}!projectile\+\_\+alloc@{projectile\+\_\+alloc}}
+\index{projectile\+\_\+alloc@{projectile\+\_\+alloc}!projectiles@{projectiles}}
+\subsubsection{\texorpdfstring{projectile\+\_\+alloc()}{projectile\_alloc()}}
+{\footnotesize\ttfamily void projectile\+\_\+alloc (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{n\+\_\+projectiles }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+A pointer to the beginning of the projectile array 
+\end{DoxyReturn}

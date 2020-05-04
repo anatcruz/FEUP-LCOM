@@ -1,0 +1,52 @@
+\hypertarget{keyboard_8h}{}\section{keyboard.\+h File Reference}
+\label{keyboard_8h}\index{keyboard.\+h@{keyboard.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for keyboard.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{keyboard_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{keyboard_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet}
+\begin{DoxyCompactList}\small\item\em Struct that represents a keyboard packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__keyboard_ga2d17911b50c0aeebb2e3325c5b36d4f2}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ}~1
+\item 
+\#define \hyperlink{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~1
+\item 
+\#define \hyperlink{group__keyboard_ga67f9ce144f998dd5c8b1ae5e25fb8dec}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK}~B\+IT(\hyperlink{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID})
+\item 
+\#define \hyperlink{group__keyboard_gaa639f3ee505b0f62686d71087830b1d5}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB}~0x\+E0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} \hyperlink{group__keyboard_ga823c244c9bc4e1f5004a548133e112d9}{keyboard\+\_\+packet}
+\begin{DoxyCompactList}\small\item\em Struct that represents a keyboard packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__keyboard_ga92937e5072f297d330bd57bb62cd35fb}{keyboard\+\_\+ih2} (\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} $\ast$new\+\_\+packet)
+\begin{DoxyCompactList}\small\item\em The second part of keyboard interrupt handling. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_ga73e07d998291eb412f8097fd06ddafa8}{keyboard\+\_\+ih\+\_\+subscribe} ()
+\begin{DoxyCompactList}\small\item\em Subscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_gae7dcc7462f98df72164f4a194125d0e9}{keyboard\+\_\+ih\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_gad416a0ec7ca419806341ab7be70064b1}{keyboard\+\_\+ih\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enables keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_ga803d759506fefe9119ad529c783b3a7a}{keyboard\+\_\+ih\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disables keyboard interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}

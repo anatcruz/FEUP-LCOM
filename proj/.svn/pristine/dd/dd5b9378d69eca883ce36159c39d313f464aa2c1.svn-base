@@ -1,0 +1,84 @@
+#include "player.h"
+#include "triangle.h"
+player player1; //jogador com o teclado
+player player2; //jogador com o rato
+
+void get_triangle(player *p){
+
+  float posx = p->state.position.x;
+  float posy = p->state.position.y;
+  float dir = p->direction;
+
+  p->p1x = posx + DIST_FROM_MIDDLE_POINT*sin(dir);
+  p->p2x = posx + DIST_FROM_MIDDLE_POINT*sin(dir + ANGLE_OFFSET);
+  p->p3x = posx + DIST_FROM_MIDDLE_POINT*sin(dir-ANGLE_OFFSET);
+
+  p->p1y = posy + DIST_FROM_MIDDLE_POINT*(-cos(dir));
+  p->p2y = posy + DIST_FROM_MIDDLE_POINT*(-cos(dir+ANGLE_OFFSET));
+  p->p3y = posy + DIST_FROM_MIDDLE_POINT*(-cos(dir-ANGLE_OFFSET));
+}
+
+
+void update_players_headings() {
+  player1.direction += player1.input_direction_delta;
+  player2.direction += player2.input_direction_delta;
+}
+
+player *get_player(uint8_t player){
+  if(player == 1)
+    return &player1;
+
+  if(player == 2)
+    return &player2;
+  
+  return NULL;
+}
+
+void draw_players(uint8_t *base_ptr) {
+  triangle_draw(base_ptr, player1.p1x,player1.p1y,
+                          player1.p2x,player1.p2y,
+                          player1.p3x,player1.p3y,-1);
+  triangle_draw(base_ptr, player2.p1x,player2.p1y,
+                          player2.p2x,player2.p2y,
+                          player2.p3x,player2.p3y,-1);
+}
+
+void handle_player1_input(keyboard_packet p1){
+
+  if(!player1.alive)
+    return;
+
+  else{
+    if(p1.n_bytes == 2){
+      switch (p1.bytes[1])
+      {
+      case LEFT_BUTTON_M:
+        player1.input_direction_delta = -0.1;
+        break;
+      case LEFT_BUTTON_B:
+        player1.input_direction_delta = 0;
+        break;
+      case RIGHT_BUTTON_M:
+        player1.input_direction_delta = 0.1;
+        break;
+      case RIGHT_BUTTON_B:
+        player1.input_direction_delta = 0;
+        break;
+      case UP_BUTTON_M:
+        player1.input_accelerate = true;
+        break;
+      case UP_BUTTON_B:
+        player1.input_accelerate = false;
+        break;
+      case SPACEBAR_M:
+        player1.input_shooting = true;
+        break;
+      case SPACEBAR_B:
+        player1.input_shooting = false;
+        break;
+      default:
+        break;
+      }
+    }
+  }
+}

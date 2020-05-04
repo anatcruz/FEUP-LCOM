@@ -1,0 +1,51 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node2" href="$proj_8c.html#ae630693cc739fd548aba5b3bf320bfed" title="print_usage" alt="" coords="163,1121,252,1148"/>
+<area shape="rect" id="node3" href="$video__card_8c.html#aa6c1ff5024cd4d15e476bce487584daa" title="vg_init" alt="" coords="177,1172,237,1198"/>
+<area shape="rect" id="node4" href="$daniel__debug_8c.html#ab7f567d83251b999426cb5d5a2337e92" title="d_main" alt="" coords="301,1140,365,1166"/>
+<area shape="rect" id="node46" href="$teresa__debug_8c.html#a362329cfadcee0b1731c9eb3c9025369" title="t_main" alt="" coords="177,1437,238,1464"/>
+<area shape="rect" id="node5" href="$group__core__game__loop.html#gaa06ba1be9bd4796cb317a83db95966f2" title="The highest&#45;level function of this module. " alt="" coords="559,1209,676,1236"/>
+<area shape="rect" id="node6" href="$group__keyboard.html#ga73e07d998291eb412f8097fd06ddafa8" title="Subscribes to keyboard interrupts. " alt="" coords="731,1032,886,1058"/>
+<area shape="rect" id="node7" href="$group__timer.html#gae44be0cfa0b6e717152afc708577cf5d" title="Subscribes to timer interrupts. " alt="" coords="743,1488,874,1514"/>
+<area shape="rect" id="node8" href="$group__mouse.html#ga6061042abde98af7b169c463bc203aee" title="Subscribes to mouse interrupts. " alt="" coords="738,1538,879,1565"/>
+<area shape="rect" id="node9" href="$group__rtc.html#gaa9a633f60d6ee3b237a80b408647908c" title="Subscribes to RTC interrupts. " alt="" coords="750,1842,867,1869"/>
+<area shape="rect" id="node10" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="1128,1234,1219,1261"/>
+<area shape="rect" id="node11" href="$group__rtc.html#ga967406c372c2ba0b6b18c4784d5b1ce2" title="Reads the RTC register at position reg. " alt="" coords="963,1690,1058,1717"/>
+<area shape="rect" id="node12" href="$group__rtc.html#ga9d32737436e666dcd33816dd240321a8" title="Writes the RTC register at position reg. " alt="" coords="760,2045,857,2072"/>
+<area shape="rect" id="node13" href="$group__utils.html#ga8c10bb1f9a5bb82b67c6980182193c54" title="Converts a value from decimal format to bcd format. " alt="" coords="752,474,865,501"/>
+<area shape="rect" id="node14" href="$group__utils.html#ga304fc85c5c7fb06010deb07c6dd16b81" title="Converts a value from bcd format to decimal format. " alt="" coords="954,1386,1067,1413"/>
+<area shape="rect" id="node15" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="975,424,1047,450"/>
+<area shape="rect" id="node16" href="$group__video__card.html#gad5999dee7ae30ea14b13e2e2e5a92c88" title="get_vres" alt="" coords="975,1082,1047,1109"/>
+<area shape="rect" id="node17" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="941,1336,1080,1362"/>
+<area shape="rect" id="node18" href="$group__core__game__loop.html#gac82e7d55ed069f5d0c396c20b97337e9" title="Loads the XPMs, if they have not been already loaded. " alt="" coords="766,1741,851,1768"/>
+<area shape="rect" id="node19" href="$group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12" title="Draws the given xpm image on the given buffer at the given coordinates. " alt="" coords="751,1589,866,1616"/>
+<area shape="rect" id="node20" href="$group__core__game__settings.html#gae294ba27e3b2bf1d347ed563ee1327f7" title="get_disable_gravity" alt="" coords="943,170,1078,197"/>
+<area shape="rect" id="node21" href="$group__core__game__loop.html#ga3675a504daf73491a060c7462420df07" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="769,1184,848,1210"/>
+<area shape="rect" id="node22" href="$group__core__game__settings.html#gaf19a3bae554ca2a2ae3213aef7f9f208" title="get_infinite_ammo" alt="" coords="745,525,873,552"/>
+<area shape="rect" id="node23" href="$group__core__game__loop.html#ga33240cb1f9e3570ad230d7e081888dd6" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="727,1640,891,1666"/>
+<area shape="rect" id="node24" href="$group__core__game__settings.html#ga7d2df33bf9002ff71c661a521df4c279" title="set_player1_color" alt="" coords="747,576,871,602"/>
+<area shape="rect" id="node25" href="$group__core__game__settings.html#ga03b1fe954023f0f81abcbf5e962e1169" title="set_player2_color" alt="" coords="747,626,871,653"/>
+<area shape="rect" id="node26" href="$group__core__game__settings.html#ga7a058129c2abf0cc41fbd17f5265710d" title="get_planet_gravity" alt="" coords="947,221,1075,248"/>
+<area shape="rect" id="node27" href="$group__player.html#gab297abc01f8234e00c40e1a2aa9b76dd" title="get_player" alt="" coords="767,677,850,704"/>
+<area shape="rect" id="node28" href="$group__ammo.html#gafd32649160360f67e00c8dc8186edeef" title="get_ammo" alt="" coords="969,297,1052,324"/>
+<area shape="rect" id="node29" href="$group__projectiles.html#ga1b3d00bd49fc0770838c70cb1d2d9e94" title="projectile_alloc" alt="" coords="755,728,863,754"/>
+<area shape="rect" id="node30" href="$keyboard_8c.html#a5761bd4aad91ac1d68916ad88f583d9f" title="kbc_ih" alt="" coords="981,1285,1041,1312"/>
+<area shape="rect" id="node31" href="$group__keyboard.html#ga92937e5072f297d330bd57bb62cd35fb" title="The second part of keyboard interrupt handling. " alt="" coords="759,778,858,805"/>
+<area shape="rect" id="node32" href="$group__player.html#gaba5c1d6b1b36aefd3412c607540f274e" title="Updates player 1&#39;s inputs. " alt="" coords="737,829,881,856"/>
+<area shape="rect" id="node33" href="$group__mouse.html#gaed4404005e4c565ac36656307386e0ac" title="The first part of mouse interrupt handling. " alt="" coords="769,69,848,96"/>
+<area shape="rect" id="node34" href="$group__mouse.html#gaf9c7f5ebd99c28946ab2184325ffa5f4" title="The second part of mouse interrupt handling. " alt="" coords="735,2146,882,2173"/>
+<area shape="rect" id="node35" href="$group__player.html#ga34127316334c60ca280028fbaa2a4c44" title="Updates player 2&#39;s inputs. " alt="" coords="737,880,881,906"/>
+<area shape="rect" id="node36" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title="timer_int_handler" alt="" coords="748,2197,869,2224"/>
+<area shape="rect" id="node37" href="$group__timer.html#gacbda5965336eef31790e7a8b983332ff" title="timer_get_counter" alt="" coords="745,2248,872,2274"/>
+<area shape="rect" id="node38" href="$group__core__game__loop.html#ga46fea93bf5d63e93090fbb95b742b881" title="The high&#45;level game loop function. " alt="" coords="766,930,851,957"/>
+<area shape="rect" id="node39" href="$group__rtc.html#ga55d98e39c0c2bf246ef774491c31b593" title="Handles RTC interrupts. " alt="" coords="781,1944,836,1970"/>
+<area shape="rect" id="node40" href="$group__rtc.html#ga900a6f54c5751abfa35460384278ec84" title="rtc_get_second" alt="" coords="753,1690,864,1717"/>
+<area shape="rect" id="node41" href="$group__ammo.html#gac8e56296d8320fc25379a842c74fd72e" title="Spawns an ammo &quot;ball&quot;. " alt="" coords="757,322,860,349"/>
+<area shape="rect" id="node42" href="$group__keyboard.html#gae7dcc7462f98df72164f4a194125d0e9" title="Unsubscribes to keyboard interrupts. " alt="" coords="724,981,893,1008"/>
+<area shape="rect" id="node43" href="$group__timer.html#ga5e9cfb5b4e41a1e647e0ee7d0ed6709a" title="Unsubscribes to timer interrupts. " alt="" coords="736,1994,881,2021"/>
+<area shape="rect" id="node44" href="$group__mouse.html#ga42e7f57ba1a7deeac5f9ba73bb00b80b" title="Unsubscribes to mouse interrupts. " alt="" coords="731,2096,886,2122"/>
+<area shape="rect" id="node45" href="$group__rtc.html#ga9c629cc80f25b7d9d4e19fb6f6de8ea4" title="Unsubscribes to RTC interrupts. " alt="" coords="743,18,874,45"/>
+<area shape="rect" id="node47" href="$group__game.html#ga435b545b95a32afd525f8a1f05b2652c" title="letsplay" alt="" coords="300,1766,367,1793"/>
+<area shape="rect" id="node48" href="$group___menu.html#ga06326bc3ce2fdfe90cb6eb3172159fd0" title="Draws the main menu with the options: play, help, options and exit. It also displays the current time..." alt="" coords="562,1690,673,1717"/>
+<area shape="rect" id="node49" href="$group__game.html#gac443369f029f95734396be718a095e93" title="handle_user_input" alt="" coords="745,424,872,450"/>
+<area shape="rect" id="node50" href="$group__game.html#gae53a2c47c7b05d012ce5356a53ae7092" title="handle_state" alt="" coords="415,1690,511,1717"/>
+</map>

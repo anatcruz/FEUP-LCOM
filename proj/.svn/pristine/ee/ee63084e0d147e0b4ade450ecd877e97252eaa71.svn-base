@@ -1,0 +1,157 @@
+\hypertarget{group___menu}{}\section{Menu}
+\label{group___menu}\index{Menu@{Menu}}
+
+
+Menu-\/related functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___menu_ga730cfddc7cb680e1b1d4ad54d4a8be30}{set\+\_\+rectangle\+\_\+frame} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint16\+\_\+t len\+\_\+edge, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em It draws the frame of a rectangle, used for buttons. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_gaa59cc81964587bdbe8dcd981e8e6fd08}{load\+\_\+xpm\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+P\+Ms for the menus, if they have not been already loaded. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga06326bc3ce2fdfe90cb6eb3172159fd0}{draw\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the main menu with the options\+: play, help, options and exit. It also displays the current time. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga879287e331940c91b6b6b9dbb65474de}{draw\+Help\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the help menu that explains the players\textquotesingle{} commands. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga8be4d848c58721f26653059357806041}{draw\+Options\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the options menu that allows the players to change some settings like if the player s want bouncy walls, infinite ammo, be affected by gravity and if they want wall damage. \end{DoxyCompactList}\item 
+bool \hyperlink{group___menu_ga24808d404d0ba3711a2445fc0d876167}{checkpixel\+\_\+inbutton} (uint16\+\_\+t pixel\+\_\+x, uint16\+\_\+t pixel\+\_\+y, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Checks if a pixel is inside a rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Menu-\/related functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group___menu_ga24808d404d0ba3711a2445fc0d876167}\label{group___menu_ga24808d404d0ba3711a2445fc0d876167}} 
+\index{Menu@{Menu}!checkpixel\+\_\+inbutton@{checkpixel\+\_\+inbutton}}
+\index{checkpixel\+\_\+inbutton@{checkpixel\+\_\+inbutton}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{checkpixel\+\_\+inbutton()}{checkpixel\_inbutton()}}
+{\footnotesize\ttfamily bool checkpixel\+\_\+inbutton (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{pixel\+\_\+x,  }\item[{uint16\+\_\+t}]{pixel\+\_\+y,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len\+\_\+x,  }\item[{uint16\+\_\+t}]{len\+\_\+y }\end{DoxyParamCaption})}
+
+
+
+Checks if a pixel is inside a rectangle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em pixel\+\_\+x} & The x coordenate of the pixel \\
+\hline
+{\em pixel\+\_\+y} & The y coordenate of the pixel \\
+\hline
+{\em x} & The x coordinate of the top left corner of the rectangle (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the rectangle (counting rightwards from the left) \\
+\hline
+{\em len\+\_\+x} & The width of the rectangle \\
+\hline
+{\em len\+\_\+y} & The height of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group___menu_ga879287e331940c91b6b6b9dbb65474de}\label{group___menu_ga879287e331940c91b6b6b9dbb65474de}} 
+\index{Menu@{Menu}!draw\+Help\+Menu@{draw\+Help\+Menu}}
+\index{draw\+Help\+Menu@{draw\+Help\+Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{draw\+Help\+Menu()}{drawHelpMenu()}}
+{\footnotesize\ttfamily void draw\+Help\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the help menu that explains the players\textquotesingle{} commands. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___menu_ga879287e331940c91b6b6b9dbb65474de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___menu_ga06326bc3ce2fdfe90cb6eb3172159fd0}\label{group___menu_ga06326bc3ce2fdfe90cb6eb3172159fd0}} 
+\index{Menu@{Menu}!draw\+Main\+Menu@{draw\+Main\+Menu}}
+\index{draw\+Main\+Menu@{draw\+Main\+Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{draw\+Main\+Menu()}{drawMainMenu()}}
+{\footnotesize\ttfamily void draw\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the main menu with the options\+: play, help, options and exit. It also displays the current time. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___menu_ga06326bc3ce2fdfe90cb6eb3172159fd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___menu_ga8be4d848c58721f26653059357806041}\label{group___menu_ga8be4d848c58721f26653059357806041}} 
+\index{Menu@{Menu}!draw\+Options\+Menu@{draw\+Options\+Menu}}
+\index{draw\+Options\+Menu@{draw\+Options\+Menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{draw\+Options\+Menu()}{drawOptionsMenu()}}
+{\footnotesize\ttfamily void draw\+Options\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Draws the options menu that allows the players to change some settings like if the player s want bouncy walls, infinite ammo, be affected by gravity and if they want wall damage. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___menu_ga8be4d848c58721f26653059357806041_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___menu_gaa59cc81964587bdbe8dcd981e8e6fd08}\label{group___menu_gaa59cc81964587bdbe8dcd981e8e6fd08}} 
+\index{Menu@{Menu}!load\+\_\+xpm\+\_\+menu@{load\+\_\+xpm\+\_\+menu}}
+\index{load\+\_\+xpm\+\_\+menu@{load\+\_\+xpm\+\_\+menu}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{load\+\_\+xpm\+\_\+menu()}{load\_xpm\_menu()}}
+{\footnotesize\ttfamily void load\+\_\+xpm\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the X\+P\+Ms for the menus, if they have not been already loaded. 
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{group___menu_gaa59cc81964587bdbe8dcd981e8e6fd08_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___menu_ga730cfddc7cb680e1b1d4ad54d4a8be30}\label{group___menu_ga730cfddc7cb680e1b1d4ad54d4a8be30}} 
+\index{Menu@{Menu}!set\+\_\+rectangle\+\_\+frame@{set\+\_\+rectangle\+\_\+frame}}
+\index{set\+\_\+rectangle\+\_\+frame@{set\+\_\+rectangle\+\_\+frame}!Menu@{Menu}}
+\subsubsection{\texorpdfstring{set\+\_\+rectangle\+\_\+frame()}{set\_rectangle\_frame()}}
+{\footnotesize\ttfamily void set\+\_\+rectangle\+\_\+frame (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len\+\_\+x,  }\item[{uint16\+\_\+t}]{len\+\_\+y,  }\item[{uint16\+\_\+t}]{len\+\_\+edge,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+It draws the frame of a rectangle, used for buttons. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the rectangle (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the rectangle (counting rightwards from the left) \\
+\hline
+{\em len\+\_\+x} & The width of the rectangle \\
+\hline
+{\em len\+\_\+y} & The height of the rectangle \\
+\hline
+{\em len\+\_\+edge} & The depth of the frame \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___menu_ga730cfddc7cb680e1b1d4ad54d4a8be30_cgraph}
+\end{center}
+\end{figure}

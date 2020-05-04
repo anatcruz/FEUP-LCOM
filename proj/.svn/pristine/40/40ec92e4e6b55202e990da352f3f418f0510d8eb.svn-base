@@ -1,0 +1,6 @@
+<map id="gravity_acc_vector" name="gravity_acc_vector">
+<area shape="rect" id="node2" href="$group__vector2.html#ga7a403a2bce25c9ee0fd5e6fc30a8f9ea" title="vector2_subtract" alt="" coords="205,5,323,32"/>
+<area shape="rect" id="node3" href="$group__vector2.html#gab71f45ca9825acdbf70c639cf4a5d09c" title="vector2_scalar_product" alt="" coords="185,56,343,83"/>
+<area shape="rect" id="node4" href="$group__vector2.html#gaa3e831b3dbed8e51233f48de98c3266e" title="vector2_normalized" alt="" coords="197,107,331,133"/>
+<area shape="rect" id="node5" href="$group__vector2.html#ga03173bb05b63e8723fc6e54cf55dff71" title="vector2_norm" alt="" coords="391,107,492,133"/>
+</map>

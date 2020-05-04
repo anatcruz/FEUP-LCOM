@@ -1,0 +1,8 @@
+<map id="wait_for_enter" name="wait_for_enter">
+<area shape="rect" id="node2" href="$group__keyboard.html#ga73e07d998291eb412f8097fd06ddafa8" title="Subscribes to keyboard interrupts. " alt="" coords="165,5,319,32"/>
+<area shape="rect" id="node3" href="$keyboard_8c.html#a5761bd4aad91ac1d68916ad88f583d9f" title="kbc_ih" alt="" coords="212,56,272,83"/>
+<area shape="rect" id="node6" href="$group__keyboard.html#ga92937e5072f297d330bd57bb62cd35fb" title="The second part of keyboard interrupt handling. " alt="" coords="193,107,291,133"/>
+<area shape="rect" id="node7" href="$group__keyboard.html#gae7dcc7462f98df72164f4a194125d0e9" title="Unsubscribes to keyboard interrupts. " alt="" coords="157,157,327,184"/>
+<area shape="rect" id="node4" href="$group__kbc.html#gaa4c58a11cd49c54cc0eb02a79010a9cc" title="Reads the status of the kbc. " alt="" coords="375,31,493,57"/>
+<area shape="rect" id="node5" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="541,56,632,83"/>
+</map>

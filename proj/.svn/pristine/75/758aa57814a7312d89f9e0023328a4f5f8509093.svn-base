@@ -1,0 +1,126 @@
+\hypertarget{video__card_8c}{}\section{video\+\_\+card.\+c File Reference}
+\label{video__card_8c}\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+Include dependency graph for video\+\_\+card.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{video__card_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}{get\+\_\+hres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}{get\+\_\+vres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}{get\+\_\+bytes\+\_\+per\+\_\+pixel} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga3ff6bb40b256e97af89a53bd459b59f5}{get\+\_\+buffer\+\_\+size} ()
+\item 
+vbe\+\_\+mode\+\_\+info\+\_\+t \hyperlink{video__card_8c_a9647dd45761f9e525df98fc86c08cbda}{get\+\_\+inf\+\_\+memory} ()
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{group__video__card_ga461fb4a3b5536b3de26e342444394ddd}{get\+\_\+buffer\+\_\+base\+\_\+ptr} ()
+\item 
+void $\ast$() \hyperlink{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}{vg\+\_\+init} (uint16\+\_\+t mode)
+\item 
+void \hyperlink{group__video__card_ga5f6f4feebf127c7d02258175e5df35ff}{set\+\_\+pixel} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Sets the pixel of the given buffer at the given coordinates to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_ga88795d0238c894e7d54c134b69305976}{set\+\_\+rectangle} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Draws the given xpm image on the given buffer at the given coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_ga0d199b5702695c4d7b78ef83759c32d5}{clean\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Sets all the bytes of the frame buffer to 0, meaning that the screen turns black. \end{DoxyCompactList}\item 
+int() \hyperlink{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}{vg\+\_\+draw\+\_\+hline} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len, uint32\+\_\+t color)
+\item 
+int() \hyperlink{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}{vg\+\_\+draw\+\_\+rectangle} (uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t width, uint16\+\_\+t height, uint32\+\_\+t color)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static vbe\+\_\+mode\+\_\+info\+\_\+t \hyperlink{video__card_8c_ab9524390626b49077636c867b41560a7}{inf\+\_\+memory}
+\item 
+static uint16\+\_\+t \hyperlink{video__card_8c_abc3c784566289e1414929d23e32a0c6c}{hres}
+\item 
+static uint16\+\_\+t \hyperlink{video__card_8c_a573eca15e5986d6dd7ae53b5dab582e2}{vres}
+\item 
+static uint8\+\_\+t \hyperlink{video__card_8c_a36b87dc42923f704d16a629834a21b1e}{bytes\+\_\+per\+\_\+pixel}
+\item 
+static void $\ast$ \hyperlink{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}{video\+\_\+mem}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{video__card_8c_a9647dd45761f9e525df98fc86c08cbda}\label{video__card_8c_a9647dd45761f9e525df98fc86c08cbda}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!get\+\_\+inf\+\_\+memory@{get\+\_\+inf\+\_\+memory}}
+\index{get\+\_\+inf\+\_\+memory@{get\+\_\+inf\+\_\+memory}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{get\+\_\+inf\+\_\+memory()}{get\_inf\_memory()}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t get\+\_\+inf\+\_\+memory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}\label{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}}
+\index{vg\+\_\+draw\+\_\+hline@{vg\+\_\+draw\+\_\+hline}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+hline()}{vg\_draw\_hline()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+hline (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a5e5b25bd525250f61f40b9e9f212d5e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}\label{video__card_8c_a99d2da2559e11200c6b40c469e9977ec}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}}
+\index{vg\+\_\+draw\+\_\+rectangle@{vg\+\_\+draw\+\_\+rectangle}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+draw\+\_\+rectangle()}{vg\_draw\_rectangle()}}
+{\footnotesize\ttfamily int() vg\+\_\+draw\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{width,  }\item[{uint16\+\_\+t}]{height,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8c_a99d2da2559e11200c6b40c469e9977ec_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}\label{video__card_8c_aa6c1ff5024cd4d15e476bce487584daa}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!vg\+\_\+init@{vg\+\_\+init}}
+\index{vg\+\_\+init@{vg\+\_\+init}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{vg\+\_\+init()}{vg\_init()}}
+{\footnotesize\ttfamily void$\ast$() vg\+\_\+init (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{mode }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{video__card_8c_a36b87dc42923f704d16a629834a21b1e}\label{video__card_8c_a36b87dc42923f704d16a629834a21b1e}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}}
+\index{bytes\+\_\+per\+\_\+pixel@{bytes\+\_\+per\+\_\+pixel}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{bytes\+\_\+per\+\_\+pixel}{bytes\_per\_pixel}}
+{\footnotesize\ttfamily uint8\+\_\+t bytes\+\_\+per\+\_\+pixel\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__card_8c_abc3c784566289e1414929d23e32a0c6c}\label{video__card_8c_abc3c784566289e1414929d23e32a0c6c}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!hres@{hres}}
+\index{hres@{hres}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{hres}{hres}}
+{\footnotesize\ttfamily uint16\+\_\+t hres\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__card_8c_ab9524390626b49077636c867b41560a7}\label{video__card_8c_ab9524390626b49077636c867b41560a7}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!inf\+\_\+memory@{inf\+\_\+memory}}
+\index{inf\+\_\+memory@{inf\+\_\+memory}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{inf\+\_\+memory}{inf\_memory}}
+{\footnotesize\ttfamily vbe\+\_\+mode\+\_\+info\+\_\+t inf\+\_\+memory\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}\label{video__card_8c_a5077a1a703b40b073dc6b5c1129ab0a1}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!video\+\_\+mem@{video\+\_\+mem}}
+\index{video\+\_\+mem@{video\+\_\+mem}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{video\+\_\+mem}{video\_mem}}
+{\footnotesize\ttfamily void$\ast$ video\+\_\+mem\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{video__card_8c_a573eca15e5986d6dd7ae53b5dab582e2}\label{video__card_8c_a573eca15e5986d6dd7ae53b5dab582e2}} 
+\index{video\+\_\+card.\+c@{video\+\_\+card.\+c}!vres@{vres}}
+\index{vres@{vres}!video\+\_\+card.\+c@{video\+\_\+card.\+c}}
+\subsubsection{\texorpdfstring{vres}{vres}}
+{\footnotesize\ttfamily uint16\+\_\+t vres\hspace{0.3cm}{\ttfamily [static]}}
+

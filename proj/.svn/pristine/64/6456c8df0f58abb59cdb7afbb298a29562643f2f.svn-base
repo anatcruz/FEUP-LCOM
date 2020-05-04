@@ -1,0 +1,6 @@
+<map id="triangle_draw" name="triangle_draw">
+<area shape="rect" id="node2" href="$triangle_8c.html#a81d593af1d8442c360cfb1aa6e19c46a" title="give_max" alt="" coords="158,5,237,32"/>
+<area shape="rect" id="node3" href="$triangle_8c.html#a65f9c241623e3fc1fd20df1ef9b14307" title="give_min" alt="" coords="160,56,235,83"/>
+<area shape="rect" id="node4" href="$group__triangle.html#gaa849ba110cf7f4a6199c4a728b0084f1" title="Checks whether or not a given point is inside a triangle. " alt="" coords="152,107,243,133"/>
+<area shape="rect" id="node5" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="160,157,235,184"/>
+</map>

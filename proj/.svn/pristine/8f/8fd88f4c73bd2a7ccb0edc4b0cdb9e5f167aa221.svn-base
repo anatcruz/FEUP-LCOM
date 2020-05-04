@@ -1,0 +1,84 @@
+\hypertarget{group__vector2}{}\section{vector2}
+\label{group__vector2}\index{vector2@{vector2}}
+
+
+Functions for 2-\/dimensional vector manipulations.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structvector2}{vector2}
+\begin{DoxyCompactList}\small\item\em Struct that represents a vector in 2d space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__vector2_ga79bfbffebc693e35657aa7eec9499688}\label{group__vector2_ga79bfbffebc693e35657aa7eec9499688}} 
+typedef struct \hyperlink{structvector2}{vector2} \hyperlink{group__vector2_ga79bfbffebc693e35657aa7eec9499688}{vector2}
+\begin{DoxyCompactList}\small\item\em Struct that represents a vector in 2d space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_ga8a53b9698cf1172ab388531dcd3d8399}{vector2\+\_\+add} (\hyperlink{structvector2}{vector2} v1, \hyperlink{structvector2}{vector2} v2)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_ga7a403a2bce25c9ee0fd5e6fc30a8f9ea}{vector2\+\_\+subtract} (\hyperlink{structvector2}{vector2} v1, \hyperlink{structvector2}{vector2} v2)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_gab71f45ca9825acdbf70c639cf4a5d09c}{vector2\+\_\+scalar\+\_\+product} (\hyperlink{structvector2}{vector2} v, float k)
+\item 
+float \hyperlink{group__vector2_ga03173bb05b63e8723fc6e54cf55dff71}{vector2\+\_\+norm} (\hyperlink{structvector2}{vector2} v)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_gaa3e831b3dbed8e51233f48de98c3266e}{vector2\+\_\+normalized} (\hyperlink{structvector2}{vector2} v)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions for 2-\/dimensional vector manipulations. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__vector2_ga8a53b9698cf1172ab388531dcd3d8399}\label{group__vector2_ga8a53b9698cf1172ab388531dcd3d8399}} 
+\index{vector2@{vector2}!vector2\+\_\+add@{vector2\+\_\+add}}
+\index{vector2\+\_\+add@{vector2\+\_\+add}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{vector2\+\_\+add()}{vector2\_add()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} vector2\+\_\+add (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{v1,  }\item[{\hyperlink{structvector2}{vector2}}]{v2 }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The sum of v1 and v2 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__vector2_ga03173bb05b63e8723fc6e54cf55dff71}\label{group__vector2_ga03173bb05b63e8723fc6e54cf55dff71}} 
+\index{vector2@{vector2}!vector2\+\_\+norm@{vector2\+\_\+norm}}
+\index{vector2\+\_\+norm@{vector2\+\_\+norm}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{vector2\+\_\+norm()}{vector2\_norm()}}
+{\footnotesize\ttfamily float vector2\+\_\+norm (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{v }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The lenght of \hyperlink{structvector2}{vector2} v 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__vector2_gaa3e831b3dbed8e51233f48de98c3266e}\label{group__vector2_gaa3e831b3dbed8e51233f48de98c3266e}} 
+\index{vector2@{vector2}!vector2\+\_\+normalized@{vector2\+\_\+normalized}}
+\index{vector2\+\_\+normalized@{vector2\+\_\+normalized}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{vector2\+\_\+normalized()}{vector2\_normalized()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} vector2\+\_\+normalized (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{v }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The normalized version of \hyperlink{structvector2}{vector2} v 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__vector2_gab71f45ca9825acdbf70c639cf4a5d09c}\label{group__vector2_gab71f45ca9825acdbf70c639cf4a5d09c}} 
+\index{vector2@{vector2}!vector2\+\_\+scalar\+\_\+product@{vector2\+\_\+scalar\+\_\+product}}
+\index{vector2\+\_\+scalar\+\_\+product@{vector2\+\_\+scalar\+\_\+product}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{vector2\+\_\+scalar\+\_\+product()}{vector2\_scalar\_product()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} vector2\+\_\+scalar\+\_\+product (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{v,  }\item[{float}]{k }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+A \hyperlink{structvector2}{vector2} in which every element of v is multiplied by k 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__vector2_ga7a403a2bce25c9ee0fd5e6fc30a8f9ea}\label{group__vector2_ga7a403a2bce25c9ee0fd5e6fc30a8f9ea}} 
+\index{vector2@{vector2}!vector2\+\_\+subtract@{vector2\+\_\+subtract}}
+\index{vector2\+\_\+subtract@{vector2\+\_\+subtract}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{vector2\+\_\+subtract()}{vector2\_subtract()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} vector2\+\_\+subtract (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{v1,  }\item[{\hyperlink{structvector2}{vector2}}]{v2 }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+v1 subtracted by v2 
+\end{DoxyReturn}

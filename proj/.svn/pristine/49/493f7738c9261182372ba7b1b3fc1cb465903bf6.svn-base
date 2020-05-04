@@ -1,0 +1,56 @@
+\hypertarget{teresa__debug_8c}{}\section{teresa\+\_\+debug.\+c File Reference}
+\label{teresa__debug_8c}\index{teresa\+\_\+debug.\+c@{teresa\+\_\+debug.\+c}}
+{\ttfamily \#include \char`\"{}teresa\+\_\+debug.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}circle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}triangle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for teresa\+\_\+debug.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teresa__debug_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{teresa__debug_8c_a43819b2d249c3e47ca768501fa0be598}{wait\+\_\+for\+\_\+enter} ()
+\item 
+void \hyperlink{teresa__debug_8c_a362329cfadcee0b1731c9eb3c9025369}{t\+\_\+main} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{teresa__debug_8c_a362329cfadcee0b1731c9eb3c9025369}\label{teresa__debug_8c_a362329cfadcee0b1731c9eb3c9025369}} 
+\index{teresa\+\_\+debug.\+c@{teresa\+\_\+debug.\+c}!t\+\_\+main@{t\+\_\+main}}
+\index{t\+\_\+main@{t\+\_\+main}!teresa\+\_\+debug.\+c@{teresa\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{t\+\_\+main()}{t\_main()}}
+{\footnotesize\ttfamily void t\+\_\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{teresa__debug_8c_a362329cfadcee0b1731c9eb3c9025369_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{teresa__debug_8c_a43819b2d249c3e47ca768501fa0be598}\label{teresa__debug_8c_a43819b2d249c3e47ca768501fa0be598}} 
+\index{teresa\+\_\+debug.\+c@{teresa\+\_\+debug.\+c}!wait\+\_\+for\+\_\+enter@{wait\+\_\+for\+\_\+enter}}
+\index{wait\+\_\+for\+\_\+enter@{wait\+\_\+for\+\_\+enter}!teresa\+\_\+debug.\+c@{teresa\+\_\+debug.\+c}}
+\subsubsection{\texorpdfstring{wait\+\_\+for\+\_\+enter()}{wait\_for\_enter()}}
+{\footnotesize\ttfamily void wait\+\_\+for\+\_\+enter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{teresa__debug_8c_a43819b2d249c3e47ca768501fa0be598_cgraph}
+\end{center}
+\end{figure}

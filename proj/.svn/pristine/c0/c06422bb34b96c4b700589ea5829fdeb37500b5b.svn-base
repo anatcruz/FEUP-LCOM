@@ -1,0 +1,9 @@
+<map id="handle_user_input" name="handle_user_input">
+<area shape="rect" id="node2" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="229,5,301,32"/>
+<area shape="rect" id="node3" href="$group__video__card.html#gad5999dee7ae30ea14b13e2e2e5a92c88" title="get_vres" alt="" coords="229,56,301,83"/>
+<area shape="rect" id="node4" href="$group___menu.html#ga24808d404d0ba3711a2445fc0d876167" title="Checks if a pixel is inside a rectangle. " alt="" coords="197,107,334,133"/>
+<area shape="rect" id="node5" href="$group__core__game__settings.html#ga3d00a4e0dab9454c1176e82699a2d510" title="set_bouncy_walls" alt="" coords="202,157,329,184"/>
+<area shape="rect" id="node6" href="$group__core__game__settings.html#gaef0357b1d6d13d5efcde0ebc880ef5ae" title="set_disable_gravity" alt="" coords="198,208,333,235"/>
+<area shape="rect" id="node7" href="$group__core__game__settings.html#ga098db2a1aea09dead03ad58bb667bff9" title="set_infinite_ammo" alt="" coords="201,259,329,285"/>
+<area shape="rect" id="node8" href="$group__core__game__settings.html#gaf4298289f3e03eb97347eb6a3865ec60" title="set_disable_wall_damage" alt="" coords="180,309,351,336"/>
+</map>

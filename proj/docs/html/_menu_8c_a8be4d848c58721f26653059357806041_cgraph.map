@@ -1,0 +1,9 @@
+<map id="drawOptionsMenu" name="drawOptionsMenu">
+<area shape="rect" id="node2" href="$group__core__game__loop.html#gac82e7d55ed069f5d0c396c20b97337e9" title="Loads the XPMs, if they have not been already loaded. " alt="" coords="219,5,305,32"/>
+<area shape="rect" id="node3" href="$_menu_8c.html#aa59cc81964587bdbe8dcd981e8e6fd08" title="load_xpm_menu" alt="" coords="203,56,321,83"/>
+<area shape="rect" id="node4" href="$group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12" title="Draws the given xpm image on the given buffer at the given coordinates. " alt="" coords="205,107,319,133"/>
+<area shape="rect" id="node6" href="$group__video__card.html#ga461fb4a3b5536b3de26e342444394ddd" title="get_buffer_base_ptr" alt="" coords="193,157,331,184"/>
+<area shape="rect" id="node7" href="$group__core__game__loop.html#ga33240cb1f9e3570ad230d7e081888dd6" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="180,208,344,235"/>
+<area shape="rect" id="node5" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="424,132,499,159"/>
+<area shape="rect" id="node8" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="392,208,531,235"/>
+</map>

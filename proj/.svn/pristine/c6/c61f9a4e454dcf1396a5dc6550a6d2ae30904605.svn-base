@@ -1,0 +1,13 @@
+#include <stdint.h>
+#include <stdbool.h>
+#include "core_game_loop.h"
+
+void set_rectangle_frame(uint8_t *base_ptr, uint16_t x, uint16_t y, uint16_t len_x, uint16_t len_y, uint16_t len_edge, uint32_t color);
+
+void load_xpm_menu();
+
+void drawMainMenu();
+
+void drawHelpMenu();
+
+void drawOptionsMenu();

@@ -1,0 +1,7 @@
+<map id="kbc_write_command_byte" name="kbc_write_command_byte">
+<area shape="rect" id="node2" href="$group__kbc.html#ga8c467e640bc33719fe3ed7bcb73f2121" title="Sends a command to the kbc. " alt="" coords="240,5,383,32"/>
+<area shape="rect" id="node6" href="$group__kbc.html#ga24f1a4d1bcb60a73ebd6cee462191a52" title="Sends an argument to the kbc. " alt="" coords="228,56,395,83"/>
+<area shape="rect" id="node3" href="$group__kbc.html#gaa4c58a11cd49c54cc0eb02a79010a9cc" title="Reads the status of the kbc. " alt="" coords="443,5,561,32"/>
+<area shape="rect" id="node5" href="$group__kbc.html#ga594c74b8ef8c0d8a660bcdb729b1f381" title="Blocks the program by delay microseconds. " alt="" coords="461,56,543,83"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="609,5,700,32"/>
+</map>

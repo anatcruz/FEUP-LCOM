@@ -1,0 +1,34 @@
+#include "gravity.h"
+#include "stdint.h"
+#include <stdbool.h>
+
+/**
+ * @brief Struct that represents one of the bullet things that give you more bullets
+ */
+typedef struct bullet_cache
+{
+    gravity_object grav; /**< @brief The position and velocity of the bullet cache*/
+    bool active; /**< @brief You can think of this as whether or not the bullet cache exists*/
+    float radius;
+    float inner_radius;
+    uint32_t color;
+    uint32_t edge_color;
+    uint8_t n_bullets;
+} bullet_cache;
+
+
+bullet_cache *get_bullet(uint8_t n);
+
+bullet_cache *get_ammo(uint8_t n);
+
+void draw_bullet_caches(uint8_t *base_ptr);
+
+void spawn_bullet();
+
+bool ammo_hits_top(bullet_cache *b);
+
+bool ammo_hits_bottom(bullet_cache *b);
+
+bool ammo_hits_left(bullet_cache *b);
+
+bool ammo_hits_right(bullet_cache *b);

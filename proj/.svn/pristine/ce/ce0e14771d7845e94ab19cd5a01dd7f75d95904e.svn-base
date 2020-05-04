@@ -1,0 +1,44 @@
+#include "teresa_debug.h"
+#include <stdio.h>
+#include "circle.h"
+#include "player.h"
+#include "video_card.h"
+#include "triangle.h"
+
+
+extern void wait_for_enter();
+void t_main() {
+    player *p1 = get_player(1);
+    p1->state.position.x = get_hres()/2;
+    p1->state.position.y = get_vres()/2;
+    p1->direction = 3;
+    get_triangle(p1);
+    //codigo para debug
+    FILE *fp;
+            fp = fopen("/home/lcom/labs/proj/debug.txt", "w+");
+            fprintf(fp, "%d %d\n", p1->p1x, p1->p1y);
+            fclose(fp);
+    triangle_draw(get_buffer_base_ptr(),p1->p1x,p1->p1y,p1->p2x,p1->p2y,p1->p3x,p1->p3y,6565685);
+    //draw_circle(get_buffer_base_ptr(),200,200,40,2222222);
+    wait_for_enter();
+}
+//codigo para debug
+  // FILE *fp;
+            // fp = fopen("/home/lcom/labs/proj/debug.txt", "w+");
+            // fprintf(fp, "%d\n", j);
+            // fclose(fp);
+
+struct res give_eq(uint16_t x1,uint16_t y1,uint16_t x2,uint16_t y2){
+    struct res eq;
+    eq.m = ((float)y2-(float)y1)/((float)x2-(float)x1);
+    eq.b = (float)y1 - eq.m * (float)x1;
+    return eq;
+    
+}
+
+uint16_t give_x(struct res fun, uint16_t y){
+    return (uint16_t)((y-fun.b)/fun.m);
+}
+
+
+

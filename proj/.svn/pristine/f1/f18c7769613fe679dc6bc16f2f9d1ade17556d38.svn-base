@@ -1,0 +1,20 @@
+<map id="daniel_debug.c" name="daniel_debug.c">
+<area shape="rect" id="node2" href="$daniel__debug_8h.html" title="daniel_debug.h" alt="" coords="5,80,115,107"/>
+<area shape="rect" id="node5" href="$video__card_8h.html" title="video_card.h" alt="" coords="1605,304,1701,331"/>
+<area shape="rect" id="node7" href="$kbc_8h.html" title="kbc.h" alt="" coords="1214,229,1269,256"/>
+<area shape="rect" id="node10" href="$keyboard_8h.html" title="keyboard.h" alt="" coords="1293,229,1379,256"/>
+<area shape="rect" id="node11" href="$timer_8h.html" title="timer.h" alt="" coords="1983,155,2046,181"/>
+<area shape="rect" id="node12" href="$vector2_8h.html" title="vector2.h" alt="" coords="1453,304,1529,331"/>
+<area shape="rect" id="node13" href="$gravity_8h.html" title="gravity.h" alt="" coords="1455,229,1527,256"/>
+<area shape="rect" id="node14" href="$mouse_8h.html" title="mouse.h" alt="" coords="277,229,349,256"/>
+<area shape="rect" id="node16" href="$player_8h.html" title="player.h" alt="" coords="634,155,702,181"/>
+<area shape="rect" id="node18" href="$projectiles_8h.html" title="projectiles.h" alt="" coords="1607,155,1699,181"/>
+<area shape="rect" id="node19" href="$core__game__loop_8h.html" title="core_game_loop.h" alt="" coords="1004,80,1132,107"/>
+<area shape="rect" id="node8" href="$utils_8h.html" title="utils.h" alt="" coords="1205,304,1262,331"/>
+<area shape="rect" id="node17" href="$circle_8h.html" title="circle.h" alt="" coords="752,229,816,256"/>
+<area shape="rect" id="node22" href="$core__game__settings_8h.html" title="core_game_settings.h" alt="" coords="526,229,677,256"/>
+<area shape="rect" id="node23" href="$triangle_8h.html" title="triangle.h" alt="" coords="840,229,915,256"/>
+<area shape="rect" id="node24" href="$numbers_8h.html" title="numbers.h" alt="" coords="1775,155,1857,181"/>
+<area shape="rect" id="node25" href="$ammo_8h.html" title="ammo.h" alt="" coords="828,155,897,181"/>
+<area shape="rect" id="node26" href="$rtc_8h.html" title="rtc.h" alt="" coords="1040,229,1088,256"/>
+</map>

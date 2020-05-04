@@ -1,0 +1,51 @@
+<map id="proj_main_loop" name="proj_main_loop">
+<area shape="rect" id="node2" href="$video__card_8c.html#aa6c1ff5024cd4d15e476bce487584daa" title="vg_init" alt="" coords="166,657,226,684"/>
+<area shape="rect" id="node3" href="$group__game.html#ga435b545b95a32afd525f8a1f05b2652c" title="letsplay" alt="" coords="163,708,229,735"/>
+<area shape="rect" id="node4" href="$group__timer.html#gae44be0cfa0b6e717152afc708577cf5d" title="Subscribes to timer interrupts. " alt="" coords="613,657,743,684"/>
+<area shape="rect" id="node5" href="$group__mouse.html#ga6061042abde98af7b169c463bc203aee" title="Subscribes to mouse interrupts. " alt="" coords="607,505,749,532"/>
+<area shape="rect" id="node6" href="$group__rtc.html#gaa9a633f60d6ee3b237a80b408647908c" title="Subscribes to RTC interrupts. " alt="" coords="619,607,737,633"/>
+<area shape="rect" id="node7" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="1051,531,1141,557"/>
+<area shape="rect" id="node8" href="$group__rtc.html#ga967406c372c2ba0b6b18c4784d5b1ce2" title="Reads the RTC register at position reg. " alt="" coords="846,759,941,785"/>
+<area shape="rect" id="node9" href="$group__rtc.html#ga9d32737436e666dcd33816dd240321a8" title="Writes the RTC register at position reg. " alt="" coords="629,404,727,431"/>
+<area shape="rect" id="node10" href="$group___menu.html#ga06326bc3ce2fdfe90cb6eb3172159fd0" title="Draws the main menu with the options: play, help, options and exit. It also displays the current time..." alt="" coords="429,1975,540,2001"/>
+<area shape="rect" id="node28" href="$group__mouse.html#gaed4404005e4c565ac36656307386e0ac" title="The first part of mouse interrupt handling. " alt="" coords="639,303,717,329"/>
+<area shape="rect" id="node29" href="$group__mouse.html#gaf9c7f5ebd99c28946ab2184325ffa5f4" title="The second part of mouse interrupt handling. " alt="" coords="605,1316,751,1343"/>
+<area shape="rect" id="node30" href="$group__game.html#gac443369f029f95734396be718a095e93" title="handle_user_input" alt="" coords="615,183,741,209"/>
+<area shape="rect" id="node36" href="$timer_8c.html#a91a2072306c68353712a6b771287dc2c" title="timer_int_handler" alt="" coords="617,1367,739,1393"/>
+<area shape="rect" id="node37" href="$group__timer.html#gacbda5965336eef31790e7a8b983332ff" title="timer_get_counter" alt="" coords="615,1417,741,1444"/>
+<area shape="rect" id="node38" href="$group__game.html#gae53a2c47c7b05d012ce5356a53ae7092" title="handle_state" alt="" coords="277,911,373,937"/>
+<area shape="rect" id="node39" href="$group__timer.html#ga5e9cfb5b4e41a1e647e0ee7d0ed6709a" title="Unsubscribes to timer interrupts. " alt="" coords="605,455,751,481"/>
+<area shape="rect" id="node40" href="$group__mouse.html#ga42e7f57ba1a7deeac5f9ba73bb00b80b" title="Unsubscribes to mouse interrupts. " alt="" coords="601,1265,755,1292"/>
+<area shape="rect" id="node41" href="$group__rtc.html#ga9c629cc80f25b7d9d4e19fb6f6de8ea4" title="Unsubscribes to RTC interrupts. " alt="" coords="613,556,743,583"/>
+<area shape="rect" id="node48" href="$group__rtc.html#ga55d98e39c0c2bf246ef774491c31b593" title="Handles RTC interrupts. " alt="" coords="651,809,705,836"/>
+<area shape="rect" id="node11" href="$group__core__game__loop.html#gac82e7d55ed069f5d0c396c20b97337e9" title="Loads the XPMs, if they have not been already loaded. " alt="" coords="635,1620,721,1647"/>
+<area shape="rect" id="node12" href="$group___menu.html#gaa59cc81964587bdbe8dcd981e8e6fd08" title="Loads the XPMs for the menus, if they have not been already loaded. " alt="" coords="619,1823,737,1849"/>
+<area shape="rect" id="node13" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="857,1569,929,1596"/>
+<area shape="rect" id="node14" href="$group__video__card.html#gad5999dee7ae30ea14b13e2e2e5a92c88" title="get_vres" alt="" coords="857,1468,929,1495"/>
+<area shape="rect" id="node15" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="1027,1848,1165,1875"/>
+<area shape="rect" id="node16" href="$group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12" title="Draws the given xpm image on the given buffer at the given coordinates. " alt="" coords="621,1924,735,1951"/>
+<area shape="rect" id="node18" href="$group__core__game__loop.html#ga33240cb1f9e3570ad230d7e081888dd6" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="596,1873,760,1900"/>
+<area shape="rect" id="node19" href="$group___menu.html#ga730cfddc7cb680e1b1d4ad54d4a8be30" title="It draws the frame of a rectangle, used for buttons. " alt="" coords="608,2127,748,2153"/>
+<area shape="rect" id="node21" href="$group__numbers.html#ga957a3e5ec5d985ee4c890b5f34ac9511" title="Draws a two&#45;digit number on the given buffer at the given coordinates. " alt="" coords="625,2279,731,2305"/>
+<area shape="rect" id="node24" href="$group__rtc.html#ga94b0c84824555e206801ea5a59eaa8fb" title="rtc_get_hour" alt="" coords="631,2380,725,2407"/>
+<area shape="rect" id="node25" href="$group__rtc.html#ga045f10751f73dcf26ec496d24332e067" title="rtc_get_minute" alt="" coords="624,2329,732,2356"/>
+<area shape="rect" id="node26" href="$group__rtc.html#ga900a6f54c5751abfa35460384278ec84" title="rtc_get_second" alt="" coords="623,1772,733,1799"/>
+<area shape="rect" id="node27" href="$group__video__card.html#ga461fb4a3b5536b3de26e342444394ddd" title="get_buffer_base_ptr" alt="" coords="609,1975,747,2001"/>
+<area shape="rect" id="node17" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="1059,1975,1133,2001"/>
+<area shape="rect" id="node20" href="$group__video__card.html#ga88795d0238c894e7d54c134b69305976" title="Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to th..." alt="" coords="843,2177,943,2204"/>
+<area shape="rect" id="node22" href="$numbers_8c.html#a86a2fa94e8ef96cf36a0a0b82cc3ec31" title="load_nums" alt="" coords="851,2279,936,2305"/>
+<area shape="rect" id="node23" href="$numbers_8c.html#a66139241d81ad95a26d9474fcc17e943" title="draw_number" alt="" coords="843,2228,943,2255"/>
+<area shape="rect" id="node31" href="$group___menu.html#ga24808d404d0ba3711a2445fc0d876167" title="Checks if a pixel is inside a rectangle. " alt="" coords="825,5,962,32"/>
+<area shape="rect" id="node32" href="$group__core__game__settings.html#ga3d00a4e0dab9454c1176e82699a2d510" title="set_bouncy_walls" alt="" coords="830,56,957,83"/>
+<area shape="rect" id="node33" href="$group__core__game__settings.html#gaef0357b1d6d13d5efcde0ebc880ef5ae" title="set_disable_gravity" alt="" coords="826,107,961,133"/>
+<area shape="rect" id="node34" href="$group__core__game__settings.html#ga098db2a1aea09dead03ad58bb667bff9" title="set_infinite_ammo" alt="" coords="829,157,957,184"/>
+<area shape="rect" id="node35" href="$group__core__game__settings.html#gaf4298289f3e03eb97347eb6a3865ec60" title="set_disable_wall_damage" alt="" coords="808,208,979,235"/>
+<area shape="rect" id="node42" href="$group__core__game__loop.html#gaa06ba1be9bd4796cb317a83db95966f2" title="The highest&#45;level function of this module. " alt="" coords="426,1012,543,1039"/>
+<area shape="rect" id="node49" href="$group___menu.html#ga879287e331940c91b6b6b9dbb65474de" title="Draws the help menu that explains the players&#39; commands. " alt="" coords="430,1696,539,1723"/>
+<area shape="rect" id="node50" href="$group___menu.html#ga8be4d848c58721f26653059357806041" title="Draws the options menu that allows the players to change some settings like if the player s want boun..." alt="" coords="421,1823,548,1849"/>
+<area shape="rect" id="node43" href="$group__keyboard.html#ga73e07d998291eb412f8097fd06ddafa8" title="Subscribes to keyboard interrupts. " alt="" coords="601,911,755,937"/>
+<area shape="rect" id="node44" href="$group__utils.html#ga8c10bb1f9a5bb82b67c6980182193c54" title="Converts a value from decimal format to bcd format. " alt="" coords="621,860,735,887"/>
+<area shape="rect" id="node45" href="$group__utils.html#ga304fc85c5c7fb06010deb07c6dd16b81" title="Converts a value from bcd format to decimal format. " alt="" coords="837,885,950,912"/>
+<area shape="rect" id="node46" href="$group__core__game__settings.html#gae294ba27e3b2bf1d347ed563ee1327f7" title="get_disable_gravity" alt="" coords="611,1519,745,1545"/>
+<area shape="rect" id="node47" href="$group__core__game__loop.html#ga3675a504daf73491a060c7462420df07" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="639,1113,717,1140"/>
+</map>

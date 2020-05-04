@@ -1,0 +1,4 @@
+<map id="draw_circle" name="draw_circle">
+<area shape="rect" id="node2" href="$group__circle.html#gaf097cd6cfd9dde8acf534b2c2e1dbabd" title="Checks whether or not a given point is inside a circle. " alt="" coords="141,5,224,32"/>
+<area shape="rect" id="node3" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="145,56,220,83"/>
+</map>

@@ -1,0 +1,193 @@
+\hypertarget{core__game__loop_8c}{}\section{core\+\_\+game\+\_\+loop.\+c File Reference}
+\label{core__game__loop_8c}\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player1wins.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}player2wins.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}nebula.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}ammo.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}sun.\+xpm\char`\"{}}\newline
+Include dependency graph for core\+\_\+game\+\_\+loop.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core__game__loop_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{core__game__loop_8c_ac6060b211635122cb0483274bc4e2b9b}{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}~0x81
+\item 
+\#define \hyperlink{core__game__loop_8c_a5400b1f2028d38732e4377be4f32b255}{D\+E\+L\+T\+A\+\_\+T}~0.\+03333333333
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \{ \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a593fcb971576d8ee918ec9eaad2678d6}{playing}, 
+\hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a4f811bee68047ae75f8c7cd0fd4e595e}{player1\+\_\+wins}, 
+\hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a1147dfc93d14618627257a9359cf2c64}{player2\+\_\+wins}, 
+\hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2ab7c5e2be72f458457f06c9598e0cb22d}{tie}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__core__game__loop_ga46e6c6f53965490e91d8629d528ec797}{gravity\+\_\+step} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level physics function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}{explode\+\_\+player} (uint8\+\_\+t \hyperlink{structplayer}{player})
+\begin{DoxyCompactList}\small\item\em Explodes one of the players Rather unsurprisingly, calls to this function usually imply the end of the game. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gadffa4aa993db001bdee35fbce31dc00b}{player\+\_\+deal\+\_\+damage} (uint8\+\_\+t \hyperlink{structplayer}{player}, uint16\+\_\+t damage)
+\begin{DoxyCompactList}\small\item\em Deals damage one of the players. If the player doesn\textquotesingle{}t have enough HP to take the hit, \hyperlink{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}{explode\+\_\+player(uint8\+\_\+t player)} is called and the game ends. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927}{player\+\_\+shoot} (\hyperlink{structplayer}{player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Spawns a projectile in front of p, with a given velocity. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga79bddd8b336f6be116bfa658dd949e2e}{shooting} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level shooting function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga53d6cc2e012c3f117efb3cd959af4af4}{collision} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level collision-\/checking function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga9f1bba2db0aa13b5749945e9679a28bc}{draw\+\_\+life\+\_\+bars} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the players\textquotesingle{} life bars. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga33240cb1f9e3570ad230d7e081888dd6}{draw\+\_\+transparent\+\_\+image} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img, bool invert)
+\begin{DoxyCompactList}\small\item\em Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that white pixels do not get drawn. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gade0334b547fb581566867d040aa7608a}{draw\+\_\+message} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em If the game ended, displays a message on the top of the screen. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga40e143893b9f0cd6ae25ab8e3017b5b2}{draw\+\_\+ammo\+\_\+numbers} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the ammunition numbers, letting them know how many bullets they have. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga56c5cf8a568cff737ff95520cbe6b405}{draw} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level frame-\/rendering function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga46fea93bf5d63e93090fbb95b742b881}{game\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level game loop function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga3675a504daf73491a060c7462420df07}{draw\+\_\+sun} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that only pixels from a given distance from the center of the screen get drawn. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gac82e7d55ed069f5d0c396c20b97337e9}{load\+\_\+xpms} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+P\+Ms, if they have not been already loaded. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gaa06ba1be9bd4796cb317a83db95966f2}{core\+\_\+game\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em The highest-\/level function of this module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{structvector2}{vector2} \hyperlink{core__game__loop_8c_a7bcca815826a83b5e84fa98b32e59404}{screen\+\_\+center}
+\item 
+static uint8\+\_\+t $\ast$ \hyperlink{core__game__loop_8c_a6473b5098c114ab97fc4cde61684ab7b}{double\+\_\+buffer}
+\item 
+static uint8\+\_\+t $\ast$ \hyperlink{core__game__loop_8c_abd1e2296f1f43cb459cbd6f2e7d3b609}{background\+\_\+buffer}
+\item 
+static enum \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} \hyperlink{core__game__loop_8c_a32b024e2a37a6e9ae39ecf5f0aea5d99}{state}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_a4e2d8e37790db5f5895447a12d89ddae}{nebula\+\_\+background\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_a8e0ef5fd626d312cb63158c14c94f205}{sun\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_a4add7d5170b2190f4f3616ed5b6cae40}{player1\+\_\+wins\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_a9fa5ad56da864b7b6500a205de00461d}{player2\+\_\+wins\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_a9dc3cfce1c20d2d26a18f9fb2860b49d}{draw\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{core__game__loop_8c_aecb09fa5ad58d433f023090e3d467eb4}{ammo\+\_\+img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{core__game__loop_8c_ac6060b211635122cb0483274bc4e2b9b}\label{core__game__loop_8c_ac6060b211635122cb0483274bc4e2b9b}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY@{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}}
+\index{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY@{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY}{BREAK\_ESC\_KEY}}
+{\footnotesize\ttfamily \#define B\+R\+E\+A\+K\+\_\+\+E\+S\+C\+\_\+\+K\+EY~0x81}
+
+\mbox{\Hypertarget{core__game__loop_8c_a5400b1f2028d38732e4377be4f32b255}\label{core__game__loop_8c_a5400b1f2028d38732e4377be4f32b255}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!D\+E\+L\+T\+A\+\_\+T@{D\+E\+L\+T\+A\+\_\+T}}
+\index{D\+E\+L\+T\+A\+\_\+T@{D\+E\+L\+T\+A\+\_\+T}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{D\+E\+L\+T\+A\+\_\+T}{DELTA\_T}}
+{\footnotesize\ttfamily \#define D\+E\+L\+T\+A\+\_\+T~0.\+03333333333}
+
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}\label{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{playing@{playing}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!playing@{playing}}}\mbox{\Hypertarget{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a593fcb971576d8ee918ec9eaad2678d6}\label{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a593fcb971576d8ee918ec9eaad2678d6}} 
+playing&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{player1\+\_\+wins@{player1\+\_\+wins}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!player1\+\_\+wins@{player1\+\_\+wins}}}\mbox{\Hypertarget{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a4f811bee68047ae75f8c7cd0fd4e595e}\label{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a4f811bee68047ae75f8c7cd0fd4e595e}} 
+player1\+\_\+wins&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{player2\+\_\+wins@{player2\+\_\+wins}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!player2\+\_\+wins@{player2\+\_\+wins}}}\mbox{\Hypertarget{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a1147dfc93d14618627257a9359cf2c64}\label{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2a1147dfc93d14618627257a9359cf2c64}} 
+player2\+\_\+wins&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{tie@{tie}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!tie@{tie}}}\mbox{\Hypertarget{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2ab7c5e2be72f458457f06c9598e0cb22d}\label{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2ab7c5e2be72f458457f06c9598e0cb22d}} 
+tie&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{core__game__loop_8c_aecb09fa5ad58d433f023090e3d467eb4}\label{core__game__loop_8c_aecb09fa5ad58d433f023090e3d467eb4}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!ammo\+\_\+img@{ammo\+\_\+img}}
+\index{ammo\+\_\+img@{ammo\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{ammo\+\_\+img}{ammo\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t ammo\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_abd1e2296f1f43cb459cbd6f2e7d3b609}\label{core__game__loop_8c_abd1e2296f1f43cb459cbd6f2e7d3b609}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!background\+\_\+buffer@{background\+\_\+buffer}}
+\index{background\+\_\+buffer@{background\+\_\+buffer}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{background\+\_\+buffer}{background\_buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ background\+\_\+buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a6473b5098c114ab97fc4cde61684ab7b}\label{core__game__loop_8c_a6473b5098c114ab97fc4cde61684ab7b}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!double\+\_\+buffer@{double\+\_\+buffer}}
+\index{double\+\_\+buffer@{double\+\_\+buffer}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{double\+\_\+buffer}{double\_buffer}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ double\+\_\+buffer\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a9dc3cfce1c20d2d26a18f9fb2860b49d}\label{core__game__loop_8c_a9dc3cfce1c20d2d26a18f9fb2860b49d}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!draw\+\_\+img@{draw\+\_\+img}}
+\index{draw\+\_\+img@{draw\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+img}{draw\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t draw\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a4e2d8e37790db5f5895447a12d89ddae}\label{core__game__loop_8c_a4e2d8e37790db5f5895447a12d89ddae}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!nebula\+\_\+background\+\_\+img@{nebula\+\_\+background\+\_\+img}}
+\index{nebula\+\_\+background\+\_\+img@{nebula\+\_\+background\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{nebula\+\_\+background\+\_\+img}{nebula\_background\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t nebula\+\_\+background\+\_\+img}
+
+\mbox{\Hypertarget{core__game__loop_8c_a4add7d5170b2190f4f3616ed5b6cae40}\label{core__game__loop_8c_a4add7d5170b2190f4f3616ed5b6cae40}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!player1\+\_\+wins\+\_\+img@{player1\+\_\+wins\+\_\+img}}
+\index{player1\+\_\+wins\+\_\+img@{player1\+\_\+wins\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{player1\+\_\+wins\+\_\+img}{player1\_wins\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t player1\+\_\+wins\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a9fa5ad56da864b7b6500a205de00461d}\label{core__game__loop_8c_a9fa5ad56da864b7b6500a205de00461d}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!player2\+\_\+wins\+\_\+img@{player2\+\_\+wins\+\_\+img}}
+\index{player2\+\_\+wins\+\_\+img@{player2\+\_\+wins\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{player2\+\_\+wins\+\_\+img}{player2\_wins\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t player2\+\_\+wins\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a7bcca815826a83b5e84fa98b32e59404}\label{core__game__loop_8c_a7bcca815826a83b5e84fa98b32e59404}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!screen\+\_\+center@{screen\+\_\+center}}
+\index{screen\+\_\+center@{screen\+\_\+center}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{screen\+\_\+center}{screen\_center}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} screen\+\_\+center\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a32b024e2a37a6e9ae39ecf5f0aea5d99}\label{core__game__loop_8c_a32b024e2a37a6e9ae39ecf5f0aea5d99}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!state@{state}}
+\index{state@{state}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{state}{state}}
+{\footnotesize\ttfamily enum \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} state\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__loop_8c_a8e0ef5fd626d312cb63158c14c94f205}\label{core__game__loop_8c_a8e0ef5fd626d312cb63158c14c94f205}} 
+\index{core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}!sun\+\_\+img@{sun\+\_\+img}}
+\index{sun\+\_\+img@{sun\+\_\+img}!core\+\_\+game\+\_\+loop.\+c@{core\+\_\+game\+\_\+loop.\+c}}
+\subsubsection{\texorpdfstring{sun\+\_\+img}{sun\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t sun\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+

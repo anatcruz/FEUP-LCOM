@@ -1,0 +1,49 @@
+\hypertarget{structvector2}{}\section{vector2 Struct Reference}
+\label{structvector2}\index{vector2@{vector2}}
+
+
+Struct that represents a vector in 2d space.  
+
+
+
+
+{\ttfamily \#include $<$vector2.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structvector2_ad0da36b2558901e21e7a30f6c227a45e}{x}
+\begin{DoxyCompactList}\small\item\em The x component. \end{DoxyCompactList}\item 
+float \hyperlink{structvector2_aa4f0d3eebc3c443f9be81bf48561a217}{y}
+\begin{DoxyCompactList}\small\item\em The y component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents a vector in 2d space. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structvector2_ad0da36b2558901e21e7a30f6c227a45e}\label{structvector2_ad0da36b2558901e21e7a30f6c227a45e}} 
+\index{vector2@{vector2}!x@{x}}
+\index{x@{x}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{x}{x}}
+{\footnotesize\ttfamily float x}
+
+
+
+The x component. 
+
+\mbox{\Hypertarget{structvector2_aa4f0d3eebc3c443f9be81bf48561a217}\label{structvector2_aa4f0d3eebc3c443f9be81bf48561a217}} 
+\index{vector2@{vector2}!y@{y}}
+\index{y@{y}!vector2@{vector2}}
+\subsubsection{\texorpdfstring{y}{y}}
+{\footnotesize\ttfamily float y}
+
+
+
+The y component. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{vector2_8h}{vector2.\+h}\end{DoxyCompactItemize}

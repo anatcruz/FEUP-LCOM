@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['bcd_5fto_5fdecimal',['bcd_to_decimal',['../group__utils.html#ga304fc85c5c7fb06010deb07c6dd16b81',1,'bcd_to_decimal(uint8_t hex):&#160;utils.c'],['../group__utils.html#ga304fc85c5c7fb06010deb07c6dd16b81',1,'bcd_to_decimal(uint8_t hex):&#160;utils.c']]],
+  ['bytes',['bytes',['../structkeyboard__packet.html#a46e4c05d20a047ec169f60d3167e912e',1,'keyboard_packet::bytes()'],['../structmouse__packet.html#a89fe01e2d4cf73b27993d65029aff235',1,'mouse_packet::bytes()']]]
+];

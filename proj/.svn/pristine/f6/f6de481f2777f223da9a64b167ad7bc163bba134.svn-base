@@ -1,0 +1,58 @@
+\hypertarget{structprojectile}{}\section{projectile Struct Reference}
+\label{structprojectile}\index{projectile@{projectile}}
+
+
+Struct that represents one of our game\textquotesingle{}s bullets.  
+
+
+
+
+{\ttfamily \#include $<$projectiles.\+h$>$}
+
+
+
+Collaboration diagram for projectile\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structprojectile__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{structprojectile_a0ad521a11f45a9309c1549873d5ed8b3}{grav}
+\begin{DoxyCompactList}\small\item\em The position and velocity of the bullet. \end{DoxyCompactList}\item 
+bool \hyperlink{structprojectile_a03c996f9fcf0e10baeb3e700be0c409a}{active}
+\begin{DoxyCompactList}\small\item\em You can think of this as whether or not the bullet exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents one of our game\textquotesingle{}s bullets. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structprojectile_a03c996f9fcf0e10baeb3e700be0c409a}\label{structprojectile_a03c996f9fcf0e10baeb3e700be0c409a}} 
+\index{projectile@{projectile}!active@{active}}
+\index{active@{active}!projectile@{projectile}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool active}
+
+
+
+You can think of this as whether or not the bullet exists. 
+
+\mbox{\Hypertarget{structprojectile_a0ad521a11f45a9309c1549873d5ed8b3}\label{structprojectile_a0ad521a11f45a9309c1549873d5ed8b3}} 
+\index{projectile@{projectile}!grav@{grav}}
+\index{grav@{grav}!projectile@{projectile}}
+\subsubsection{\texorpdfstring{grav}{grav}}
+{\footnotesize\ttfamily \hyperlink{structgravity__object}{gravity\+\_\+object} grav}
+
+
+
+The position and velocity of the bullet. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{projectiles_8h}{projectiles.\+h}\end{DoxyCompactItemize}

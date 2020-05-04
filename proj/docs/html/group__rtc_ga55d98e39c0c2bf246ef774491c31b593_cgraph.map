@@ -1,0 +1,5 @@
+<map id="rtc_ih" name="rtc_ih">
+<area shape="rect" id="node2" href="$group__rtc.html#ga967406c372c2ba0b6b18c4784d5b1ce2" title="Reads the RTC register at position reg. " alt="" coords="117,5,212,32"/>
+<area shape="rect" id="node4" href="$group__utils.html#ga304fc85c5c7fb06010deb07c6dd16b81" title="Converts a value from bcd format to decimal format. " alt="" coords="108,56,221,83"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="269,5,360,32"/>
+</map>

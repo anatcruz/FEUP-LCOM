@@ -1,0 +1,63 @@
+\hypertarget{group__game}{}\section{game}
+\label{group__game}\index{game@{game}}
+
+
+game-\/related functions  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__game_gac443369f029f95734396be718a095e93}{handle\+\_\+user\+\_\+input} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p1)
+\item 
+void \hyperlink{group__game_gae53a2c47c7b05d012ce5356a53ae7092}{handle\+\_\+state} ()
+\item 
+void \hyperlink{group__game_ga435b545b95a32afd525f8a1f05b2652c}{letsplay} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+game-\/related functions 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__game_gae53a2c47c7b05d012ce5356a53ae7092}\label{group__game_gae53a2c47c7b05d012ce5356a53ae7092}} 
+\index{game@{game}!handle\+\_\+state@{handle\+\_\+state}}
+\index{handle\+\_\+state@{handle\+\_\+state}!game@{game}}
+\subsubsection{\texorpdfstring{handle\+\_\+state()}{handle\_state()}}
+{\footnotesize\ttfamily void handle\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__game_gae53a2c47c7b05d012ce5356a53ae7092_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_gac443369f029f95734396be718a095e93}\label{group__game_gac443369f029f95734396be718a095e93}} 
+\index{game@{game}!handle\+\_\+user\+\_\+input@{handle\+\_\+user\+\_\+input}}
+\index{handle\+\_\+user\+\_\+input@{handle\+\_\+user\+\_\+input}!game@{game}}
+\subsubsection{\texorpdfstring{handle\+\_\+user\+\_\+input()}{handle\_user\_input()}}
+{\footnotesize\ttfamily void handle\+\_\+user\+\_\+input (\begin{DoxyParamCaption}\item[{\hyperlink{structmouse__packet}{mouse\+\_\+packet}}]{p1 }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{group__game_gac443369f029f95734396be718a095e93_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__game_ga435b545b95a32afd525f8a1f05b2652c}\label{group__game_ga435b545b95a32afd525f8a1f05b2652c}} 
+\index{game@{game}!letsplay@{letsplay}}
+\index{letsplay@{letsplay}!game@{game}}
+\subsubsection{\texorpdfstring{letsplay()}{letsplay()}}
+{\footnotesize\ttfamily void letsplay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__game_ga435b545b95a32afd525f8a1f05b2652c_cgraph}
+\end{center}
+\end{figure}

@@ -1,0 +1,43 @@
+#pragma once
+
+#include <stdint.h>
+#include <stdbool.h>
+
+uint16_t get_planet_radius();
+void     set_planet_radius(uint16_t r);
+
+float get_planet_gravity();
+void  set_planet_gravity(float g);
+
+uint32_t get_planet_color();
+void     set_planet_color(uint32_t color);
+
+////////////////////////////////////////
+
+float get_projectile_shooting_speed();
+void  set_projectile_shooting_speed(float speed);
+
+uint8_t get_projectile_shooting_cooldown();
+void    set_projectile_shooting_cooldown(uint8_t cooldown);
+
+uint32_t get_projectile_color();
+void     set_projectile_color(uint32_t color);
+
+////////////////////////////////////////
+
+uint32_t get_player1_color();
+void     set_player1_color(uint32_t color);
+
+uint32_t get_player2_color();
+void     set_player2_color(uint32_t color);
+
+float get_player_size();
+void  set_player_size(float size);
+
+float get_player_acceleration();
+void  set_player_acceleration(float acc);
+
+////////////////////////////////////////
+
+bool get_bouncy_walls();
+void set_bouncy_walls(bool bouncy);

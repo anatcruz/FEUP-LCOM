@@ -1,0 +1,161 @@
+\hypertarget{group__keyboard}{}\section{keyboard}
+\label{group__keyboard}\index{keyboard@{keyboard}}
+
+
+Keyboard-\/related interrupt functions.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet}
+\begin{DoxyCompactList}\small\item\em Struct that represents a keyboard packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__keyboard_ga2d17911b50c0aeebb2e3325c5b36d4f2}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ}~1
+\item 
+\#define \hyperlink{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~1
+\item 
+\#define \hyperlink{group__keyboard_ga67f9ce144f998dd5c8b1ae5e25fb8dec}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK}~B\+IT(\hyperlink{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID})
+\item 
+\#define \hyperlink{group__keyboard_gaa639f3ee505b0f62686d71087830b1d5}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB}~0x\+E0
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} \hyperlink{group__keyboard_ga823c244c9bc4e1f5004a548133e112d9}{keyboard\+\_\+packet}
+\begin{DoxyCompactList}\small\item\em Struct that represents a keyboard packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__keyboard_ga92937e5072f297d330bd57bb62cd35fb}{keyboard\+\_\+ih2} (\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} $\ast$new\+\_\+packet)
+\begin{DoxyCompactList}\small\item\em The second part of keyboard interrupt handling. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_ga73e07d998291eb412f8097fd06ddafa8}{keyboard\+\_\+ih\+\_\+subscribe} ()
+\begin{DoxyCompactList}\small\item\em Subscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_gae7dcc7462f98df72164f4a194125d0e9}{keyboard\+\_\+ih\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_gad416a0ec7ca419806341ab7be70064b1}{keyboard\+\_\+ih\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enables keyboard interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__keyboard_ga803d759506fefe9119ad529c783b3a7a}{keyboard\+\_\+ih\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disables keyboard interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Keyboard-\/related interrupt functions. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}\label{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}} 
+\index{keyboard@{keyboard}!K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}}
+\index{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID}{KEYBOARD\_HOOK\_ID}}
+{\footnotesize\ttfamily \#define K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID~1}
+
+\mbox{\Hypertarget{group__keyboard_ga2d17911b50c0aeebb2e3325c5b36d4f2}\label{group__keyboard_ga2d17911b50c0aeebb2e3325c5b36d4f2}} 
+\index{keyboard@{keyboard}!K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ}}
+\index{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ}{KEYBOARD\_IRQ}}
+{\footnotesize\ttfamily \#define K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+I\+RQ~1}
+
+\mbox{\Hypertarget{group__keyboard_ga67f9ce144f998dd5c8b1ae5e25fb8dec}\label{group__keyboard_ga67f9ce144f998dd5c8b1ae5e25fb8dec}} 
+\index{keyboard@{keyboard}!K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK}}
+\index{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK}{KEYBOARD\_MASK}}
+{\footnotesize\ttfamily \#define K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+M\+A\+SK~B\+IT(\hyperlink{group__keyboard_ga03c0bb70d0f678541f822faab96376bc}{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+H\+O\+O\+K\+\_\+\+ID})}
+
+\mbox{\Hypertarget{group__keyboard_gaa639f3ee505b0f62686d71087830b1d5}\label{group__keyboard_gaa639f3ee505b0f62686d71087830b1d5}} 
+\index{keyboard@{keyboard}!K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB}}
+\index{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB@{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB}{KEYBOARD\_TWO\_BYTES\_MSB}}
+{\footnotesize\ttfamily \#define K\+E\+Y\+B\+O\+A\+R\+D\+\_\+\+T\+W\+O\+\_\+\+B\+Y\+T\+E\+S\+\_\+\+M\+SB~0x\+E0}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__keyboard_ga823c244c9bc4e1f5004a548133e112d9}\label{group__keyboard_ga823c244c9bc4e1f5004a548133e112d9}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+packet@{keyboard\+\_\+packet}}
+\index{keyboard\+\_\+packet@{keyboard\+\_\+packet}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+packet}{keyboard\_packet}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet}  \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet}}
+
+
+
+Struct that represents a keyboard packet. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__keyboard_ga92937e5072f297d330bd57bb62cd35fb}\label{group__keyboard_ga92937e5072f297d330bd57bb62cd35fb}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+ih2@{keyboard\+\_\+ih2}}
+\index{keyboard\+\_\+ih2@{keyboard\+\_\+ih2}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+ih2()}{keyboard\_ih2()}}
+{\footnotesize\ttfamily bool keyboard\+\_\+ih2 (\begin{DoxyParamCaption}\item[{\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} $\ast$}]{new\+\_\+packet }\end{DoxyParamCaption})}
+
+
+
+The second part of keyboard interrupt handling. 
+
+Calls to this function should be preceded immediately by \hyperlink{keyboard_8c_a5761bd4aad91ac1d68916ad88f583d9f}{kbc\+\_\+ih(void)}
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+packet} & A \hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} pointer that will get overwritten if the packet was fully parsed \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the packet was overwritten with a new packet, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_ga803d759506fefe9119ad529c783b3a7a}\label{group__keyboard_ga803d759506fefe9119ad529c783b3a7a}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+ih\+\_\+disable@{keyboard\+\_\+ih\+\_\+disable}}
+\index{keyboard\+\_\+ih\+\_\+disable@{keyboard\+\_\+ih\+\_\+disable}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+ih\+\_\+disable()}{keyboard\_ih\_disable()}}
+{\footnotesize\ttfamily int keyboard\+\_\+ih\+\_\+disable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Disables keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_gad416a0ec7ca419806341ab7be70064b1}\label{group__keyboard_gad416a0ec7ca419806341ab7be70064b1}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+ih\+\_\+enable@{keyboard\+\_\+ih\+\_\+enable}}
+\index{keyboard\+\_\+ih\+\_\+enable@{keyboard\+\_\+ih\+\_\+enable}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+ih\+\_\+enable()}{keyboard\_ih\_enable()}}
+{\footnotesize\ttfamily int keyboard\+\_\+ih\+\_\+enable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enables keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_ga73e07d998291eb412f8097fd06ddafa8}\label{group__keyboard_ga73e07d998291eb412f8097fd06ddafa8}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+ih\+\_\+subscribe@{keyboard\+\_\+ih\+\_\+subscribe}}
+\index{keyboard\+\_\+ih\+\_\+subscribe@{keyboard\+\_\+ih\+\_\+subscribe}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+ih\+\_\+subscribe()}{keyboard\_ih\_subscribe()}}
+{\footnotesize\ttfamily int keyboard\+\_\+ih\+\_\+subscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Subscribes to keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__keyboard_gae7dcc7462f98df72164f4a194125d0e9}\label{group__keyboard_gae7dcc7462f98df72164f4a194125d0e9}} 
+\index{keyboard@{keyboard}!keyboard\+\_\+ih\+\_\+unsubscribe@{keyboard\+\_\+ih\+\_\+unsubscribe}}
+\index{keyboard\+\_\+ih\+\_\+unsubscribe@{keyboard\+\_\+ih\+\_\+unsubscribe}!keyboard@{keyboard}}
+\subsubsection{\texorpdfstring{keyboard\+\_\+ih\+\_\+unsubscribe()}{keyboard\_ih\_unsubscribe()}}
+{\footnotesize\ttfamily int keyboard\+\_\+ih\+\_\+unsubscribe (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Unsubscribes to keyboard interrupts. 
+
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}

@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include "Menu.h"
+#include "core_game_loop.h"
+#include "core_game_settings.h"
+#include <lcom/lab5.h>
+#include <lcom/xpm.h>
+
+typedef struct game
+{
+  bool main_menu;
+  bool help_menu;
+  bool options_menu;
+  int  state;
+  bool exit;
+
+}game;
+
+void mouse_mov(mouse_packet p1);
+
+void handle_user_input(mouse_packet p1);
+
+void handle_state();
+
+void letsplay();

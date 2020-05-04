@@ -1,0 +1,139 @@
+\hypertarget{numbers_8c}{}\section{numbers.\+c File Reference}
+\label{numbers_8c}\index{numbers.\+c@{numbers.\+c}}
+{\ttfamily \#include \char`\"{}numbers.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}number0.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number1.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number2.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number3.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number4.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number5.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number6.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number7.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number8.\+xpm\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}number9.\+xpm\char`\"{}}\newline
+Include dependency graph for numbers.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{numbers_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{numbers_8c_a86a2fa94e8ef96cf36a0a0b82cc3ec31}{load\+\_\+nums} ()
+\item 
+void \hyperlink{numbers_8c_a66139241d81ad95a26d9474fcc17e943}{draw\+\_\+number} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n})
+\item 
+void \hyperlink{group__numbers_ga957a3e5ec5d985ee4c890b5f34ac9511}{draw\+\_\+numbers} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n})
+\begin{DoxyCompactList}\small\item\em Draws a two-\/digit number on the given buffer at the given coordinates. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_aa133a2b4b0daa9380ef272e043089bad}{number0\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a2bd6210ece34cb49afafd9bf4efd5949}{number1\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a9036deb354656ad6d0d6d6b488260ea0}{number2\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_ae5b6f13df3cc01f71ab8236df6b88675}{number3\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_af56566b899ba8c4d7f604446fe472cdf}{number4\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a44bc4707b808305e8d779b004defec22}{number5\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a83912e5cba019ae8bfc43c823ce0aba8}{number6\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_ab283e20dec71e70574608101e4fec419}{number7\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a193d863211c5ada5a7f198dd242984f3}{number8\+\_\+img}
+\item 
+static xpm\+\_\+image\+\_\+t \hyperlink{numbers_8c_a1941ed4e54fdf44de16f49c8ed1056e9}{number9\+\_\+img}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{numbers_8c_a66139241d81ad95a26d9474fcc17e943}\label{numbers_8c_a66139241d81ad95a26d9474fcc17e943}} 
+\index{numbers.\+c@{numbers.\+c}!draw\+\_\+number@{draw\+\_\+number}}
+\index{draw\+\_\+number@{draw\+\_\+number}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+number()}{draw\_number()}}
+{\footnotesize\ttfamily void draw\+\_\+number (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{numbers_8c_a66139241d81ad95a26d9474fcc17e943_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{numbers_8c_a86a2fa94e8ef96cf36a0a0b82cc3ec31}\label{numbers_8c_a86a2fa94e8ef96cf36a0a0b82cc3ec31}} 
+\index{numbers.\+c@{numbers.\+c}!load\+\_\+nums@{load\+\_\+nums}}
+\index{load\+\_\+nums@{load\+\_\+nums}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{load\+\_\+nums()}{load\_nums()}}
+{\footnotesize\ttfamily void load\+\_\+nums (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{numbers_8c_aa133a2b4b0daa9380ef272e043089bad}\label{numbers_8c_aa133a2b4b0daa9380ef272e043089bad}} 
+\index{numbers.\+c@{numbers.\+c}!number0\+\_\+img@{number0\+\_\+img}}
+\index{number0\+\_\+img@{number0\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number0\+\_\+img}{number0\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number0\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a2bd6210ece34cb49afafd9bf4efd5949}\label{numbers_8c_a2bd6210ece34cb49afafd9bf4efd5949}} 
+\index{numbers.\+c@{numbers.\+c}!number1\+\_\+img@{number1\+\_\+img}}
+\index{number1\+\_\+img@{number1\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number1\+\_\+img}{number1\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number1\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a9036deb354656ad6d0d6d6b488260ea0}\label{numbers_8c_a9036deb354656ad6d0d6d6b488260ea0}} 
+\index{numbers.\+c@{numbers.\+c}!number2\+\_\+img@{number2\+\_\+img}}
+\index{number2\+\_\+img@{number2\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number2\+\_\+img}{number2\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number2\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_ae5b6f13df3cc01f71ab8236df6b88675}\label{numbers_8c_ae5b6f13df3cc01f71ab8236df6b88675}} 
+\index{numbers.\+c@{numbers.\+c}!number3\+\_\+img@{number3\+\_\+img}}
+\index{number3\+\_\+img@{number3\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number3\+\_\+img}{number3\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number3\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_af56566b899ba8c4d7f604446fe472cdf}\label{numbers_8c_af56566b899ba8c4d7f604446fe472cdf}} 
+\index{numbers.\+c@{numbers.\+c}!number4\+\_\+img@{number4\+\_\+img}}
+\index{number4\+\_\+img@{number4\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number4\+\_\+img}{number4\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number4\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a44bc4707b808305e8d779b004defec22}\label{numbers_8c_a44bc4707b808305e8d779b004defec22}} 
+\index{numbers.\+c@{numbers.\+c}!number5\+\_\+img@{number5\+\_\+img}}
+\index{number5\+\_\+img@{number5\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number5\+\_\+img}{number5\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number5\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a83912e5cba019ae8bfc43c823ce0aba8}\label{numbers_8c_a83912e5cba019ae8bfc43c823ce0aba8}} 
+\index{numbers.\+c@{numbers.\+c}!number6\+\_\+img@{number6\+\_\+img}}
+\index{number6\+\_\+img@{number6\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number6\+\_\+img}{number6\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number6\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_ab283e20dec71e70574608101e4fec419}\label{numbers_8c_ab283e20dec71e70574608101e4fec419}} 
+\index{numbers.\+c@{numbers.\+c}!number7\+\_\+img@{number7\+\_\+img}}
+\index{number7\+\_\+img@{number7\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number7\+\_\+img}{number7\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number7\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a193d863211c5ada5a7f198dd242984f3}\label{numbers_8c_a193d863211c5ada5a7f198dd242984f3}} 
+\index{numbers.\+c@{numbers.\+c}!number8\+\_\+img@{number8\+\_\+img}}
+\index{number8\+\_\+img@{number8\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number8\+\_\+img}{number8\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number8\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{numbers_8c_a1941ed4e54fdf44de16f49c8ed1056e9}\label{numbers_8c_a1941ed4e54fdf44de16f49c8ed1056e9}} 
+\index{numbers.\+c@{numbers.\+c}!number9\+\_\+img@{number9\+\_\+img}}
+\index{number9\+\_\+img@{number9\+\_\+img}!numbers.\+c@{numbers.\+c}}
+\subsubsection{\texorpdfstring{number9\+\_\+img}{number9\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t number9\+\_\+img\hspace{0.3cm}{\ttfamily [static]}}
+

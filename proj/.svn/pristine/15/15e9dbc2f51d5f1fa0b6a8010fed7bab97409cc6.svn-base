@@ -1,0 +1,21 @@
+#pragma once
+
+#include "video_card.h"
+#include "gravity.h"
+#include "vector2.h"
+
+typedef struct projectile
+{
+    gravity_object grav;
+    bool active;
+} projectile;
+
+uint8_t get_n_projectiles();
+
+projectile *get_proj_array();
+
+void projectile_alloc(uint8_t n_projectiles);
+
+void new_projectile(vector2 pos, vector2 speed);
+
+void draw_projectiles(uint8_t *base_ptr);

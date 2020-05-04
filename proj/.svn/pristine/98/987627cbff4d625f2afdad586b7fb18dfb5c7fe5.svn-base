@@ -1,0 +1,4 @@
+<map id="player_shoot" name="player_shoot">
+<area shape="rect" id="node2" href="$group__core__game__settings.html#ga15eb947de263d29d6c97bae746737fa8" title="get_projectile_shooting\l_speed" alt="" coords="149,5,304,47"/>
+<area shape="rect" id="node3" href="$group__projectiles.html#ga1dcccbbcaf5fbc336ec52666ff0960ac" title="Spawns a new projectile with the given position and velocity. " alt="" coords="174,71,279,98"/>
+</map>

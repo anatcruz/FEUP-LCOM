@@ -1,0 +1,70 @@
+#include "daniel_debug.h"
+#include <stdio.h>
+#include <math.h>
+
+#include "video_card.h"
+#include "kbc.h"
+#include "keyboard.h"
+#include "timer.h"
+#include "vector2.h"
+#include <stdio.h>
+#include "gravity.h"
+#include "keyboard.h"
+#include "mouse.h"
+#include "player.h"
+#include "projectiles.h"
+#include "core_game_loop.h"
+
+#define BREAK_ESC_KEY 0x81
+#define DELTA_T 0.03333333333
+
+void d_main() {
+  for (int i = 0; i < 5; i++) {
+    core_game_loop();
+  }
+}
+  
+void wait_for_enter() {
+
+  if (keyboard_ih_subscribe() != 0)
+    return;
+   
+  int r, ipc_status;
+  message msg;
+  bool esc_key_pressed = false;
+  keyboard_packet p;
+
+  while (!esc_key_pressed)
+  { /*You may want to use a different condition*/ /*Get a request message.*/
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0)
+    {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status))
+    { /*received notification*/
+      //printf("HI\n");
+      switch (_ENDPOINT_P(msg.m_source))
+      {
+      case HARDWARE: /*hardware interrupt notification*/
+        if (msg.m_notify.interrupts & KEYBOARD_MASK)
+        {     /*subscribed interrupt*/
+          kbc_ih();
+          if (keyboard_ih2(&p)) {
+            if ((p.n_bytes == 1) && (p.bytes[0] == BREAK_ESC_KEY)) {
+              esc_key_pressed = true;
+            }
+          }
+        }
+        break;
+      default:
+        break; /*no other notifications expected: do nothing*/
+      }
+    }
+    else
+    { /*received a standard message, not a notification*/ /*no standard messages expected: do nothing*/
+    } 
+  }
+
+  keyboard_ih_unsubscribe();
+}

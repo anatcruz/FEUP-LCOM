@@ -1,0 +1,20 @@
+\hypertarget{structprojectile}{}\section{projectile Struct Reference}
+\label{structprojectile}\index{projectile@{projectile}}
+
+
+Collaboration diagram for projectile\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structprojectile_a0ad521a11f45a9309c1549873d5ed8b3}\label{structprojectile_a0ad521a11f45a9309c1549873d5ed8b3}} 
+\hyperlink{structgravity__object}{gravity\+\_\+object} {\bfseries grav}
+\item 
+\mbox{\Hypertarget{structprojectile_a03c996f9fcf0e10baeb3e700be0c409a}\label{structprojectile_a03c996f9fcf0e10baeb3e700be0c409a}} 
+bool {\bfseries active}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+projectiles.\+h\end{DoxyCompactItemize}

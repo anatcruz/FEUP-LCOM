@@ -1,0 +1,40 @@
+\hypertarget{group__utils}{}\section{utils}
+\label{group__utils}\index{utils@{utils}}
+
+
+Utility functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}{util\+\_\+sys\+\_\+inb} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads a byte from memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}\label{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}} 
+\index{utils@{utils}!util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}}
+\index{util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}!utils@{utils}}
+\subsubsection{\texorpdfstring{util\+\_\+sys\+\_\+inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads a byte from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The memory address (normally in hexadecimal) \\
+\hline
+{\em value} & A pointer to a byte, which will be rewritten with the value in memory\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}

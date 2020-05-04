@@ -1,0 +1,101 @@
+\hypertarget{game_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.c File Reference}
+\label{game_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/game.\+c}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+Include dependency graph for game.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790ea}{game} \{ \newline
+\hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa9ba67d49ea8aa2b12c9ec7cac8e86d2a}{main\+\_\+menu}, 
+\hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa5c08a9f3277eeb4cca4f930fcf99f5df}{help\+\_\+menu}, 
+\hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa944ff5408b44febe564f099c9dc9f9c7}{options\+\_\+menu}, 
+\hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa7997bec422545eaa64e296a5fc7c8511}{exit\+\_\+program}, 
+\newline
+\hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaadf6e38ec7c00a6c4549173d5f142a708}{core\+\_\+game}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__game_gac443369f029f95734396be718a095e93}{handle\+\_\+user\+\_\+input} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p1)
+\item 
+void \hyperlink{group__game_gae53a2c47c7b05d012ce5356a53ae7092}{handle\+\_\+state} ()
+\item 
+void \hyperlink{group__game_ga435b545b95a32afd525f8a1f05b2652c}{letsplay} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int16\+\_\+t \hyperlink{game_8c_af31a1d563ee2613b5b30838bf58f012a}{mouse\+\_\+x}
+\item 
+int16\+\_\+t \hyperlink{game_8c_a780edb8ad65677d73615b4e40d06f5f1}{mouse\+\_\+y}
+\item 
+xpm\+\_\+image\+\_\+t \hyperlink{game_8c_ac9a8bf81e7492977136733d5e9c3142f}{mousepointer\+\_\+img}
+\item 
+enum \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790ea}{game} \hyperlink{game_8c_a0bbdedf83490fc2acbaf1c000ecbef9b}{game\+\_\+state} = \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa9ba67d49ea8aa2b12c9ec7cac8e86d2a}{main\+\_\+menu}
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790ea}\label{game_8c_ab587deac2ae34c126e6222afedb790ea}} 
+\index{game.\+c@{game.\+c}!game@{game}}
+\index{game@{game}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{game}{game}}
+{\footnotesize\ttfamily enum \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790ea}{game}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{main\+\_\+menu@{main\+\_\+menu}!game.\+c@{game.\+c}}\index{game.\+c@{game.\+c}!main\+\_\+menu@{main\+\_\+menu}}}\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790eaa9ba67d49ea8aa2b12c9ec7cac8e86d2a}\label{game_8c_ab587deac2ae34c126e6222afedb790eaa9ba67d49ea8aa2b12c9ec7cac8e86d2a}} 
+main\+\_\+menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{help\+\_\+menu@{help\+\_\+menu}!game.\+c@{game.\+c}}\index{game.\+c@{game.\+c}!help\+\_\+menu@{help\+\_\+menu}}}\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790eaa5c08a9f3277eeb4cca4f930fcf99f5df}\label{game_8c_ab587deac2ae34c126e6222afedb790eaa5c08a9f3277eeb4cca4f930fcf99f5df}} 
+help\+\_\+menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{options\+\_\+menu@{options\+\_\+menu}!game.\+c@{game.\+c}}\index{game.\+c@{game.\+c}!options\+\_\+menu@{options\+\_\+menu}}}\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790eaa944ff5408b44febe564f099c9dc9f9c7}\label{game_8c_ab587deac2ae34c126e6222afedb790eaa944ff5408b44febe564f099c9dc9f9c7}} 
+options\+\_\+menu&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{exit\+\_\+program@{exit\+\_\+program}!game.\+c@{game.\+c}}\index{game.\+c@{game.\+c}!exit\+\_\+program@{exit\+\_\+program}}}\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790eaa7997bec422545eaa64e296a5fc7c8511}\label{game_8c_ab587deac2ae34c126e6222afedb790eaa7997bec422545eaa64e296a5fc7c8511}} 
+exit\+\_\+program&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{core\+\_\+game@{core\+\_\+game}!game.\+c@{game.\+c}}\index{game.\+c@{game.\+c}!core\+\_\+game@{core\+\_\+game}}}\mbox{\Hypertarget{game_8c_ab587deac2ae34c126e6222afedb790eaadf6e38ec7c00a6c4549173d5f142a708}\label{game_8c_ab587deac2ae34c126e6222afedb790eaadf6e38ec7c00a6c4549173d5f142a708}} 
+core\+\_\+game&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{game_8c_a0bbdedf83490fc2acbaf1c000ecbef9b}\label{game_8c_a0bbdedf83490fc2acbaf1c000ecbef9b}} 
+\index{game.\+c@{game.\+c}!game\+\_\+state@{game\+\_\+state}}
+\index{game\+\_\+state@{game\+\_\+state}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{game\+\_\+state}{game\_state}}
+{\footnotesize\ttfamily enum \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790ea}{game} \hyperlink{core__game__loop_8c_ad0ed1832dd134806ad335cdcc1a59ad2}{game\+\_\+state} = \hyperlink{game_8c_ab587deac2ae34c126e6222afedb790eaa9ba67d49ea8aa2b12c9ec7cac8e86d2a}{main\+\_\+menu}}
+
+\mbox{\Hypertarget{game_8c_af31a1d563ee2613b5b30838bf58f012a}\label{game_8c_af31a1d563ee2613b5b30838bf58f012a}} 
+\index{game.\+c@{game.\+c}!mouse\+\_\+x@{mouse\+\_\+x}}
+\index{mouse\+\_\+x@{mouse\+\_\+x}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+x}{mouse\_x}}
+{\footnotesize\ttfamily int16\+\_\+t mouse\+\_\+x}
+
+\mbox{\Hypertarget{game_8c_a780edb8ad65677d73615b4e40d06f5f1}\label{game_8c_a780edb8ad65677d73615b4e40d06f5f1}} 
+\index{game.\+c@{game.\+c}!mouse\+\_\+y@{mouse\+\_\+y}}
+\index{mouse\+\_\+y@{mouse\+\_\+y}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+y}{mouse\_y}}
+{\footnotesize\ttfamily int16\+\_\+t mouse\+\_\+y}
+
+\mbox{\Hypertarget{game_8c_ac9a8bf81e7492977136733d5e9c3142f}\label{game_8c_ac9a8bf81e7492977136733d5e9c3142f}} 
+\index{game.\+c@{game.\+c}!mousepointer\+\_\+img@{mousepointer\+\_\+img}}
+\index{mousepointer\+\_\+img@{mousepointer\+\_\+img}!game.\+c@{game.\+c}}
+\subsubsection{\texorpdfstring{mousepointer\+\_\+img}{mousepointer\_img}}
+{\footnotesize\ttfamily xpm\+\_\+image\+\_\+t mousepointer\+\_\+img}
+

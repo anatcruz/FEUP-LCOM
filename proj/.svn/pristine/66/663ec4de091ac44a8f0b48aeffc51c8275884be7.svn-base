@@ -1,0 +1,145 @@
+\hypertarget{group__video__card}{}\section{video\+\_\+card}
+\label{group__video__card}\index{video\+\_\+card@{video\+\_\+card}}
+
+
+Functions related to graphic mode initialization and frame buffer modification.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}{get\+\_\+vres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}{get\+\_\+hres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}{get\+\_\+bytes\+\_\+per\+\_\+pixel} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga3ff6bb40b256e97af89a53bd459b59f5}{get\+\_\+buffer\+\_\+size} ()
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{group__video__card_ga461fb4a3b5536b3de26e342444394ddd}{get\+\_\+buffer\+\_\+base\+\_\+ptr} ()
+\item 
+void \hyperlink{group__video__card_ga5f6f4feebf127c7d02258175e5df35ff}{set\+\_\+pixel} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Sets the pixel of the given buffer at the given coordinates to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_ga88795d0238c894e7d54c134b69305976}{set\+\_\+rectangle} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Draws the given xpm image on the given buffer at the given coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{group__video__card_ga0d199b5702695c4d7b78ef83759c32d5}\label{group__video__card_ga0d199b5702695c4d7b78ef83759c32d5}} 
+void \hyperlink{group__video__card_ga0d199b5702695c4d7b78ef83759c32d5}{clean\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Sets all the bytes of the frame buffer to 0, meaning that the screen turns black. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to graphic mode initialization and frame buffer modification. 
+
+All the functions provided have buffer boundary checks, which means that they are (as far as I\textquotesingle{}m concerned) safe to use given bogus coordinates 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__video__card_ga461fb4a3b5536b3de26e342444394ddd}\label{group__video__card_ga461fb4a3b5536b3de26e342444394ddd}} 
+\index{video\+\_\+card@{video\+\_\+card}!get\+\_\+buffer\+\_\+base\+\_\+ptr@{get\+\_\+buffer\+\_\+base\+\_\+ptr}}
+\index{get\+\_\+buffer\+\_\+base\+\_\+ptr@{get\+\_\+buffer\+\_\+base\+\_\+ptr}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{get\+\_\+buffer\+\_\+base\+\_\+ptr()}{get\_buffer\_base\_ptr()}}
+{\footnotesize\ttfamily uint8\+\_\+t$\ast$ get\+\_\+buffer\+\_\+base\+\_\+ptr (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+A pointer to the frame buffer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video__card_ga3ff6bb40b256e97af89a53bd459b59f5}\label{group__video__card_ga3ff6bb40b256e97af89a53bd459b59f5}} 
+\index{video\+\_\+card@{video\+\_\+card}!get\+\_\+buffer\+\_\+size@{get\+\_\+buffer\+\_\+size}}
+\index{get\+\_\+buffer\+\_\+size@{get\+\_\+buffer\+\_\+size}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{get\+\_\+buffer\+\_\+size()}{get\_buffer\_size()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+buffer\+\_\+size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The size of the buffer, in bytes
+\end{DoxyReturn}
+Instead of this function, you may want to do \hyperlink{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}{get\+\_\+vres()} $\ast$ \hyperlink{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}{get\+\_\+hres()} $\ast$ \hyperlink{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}{get\+\_\+bytes\+\_\+per\+\_\+pixel()} for the same outcome. \mbox{\Hypertarget{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}\label{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}} 
+\index{video\+\_\+card@{video\+\_\+card}!get\+\_\+bytes\+\_\+per\+\_\+pixel@{get\+\_\+bytes\+\_\+per\+\_\+pixel}}
+\index{get\+\_\+bytes\+\_\+per\+\_\+pixel@{get\+\_\+bytes\+\_\+per\+\_\+pixel}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{get\+\_\+bytes\+\_\+per\+\_\+pixel()}{get\_bytes\_per\_pixel()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+bytes\+\_\+per\+\_\+pixel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The number of bytes per pixel 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}\label{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}} 
+\index{video\+\_\+card@{video\+\_\+card}!get\+\_\+hres@{get\+\_\+hres}}
+\index{get\+\_\+hres@{get\+\_\+hres}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{get\+\_\+hres()}{get\_hres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+hres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The horizontal resolution of the screen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}\label{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}} 
+\index{video\+\_\+card@{video\+\_\+card}!get\+\_\+vres@{get\+\_\+vres}}
+\index{get\+\_\+vres@{get\+\_\+vres}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{get\+\_\+vres()}{get\_vres()}}
+{\footnotesize\ttfamily uint16\+\_\+t get\+\_\+vres (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+The vertical resolution of the screen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__video__card_ga5f6f4feebf127c7d02258175e5df35ff}\label{group__video__card_ga5f6f4feebf127c7d02258175e5df35ff}} 
+\index{video\+\_\+card@{video\+\_\+card}!set\+\_\+pixel@{set\+\_\+pixel}}
+\index{set\+\_\+pixel@{set\+\_\+pixel}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{set\+\_\+pixel()}{set\_pixel()}}
+{\footnotesize\ttfamily void set\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Sets the pixel of the given buffer at the given coordinates to the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the pixel (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the pixel (counting rightwards from the left) \\
+\hline
+{\em color} & The color to which the pixel will be set \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__video__card_ga88795d0238c894e7d54c134b69305976}\label{group__video__card_ga88795d0238c894e7d54c134b69305976}} 
+\index{video\+\_\+card@{video\+\_\+card}!set\+\_\+rectangle@{set\+\_\+rectangle}}
+\index{set\+\_\+rectangle@{set\+\_\+rectangle}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{set\+\_\+rectangle()}{set\_rectangle()}}
+{\footnotesize\ttfamily void set\+\_\+rectangle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len\+\_\+x,  }\item[{uint16\+\_\+t}]{len\+\_\+y,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to the given color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the rectangle (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the rectangle (counting rightwards from the left) \\
+\hline
+{\em color} & The color of the rectangle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}\label{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}} 
+\index{video\+\_\+card@{video\+\_\+card}!set\+\_\+xpm\+\_\+image@{set\+\_\+xpm\+\_\+image}}
+\index{set\+\_\+xpm\+\_\+image@{set\+\_\+xpm\+\_\+image}!video\+\_\+card@{video\+\_\+card}}
+\subsubsection{\texorpdfstring{set\+\_\+xpm\+\_\+image()}{set\_xpm\_image()}}
+{\footnotesize\ttfamily void set\+\_\+xpm\+\_\+image (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{img }\end{DoxyParamCaption})}
+
+
+
+Draws the given xpm image on the given buffer at the given coordinates. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the xpm image (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the xpm image (counting rightwards from the left) \\
+\hline
+{\em img} & The xpm image (see \href{https://web.fe.up.pt/~pfs/aulas/lcom2019/labs/lab5/src/doc/structxpm__image__t.html}{\tt this}) \\
+\hline
+\end{DoxyParams}

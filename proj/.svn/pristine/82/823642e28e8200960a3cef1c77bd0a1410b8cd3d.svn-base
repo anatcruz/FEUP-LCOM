@@ -1,0 +1,8 @@
+#pragma once
+
+#include "video_card.h"
+
+#define NUMBERS_LENGTH 56
+#define NUMBERS_HEIGHT 32
+
+void draw_numbers(uint8_t *base_ptr, uint16_t x, uint16_t y, uint8_t n);

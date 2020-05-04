@@ -1,0 +1,70 @@
+\hypertarget{structplayer}{}\section{player Struct Reference}
+\label{structplayer}\index{player@{player}}
+
+
+Struct that represents one of our game\textquotesingle{}s players.  
+
+
+
+
+{\ttfamily \#include $<$player.\+h$>$}
+
+
+
+Collaboration diagram for player\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structplayer_a4e4005a0bb3af3d6876952a7cca49163}\label{structplayer_a4e4005a0bb3af3d6876952a7cca49163}} 
+\hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{structplayer_a4e4005a0bb3af3d6876952a7cca49163}{state}
+\begin{DoxyCompactList}\small\item\em The position and velocity of the player (the position is actually the triangle\textquotesingle{}s \href{https://en.wikipedia.org/wiki/Triangle_center#Circumcenter}{\tt circumcenter}) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a8f54e9f41016004732115c10e844deb8}\label{structplayer_a8f54e9f41016004732115c10e844deb8}} 
+float \hyperlink{structplayer_a8f54e9f41016004732115c10e844deb8}{direction}
+\begin{DoxyCompactList}\small\item\em The orientation of the player, in radians. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a23a0742ddb120a88b03c4eaa61daab72}\label{structplayer_a23a0742ddb120a88b03c4eaa61daab72}} 
+bool \hyperlink{structplayer_a23a0742ddb120a88b03c4eaa61daab72}{alive}
+\begin{DoxyCompactList}\small\item\em Whether or not the player is alive. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}\label{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}} 
+uint16\+\_\+t \hyperlink{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}{p1x}
+\begin{DoxyCompactList}\small\item\em The x coordinate of the first vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a7fa638c52e431ce5053b8dfcc787c778}\label{structplayer_a7fa638c52e431ce5053b8dfcc787c778}} 
+uint16\+\_\+t \hyperlink{structplayer_a7fa638c52e431ce5053b8dfcc787c778}{p1y}
+\begin{DoxyCompactList}\small\item\em The y coordinate of the first vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}\label{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}} 
+uint16\+\_\+t \hyperlink{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}{p2x}
+\begin{DoxyCompactList}\small\item\em The x coordinate of the second vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a6f1fb8d5e9e7c611aa39465a961d7cd1}\label{structplayer_a6f1fb8d5e9e7c611aa39465a961d7cd1}} 
+uint16\+\_\+t \hyperlink{structplayer_a6f1fb8d5e9e7c611aa39465a961d7cd1}{p2y}
+\begin{DoxyCompactList}\small\item\em The y coordinate of the second vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a338c30a8d3c35fca3af6cc832ee472c0}\label{structplayer_a338c30a8d3c35fca3af6cc832ee472c0}} 
+uint16\+\_\+t \hyperlink{structplayer_a338c30a8d3c35fca3af6cc832ee472c0}{p3x}
+\begin{DoxyCompactList}\small\item\em The x coordinate of the third vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_adfa7d386121c4c7dd78e6a3b19f6fbae}\label{structplayer_adfa7d386121c4c7dd78e6a3b19f6fbae}} 
+uint16\+\_\+t \hyperlink{structplayer_adfa7d386121c4c7dd78e6a3b19f6fbae}{p3y}
+\begin{DoxyCompactList}\small\item\em The y coordinate of the third vertex of the player\textquotesingle{}s triangle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a93e6353ab4b2c8e528bfe9789f7996ee}\label{structplayer_a93e6353ab4b2c8e528bfe9789f7996ee}} 
+uint8\+\_\+t \hyperlink{structplayer_a93e6353ab4b2c8e528bfe9789f7996ee}{shooting\+\_\+cooldown}
+\begin{DoxyCompactList}\small\item\em A cooldown counter to prevent the player from shooting every frame. If it is equal to 0, the player can shoot. Decrements once per frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a26eb3b2626daf93d534a3504a6fc663b}\label{structplayer_a26eb3b2626daf93d534a3504a6fc663b}} 
+bool \hyperlink{structplayer_a26eb3b2626daf93d534a3504a6fc663b}{input\+\_\+accelerate}
+\begin{DoxyCompactList}\small\item\em Whether or not the player should accelerate this frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a0ac2a27628c9f628fe4f01e522845372}\label{structplayer_a0ac2a27628c9f628fe4f01e522845372}} 
+bool \hyperlink{structplayer_a0ac2a27628c9f628fe4f01e522845372}{input\+\_\+shooting}
+\begin{DoxyCompactList}\small\item\em Whether or not the player should fire a shot this frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_a54480a9ce1ccb383229691dd88d55103}\label{structplayer_a54480a9ce1ccb383229691dd88d55103}} 
+float \hyperlink{structplayer_a54480a9ce1ccb383229691dd88d55103}{input\+\_\+direction\+\_\+delta}
+\begin{DoxyCompactList}\small\item\em By how much should the player turn this frame. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structplayer_ab517d54e430f914ee52f52813e1761cb}\label{structplayer_ab517d54e430f914ee52f52813e1761cb}} 
+uint16\+\_\+t \hyperlink{structplayer_ab517d54e430f914ee52f52813e1761cb}{hp}
+\begin{DoxyCompactList}\small\item\em The health points of the player, measured in pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents one of our game\textquotesingle{}s players. 
+
+The players, in our game, are represented by triangles. The reason the players\textquotesingle{} vertices are stored in the struct is because they necessary, not only for triangle drawing, but also for collision checking. Therefore, for sake of both convenience and efficiency, the players\textquotesingle{} vertices are only computed once per frame and stored in the struct itself. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+player.\+h\end{DoxyCompactItemize}

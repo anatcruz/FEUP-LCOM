@@ -1,0 +1,37 @@
+\hypertarget{game_8h}{}\section{game.\+h File Reference}
+\label{game_8h}\index{game.\+h@{game.\+h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Menu.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+loop.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+settings.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$lcom/lab5.\+h$>$}\newline
+{\ttfamily \#include $<$lcom/xpm.\+h$>$}\newline
+Include dependency graph for game.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{game_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{game_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__game_gaae46653e5358c70061884685b761ff92}{mouse\+\_\+mov} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p1)
+\item 
+void \hyperlink{group__game_gac443369f029f95734396be718a095e93}{handle\+\_\+user\+\_\+input} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p1)
+\item 
+void \hyperlink{group__game_gae53a2c47c7b05d012ce5356a53ae7092}{handle\+\_\+state} ()
+\item 
+void \hyperlink{group__game_ga435b545b95a32afd525f8a1f05b2652c}{letsplay} ()
+\end{DoxyCompactItemize}

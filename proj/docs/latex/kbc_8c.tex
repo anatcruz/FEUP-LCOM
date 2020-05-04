@@ -1,0 +1,30 @@
+\hypertarget{kbc_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.c File Reference}
+\label{kbc_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/kbc.\+c}}
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{kbc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__kbc_ga594c74b8ef8c0d8a660bcdb729b1f381}{kbc\+\_\+delay} (int delay)
+\begin{DoxyCompactList}\small\item\em Blocks the program by delay microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121}{kbc\+\_\+write\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52}{kbc\+\_\+write\+\_\+command\+\_\+arg} (uint8\+\_\+t arg)
+\begin{DoxyCompactList}\small\item\em Sends an argument to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga65f11cca39a73154ab68dabac8b12683}{kbc\+\_\+read\+\_\+command\+\_\+result} (uint8\+\_\+t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Reads a command result from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b}{kbc\+\_\+read\+\_\+command\+\_\+byte} (uint8\+\_\+t $\ast$command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Reads the command byte from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9}{kbc\+\_\+write\+\_\+command\+\_\+byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Sends a command byte to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc}{kbc\+\_\+read\+\_\+status} (uint8\+\_\+t $\ast$status)
+\begin{DoxyCompactList}\small\item\em Reads the status of the kbc. \end{DoxyCompactList}\end{DoxyCompactItemize}

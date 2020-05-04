@@ -1,0 +1,43 @@
+\hypertarget{timer_8h}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.h File Reference}
+\label{timer_8h}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.\+h@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/timer.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for timer.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{timer_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{timer_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__timer_ga6afdd2bea8e7518daaa2641def6638a5}{T\+I\+M\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+P\+T\+\_\+\+F\+R\+EQ}~60
+\item 
+\#define \hyperlink{group__timer_ga7095fb363d08f6646611f9a47806647b}{T\+I\+M\+E\+R\+\_\+\+I\+RQ}~0
+\item 
+\#define \hyperlink{group__timer_gacaa139b4a451d80a4cb00da3451edd5b}{T\+I\+M\+E\+R\+\_\+\+H\+O\+O\+K\+\_\+\+ID}~0
+\item 
+\#define \hyperlink{group__timer_gae41604e470c014060c92349437078e03}{T\+I\+M\+E\+R\+\_\+\+M\+A\+SK}~B\+IT(\hyperlink{group__timer_gacaa139b4a451d80a4cb00da3451edd5b}{T\+I\+M\+E\+R\+\_\+\+H\+O\+O\+K\+\_\+\+ID})
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__timer_gacbda5965336eef31790e7a8b983332ff}{timer\+\_\+get\+\_\+counter} ()
+\item 
+int \hyperlink{group__timer_gae44be0cfa0b6e717152afc708577cf5d}{timer\+\_\+ih\+\_\+subscribe} ()
+\begin{DoxyCompactList}\small\item\em Subscribes to timer interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_ga5e9cfb5b4e41a1e647e0ee7d0ed6709a}{timer\+\_\+ih\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to timer interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_ga4baf1b5c30d394576f8044178524e2c4}{timer\+\_\+ih\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enables timer interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__timer_ga4a90bd229401205fbf0222cc3228c22c}{timer\+\_\+ih\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disables timer interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}

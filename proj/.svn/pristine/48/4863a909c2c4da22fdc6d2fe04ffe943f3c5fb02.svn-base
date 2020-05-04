@@ -1,0 +1,92 @@
+\hypertarget{kbc_8h}{}\section{kbc.\+h File Reference}
+\label{kbc_8h}\index{kbc.\+h@{kbc.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for kbc.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{kbc_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{kbc_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__kbc_gab414f096b1781939124cd2ff672edb59}{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}~20000
+\item 
+\#define \hyperlink{group__kbc_ga82a39176e42fe8f48025521b9674cdc6}{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY}~B\+IT(7)
+\item 
+\#define \hyperlink{group__kbc_ga34599ca5c55cb9be3b235d7422aff45c}{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT}~B\+IT(6)
+\item 
+\#define \hyperlink{group__kbc_gaaa796d09d1e94025da456738295342f2}{K\+B\+C\+\_\+\+A\+UX}~B\+IT(5)
+\item 
+\#define \hyperlink{group__kbc_ga869c99dd1e3e026e766b3a1c75729df1}{K\+B\+C\+\_\+\+I\+NH}~B\+IT(4)
+\item 
+\#define \hyperlink{group__kbc_ga933a8846def486d800a725dc3959a74b}{K\+B\+C\+\_\+\+A2}~B\+IT(3)
+\item 
+\#define \hyperlink{group__kbc_ga9e3fddced5da8ee918cc20e74ff124d8}{K\+B\+C\+\_\+\+S\+YS}~B\+IT(2)
+\item 
+\#define \hyperlink{group__kbc_gac1649d41f8ba9a02fa70ec4e600d5e4a}{K\+B\+C\+\_\+\+I\+BF}~B\+IT(1)
+\item 
+\#define \hyperlink{group__kbc_ga36930de8a703505c95fe133095dcfe06}{K\+B\+C\+\_\+\+O\+BF}~B\+IT(0)
+\item 
+\#define \hyperlink{group__kbc_ga34b14687d83496940a236351fbbb1aea}{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__kbc_ga693314276867029f4c094442a261159f}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__kbc_ga1ccde68b2b6d4e45b50eef1403e10bb7}{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga44b2468c0ea248ca480a8863b3f78c34}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga67a2de56fabfdf65bfa20c50f8b77422}{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM}~0x20
+\item 
+\#define \hyperlink{group__kbc_ga09cb7b27cd3f4d0408f453da78ca294e}{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga3add1395817336a078643ed6e0175ad6}{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST}~0x\+AA
+\item 
+\#define \hyperlink{group__kbc_gab389a48497ca01296ca29c83c8eab2cd}{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AB
+\item 
+\#define \hyperlink{group__kbc_ga80e8aea5305350df2cc8811712caa6cc}{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AD
+\item 
+\#define \hyperlink{group__kbc_ga728cbb4bd95a78097c116e7d4ce099a8}{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AE
+\item 
+\#define \hyperlink{group__kbc_ga1feec59f57ba28933fbe3516f30b1d14}{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}~0x\+A7
+\item 
+\#define \hyperlink{group__kbc_ga2c0f7ed5ff3b86d06f0e95600a5f736f}{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}~0x\+A8
+\item 
+\#define \hyperlink{group__kbc_ga19f3f409be0e3cfa750c56408ef50f92}{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+A9
+\item 
+\#define \hyperlink{group__kbc_ga27c4267800118ec8c413f75f0bc45dc3}{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}~0\+X\+D4
+\item 
+\#define \hyperlink{group__kbc_ga474cbc1b6540f557c0440d718b288ddd}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2}~B\+IT(5)
+\item 
+\#define \hyperlink{group__kbc_ga698b737cbe2182ee299347f00bc55ac1}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS}~B\+IT(4)
+\item 
+\#define \hyperlink{group__kbc_ga35fe39f07554845d7c27a0b8d775cf25}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2}~B\+IT(1)
+\item 
+\#define \hyperlink{group__kbc_ga0574cae4394dc24a596d50361f31a1b3}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT}~B\+IT(0)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__kbc_ga594c74b8ef8c0d8a660bcdb729b1f381}{kbc\+\_\+delay} (int delay)
+\begin{DoxyCompactList}\small\item\em Blocks the program by delay microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121}{kbc\+\_\+write\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52}{kbc\+\_\+write\+\_\+command\+\_\+arg} (uint8\+\_\+t arg)
+\begin{DoxyCompactList}\small\item\em Sends an argument to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga65f11cca39a73154ab68dabac8b12683}{kbc\+\_\+read\+\_\+command\+\_\+result} (uint8\+\_\+t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Reads a command result from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b}{kbc\+\_\+read\+\_\+command\+\_\+byte} (uint8\+\_\+t $\ast$command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Reads the command byte from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9}{kbc\+\_\+write\+\_\+command\+\_\+byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Sends a command byte to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc}{kbc\+\_\+read\+\_\+status} (uint8\+\_\+t $\ast$status)
+\begin{DoxyCompactList}\small\item\em Reads the status of the kbc. \end{DoxyCompactList}\end{DoxyCompactItemize}

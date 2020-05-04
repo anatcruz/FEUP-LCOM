@@ -1,0 +1,93 @@
+\hypertarget{video__card_8h}{}\section{video\+\_\+card.\+h File Reference}
+\label{video__card_8h}\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+{\ttfamily \#include $<$lcom/lcf.\+h$>$}\newline
+Include dependency graph for video\+\_\+card.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{video__card_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{video__card_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{video__card_8h_a544272917062d9213785ec39825622e9}{B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL}~0x10
+\item 
+\#define \hyperlink{video__card_8h_aaa7fbe1e02a424af8eb9efc320d936c0}{V\+B\+E\+\_\+\+C\+A\+LL}~0x4f
+\item 
+\#define \hyperlink{video__card_8h_a65e5709bca28d87f235a433f793e257e}{M\+O\+D\+E\+\_\+\+I\+NF}~0x01
+\item 
+\#define \hyperlink{video__card_8h_ab32156e1d72cb92b120bb16883c87eea}{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}~0x02
+\item 
+\#define \hyperlink{video__card_8h_a5125a1103361f59594f741299774ccd2}{C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF}~0x00
+\item 
+\#define \hyperlink{video__card_8h_ae9d71b38a7833cdecf09d93dd2a31e7a}{L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}~(0x1$<$$<$14)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_gad5999dee7ae30ea14b13e2e2e5a92c88}{get\+\_\+vres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga8becb86f48f701c43e1c411f57f60c4d}{get\+\_\+hres} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga9f914dcc3574459a6f0f5fa903ad40e7}{get\+\_\+bytes\+\_\+per\+\_\+pixel} ()
+\item 
+uint16\+\_\+t \hyperlink{group__video__card_ga3ff6bb40b256e97af89a53bd459b59f5}{get\+\_\+buffer\+\_\+size} ()
+\item 
+uint8\+\_\+t $\ast$ \hyperlink{group__video__card_ga461fb4a3b5536b3de26e342444394ddd}{get\+\_\+buffer\+\_\+base\+\_\+ptr} ()
+\item 
+void \hyperlink{group__video__card_ga5f6f4feebf127c7d02258175e5df35ff}{set\+\_\+pixel} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Sets the pixel of the given buffer at the given coordinates to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_ga88795d0238c894e7d54c134b69305976}{set\+\_\+rectangle} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to the given color. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Draws the given xpm image on the given buffer at the given coordinates. \end{DoxyCompactList}\item 
+void \hyperlink{group__video__card_ga0d199b5702695c4d7b78ef83759c32d5}{clean\+\_\+screen} ()
+\begin{DoxyCompactList}\small\item\em Sets all the bytes of the frame buffer to 0, meaning that the screen turns black. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{video__card_8h_a544272917062d9213785ec39825622e9}\label{video__card_8h_a544272917062d9213785ec39825622e9}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL@{B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL}}
+\index{B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL@{B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL}{BIOS\_VIDEO\_CALL}}
+{\footnotesize\ttfamily \#define B\+I\+O\+S\+\_\+\+V\+I\+D\+E\+O\+\_\+\+C\+A\+LL~0x10}
+
+\mbox{\Hypertarget{video__card_8h_a5125a1103361f59594f741299774ccd2}\label{video__card_8h_a5125a1103361f59594f741299774ccd2}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF@{C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF}}
+\index{C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF@{C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF}{CONTROLLER\_INF}}
+{\footnotesize\ttfamily \#define C\+O\+N\+T\+R\+O\+L\+L\+E\+R\+\_\+\+I\+NF~0x00}
+
+\mbox{\Hypertarget{video__card_8h_ae9d71b38a7833cdecf09d93dd2a31e7a}\label{video__card_8h_ae9d71b38a7833cdecf09d93dd2a31e7a}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}}
+\index{L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER@{L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER}{LINER\_FRAMEBUFFER}}
+{\footnotesize\ttfamily \#define L\+I\+N\+E\+R\+\_\+\+F\+R\+A\+M\+E\+B\+U\+F\+F\+ER~(0x1$<$$<$14)}
+
+\mbox{\Hypertarget{video__card_8h_a65e5709bca28d87f235a433f793e257e}\label{video__card_8h_a65e5709bca28d87f235a433f793e257e}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!M\+O\+D\+E\+\_\+\+I\+NF@{M\+O\+D\+E\+\_\+\+I\+NF}}
+\index{M\+O\+D\+E\+\_\+\+I\+NF@{M\+O\+D\+E\+\_\+\+I\+NF}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{M\+O\+D\+E\+\_\+\+I\+NF}{MODE\_INF}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+\_\+\+I\+NF~0x01}
+
+\mbox{\Hypertarget{video__card_8h_ab32156e1d72cb92b120bb16883c87eea}\label{video__card_8h_ab32156e1d72cb92b120bb16883c87eea}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}}
+\index{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE}{SET\_VBE\_MODE}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+V\+B\+E\+\_\+\+M\+O\+DE~0x02}
+
+\mbox{\Hypertarget{video__card_8h_aaa7fbe1e02a424af8eb9efc320d936c0}\label{video__card_8h_aaa7fbe1e02a424af8eb9efc320d936c0}} 
+\index{video\+\_\+card.\+h@{video\+\_\+card.\+h}!V\+B\+E\+\_\+\+C\+A\+LL@{V\+B\+E\+\_\+\+C\+A\+LL}}
+\index{V\+B\+E\+\_\+\+C\+A\+LL@{V\+B\+E\+\_\+\+C\+A\+LL}!video\+\_\+card.\+h@{video\+\_\+card.\+h}}
+\subsubsection{\texorpdfstring{V\+B\+E\+\_\+\+C\+A\+LL}{VBE\_CALL}}
+{\footnotesize\ttfamily \#define V\+B\+E\+\_\+\+C\+A\+LL~0x4f}
+

@@ -1,0 +1,51 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include "gravity.h"
+#include "kbc.h"
+#include "keyboard.h"
+#include <math.h>
+
+#define LEFT_BUTTON_M  0x4b
+#define RIGHT_BUTTON_M 0x4d
+#define UP_BUTTON_M    0x48
+#define SPACEBAR_M     0x39
+#define LEFT_BUTTON_B  0xcb
+#define RIGHT_BUTTON_B 0xcd
+#define UP_BUTTON_B    0xc8
+#define SPACEBAR_B     0xb9
+#define DIST_FROM_MIDDLE_POINT 20
+#define ANGLE_OFSET 2
+
+
+//para ja vai morrer logo com o primeiro tiro; mais tarde pode ser acrescentada outra variavel(float vida)
+
+typedef struct player
+{
+  gravity_object state; //position do centro do triangulo
+  float direction; //direçao da ponta do triangulo que dispara
+  bool alive;
+  uint16_t p1x;
+  uint16_t p1y;
+  uint16_t p2x;
+  uint16_t p2y;
+  uint16_t p3x;
+  uint16_t p3y;
+
+  bool  input_accelerate;
+  bool  input_shooting;
+  float input_direction_delta;
+}player;
+
+//funçao que determina os pontos do triangulo mediante o centro do triangulo
+void get_triangle(player *p);
+
+//funçao para obter o jogador
+player *get_player(uint8_t player);
+
+
+//funçao que atualiza a posicao dos players mediante os seus inputs
+void handle_player1_input(keyboard_packet p1);
+void handle_player2_input(keyboard_packet p2);
+
+void draw_players(uint8_t *base_ptr);

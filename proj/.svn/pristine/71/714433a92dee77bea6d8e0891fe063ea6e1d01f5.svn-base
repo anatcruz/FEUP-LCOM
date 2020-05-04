@@ -1,0 +1,20 @@
+\hypertarget{utils_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/utils.c File Reference}
+\label{utils_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/utils.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/utils.\+c}}
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+Include dependency graph for utils.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{utils_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}{util\+\_\+sys\+\_\+inb} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads a byte from memory. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__utils_ga304fc85c5c7fb06010deb07c6dd16b81}{bcd\+\_\+to\+\_\+decimal} (uint8\+\_\+t hex)
+\begin{DoxyCompactList}\small\item\em Converts a value from bcd format to decimal format. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__utils_ga8c10bb1f9a5bb82b67c6980182193c54}{decimal\+\_\+to\+\_\+bcd} (uint8\+\_\+t decimal)
+\begin{DoxyCompactList}\small\item\em Converts a value from decimal format to bcd format. \end{DoxyCompactList}\end{DoxyCompactItemize}

@@ -1,0 +1,34 @@
+\hypertarget{gravity_8h}{}\section{gravity.\+h File Reference}
+\label{gravity_8h}\index{gravity.\+h@{gravity.\+h}}
+{\ttfamily \#include \char`\"{}vector2.\+h\char`\"{}}\newline
+Include dependency graph for gravity.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=137pt]{gravity_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{gravity_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgravity__object}{gravity\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Struct that contains the position and velocity of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{group__gravity_ga5aec6ca0c05d29e1a2708c89b0f27228}{gravity\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Struct that contains the position and velocity of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__gravity_gadecebe4cd578161d35b325249079f7b9}{gravity\+\_\+acc\+\_\+vector} (\hyperlink{structvector2}{vector2} body\+\_\+pos, float body\+\_\+grav\+\_\+parameter, const \hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Calculates the gravitational pull of a given body on \hyperlink{structgravity__object}{gravity\+\_\+object} obj. \end{DoxyCompactList}\item 
+void \hyperlink{group__gravity_ga2cf5adbf1029afdd7b7cdd00eadc8771}{update\+\_\+gravity\+\_\+object} (\hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$obj, \hyperlink{structvector2}{vector2} acc, float delta)
+\begin{DoxyCompactList}\small\item\em Updates the velocity and position of obj, using something similar to the \href{https://en.wikipedia.org/wiki/Euler_method}{\tt Euler method} \end{DoxyCompactList}\end{DoxyCompactItemize}

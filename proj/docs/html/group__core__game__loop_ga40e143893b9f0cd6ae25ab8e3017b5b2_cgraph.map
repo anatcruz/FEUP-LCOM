@@ -1,0 +1,9 @@
+<map id="draw_ammo_numbers" name="draw_ammo_numbers">
+<area shape="rect" id="node2" href="$group__numbers.html#ga957a3e5ec5d985ee4c890b5f34ac9511" title="Draws a two&#45;digit number on the given buffer at the given coordinates. " alt="" coords="204,31,311,57"/>
+<area shape="rect" id="node7" href="$group__player.html#gab297abc01f8234e00c40e1a2aa9b76dd" title="get_player" alt="" coords="216,81,299,108"/>
+<area shape="rect" id="node8" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="221,132,293,159"/>
+<area shape="rect" id="node3" href="$numbers_8c.html#a86a2fa94e8ef96cf36a0a0b82cc3ec31" title="load_nums" alt="" coords="366,5,451,32"/>
+<area shape="rect" id="node4" href="$numbers_8c.html#a66139241d81ad95a26d9474fcc17e943" title="draw_number" alt="" coords="359,56,459,83"/>
+<area shape="rect" id="node5" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="539,31,613,57"/>
+<area shape="rect" id="node6" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="507,81,645,108"/>
+</map>

@@ -1,0 +1,180 @@
+\hypertarget{group__ammo}{}\section{ammo}
+\label{group__ammo}\index{ammo@{ammo}}
+
+
+Ammo-\/related functions.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structammo}{ammo}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structammo}{ammo} \hyperlink{group__ammo_ga2beee330181a5b70a5c47092391bb174}{ammo}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structammo}{ammo} $\ast$ \hyperlink{group__ammo_gafd32649160360f67e00c8dc8186edeef}{get\+\_\+ammo} (uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n})
+\item 
+void \hyperlink{group__ammo_ga4d649b8b03319d3a2cdc2f171f9112ea}{draw\+\_\+ammo} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the ammo \char`\"{}balls\char`\"{} (that are active) on the given buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__ammo_gac8e56296d8320fc25379a842c74fd72e}{spawn\+\_\+ammo} ()
+\begin{DoxyCompactList}\small\item\em Spawns an ammo \char`\"{}ball\char`\"{}. \end{DoxyCompactList}\item 
+bool \hyperlink{group__ammo_ga05181ac613d5d6d1d1070031b5461191}{ammo\+\_\+hits\+\_\+top} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_gaec2edee56f7204786a3640973e4f8f7f}{ammo\+\_\+hits\+\_\+bottom} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_ga23525b3b56d7c2217da8179045d80db6}{ammo\+\_\+hits\+\_\+left} (\hyperlink{structammo}{ammo} $\ast$b)
+\item 
+bool \hyperlink{group__ammo_gabab3a68eb48f6e4f339c648f6cec5522}{ammo\+\_\+hits\+\_\+right} (\hyperlink{structammo}{ammo} $\ast$b)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Ammo-\/related functions. 
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__ammo_ga2beee330181a5b70a5c47092391bb174}\label{group__ammo_ga2beee330181a5b70a5c47092391bb174}} 
+\index{ammo@{ammo}!ammo@{ammo}}
+\index{ammo@{ammo}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{ammo}{ammo}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structammo}{ammo}  \hyperlink{structammo}{ammo}}
+
+
+
+Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__ammo_gaec2edee56f7204786a3640973e4f8f7f}\label{group__ammo_gaec2edee56f7204786a3640973e4f8f7f}} 
+\index{ammo@{ammo}!ammo\+\_\+hits\+\_\+bottom@{ammo\+\_\+hits\+\_\+bottom}}
+\index{ammo\+\_\+hits\+\_\+bottom@{ammo\+\_\+hits\+\_\+bottom}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{ammo\+\_\+hits\+\_\+bottom()}{ammo\_hits\_bottom()}}
+{\footnotesize\ttfamily bool ammo\+\_\+hits\+\_\+bottom (\begin{DoxyParamCaption}\item[{\hyperlink{structammo}{ammo} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & A pointer to the ammo we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the ammo is hitting the bottom of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{group__ammo_gaec2edee56f7204786a3640973e4f8f7f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__ammo_ga23525b3b56d7c2217da8179045d80db6}\label{group__ammo_ga23525b3b56d7c2217da8179045d80db6}} 
+\index{ammo@{ammo}!ammo\+\_\+hits\+\_\+left@{ammo\+\_\+hits\+\_\+left}}
+\index{ammo\+\_\+hits\+\_\+left@{ammo\+\_\+hits\+\_\+left}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{ammo\+\_\+hits\+\_\+left()}{ammo\_hits\_left()}}
+{\footnotesize\ttfamily bool ammo\+\_\+hits\+\_\+left (\begin{DoxyParamCaption}\item[{\hyperlink{structammo}{ammo} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & A pointer to the ammo we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the ammo is hitting the left of the screen, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ammo_gabab3a68eb48f6e4f339c648f6cec5522}\label{group__ammo_gabab3a68eb48f6e4f339c648f6cec5522}} 
+\index{ammo@{ammo}!ammo\+\_\+hits\+\_\+right@{ammo\+\_\+hits\+\_\+right}}
+\index{ammo\+\_\+hits\+\_\+right@{ammo\+\_\+hits\+\_\+right}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{ammo\+\_\+hits\+\_\+right()}{ammo\_hits\_right()}}
+{\footnotesize\ttfamily bool ammo\+\_\+hits\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{structammo}{ammo} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & A pointer to the ammo we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the ammo is hitting the right of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=259pt]{group__ammo_gabab3a68eb48f6e4f339c648f6cec5522_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__ammo_ga05181ac613d5d6d1d1070031b5461191}\label{group__ammo_ga05181ac613d5d6d1d1070031b5461191}} 
+\index{ammo@{ammo}!ammo\+\_\+hits\+\_\+top@{ammo\+\_\+hits\+\_\+top}}
+\index{ammo\+\_\+hits\+\_\+top@{ammo\+\_\+hits\+\_\+top}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{ammo\+\_\+hits\+\_\+top()}{ammo\_hits\_top()}}
+{\footnotesize\ttfamily bool ammo\+\_\+hits\+\_\+top (\begin{DoxyParamCaption}\item[{\hyperlink{structammo}{ammo} $\ast$}]{b }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & A pointer to the ammo we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the ammo is hitting the top of the screen, otherwise false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ammo_ga4d649b8b03319d3a2cdc2f171f9112ea}\label{group__ammo_ga4d649b8b03319d3a2cdc2f171f9112ea}} 
+\index{ammo@{ammo}!draw\+\_\+ammo@{draw\+\_\+ammo}}
+\index{draw\+\_\+ammo@{draw\+\_\+ammo}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{draw\+\_\+ammo()}{draw\_ammo()}}
+{\footnotesize\ttfamily void draw\+\_\+ammo (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Draws the ammo \char`\"{}balls\char`\"{} (that are active) on the given buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__ammo_ga4d649b8b03319d3a2cdc2f171f9112ea_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__ammo_gafd32649160360f67e00c8dc8186edeef}\label{group__ammo_gafd32649160360f67e00c8dc8186edeef}} 
+\index{ammo@{ammo}!get\+\_\+ammo@{get\+\_\+ammo}}
+\index{get\+\_\+ammo@{get\+\_\+ammo}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{get\+\_\+ammo()}{get\_ammo()}}
+{\footnotesize\ttfamily \hyperlink{structammo}{ammo}$\ast$ get\+\_\+ammo (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & either 1, 2 or 3 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An ammo pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__ammo_gac8e56296d8320fc25379a842c74fd72e}\label{group__ammo_gac8e56296d8320fc25379a842c74fd72e}} 
+\index{ammo@{ammo}!spawn\+\_\+ammo@{spawn\+\_\+ammo}}
+\index{spawn\+\_\+ammo@{spawn\+\_\+ammo}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{spawn\+\_\+ammo()}{spawn\_ammo()}}
+{\footnotesize\ttfamily void spawn\+\_\+ammo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Spawns an ammo \char`\"{}ball\char`\"{}. 
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{group__ammo_gac8e56296d8320fc25379a842c74fd72e_cgraph}
+\end{center}
+\end{figure}

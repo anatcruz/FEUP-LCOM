@@ -1,0 +1,7 @@
+var searchData=
+[
+  ['n_5fbullets',['n_bullets',['../structammo.html#a76fcb1d819bf5074623ac90bfab0abf9',1,'ammo::n_bullets()'],['../structplayer.html#a76fcb1d819bf5074623ac90bfab0abf9',1,'player::n_bullets()']]],
+  ['n_5fbytes',['n_bytes',['../structkeyboard__packet.html#a712aa6778c25fe5f5a87add171dbde7d',1,'keyboard_packet']]],
+  ['new_5fprojectile',['new_projectile',['../group__projectiles.html#ga1dcccbbcaf5fbc336ec52666ff0960ac',1,'new_projectile(vector2 pos, vector2 speed):&#160;projectiles.c'],['../group__projectiles.html#ga1dcccbbcaf5fbc336ec52666ff0960ac',1,'new_projectile(vector2 pos, vector2 speed):&#160;projectiles.c']]],
+  ['numbers',['numbers',['../group__numbers.html',1,'']]]
+];

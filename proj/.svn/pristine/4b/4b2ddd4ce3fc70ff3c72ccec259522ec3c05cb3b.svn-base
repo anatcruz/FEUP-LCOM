@@ -1,0 +1,12 @@
+var searchData=
+[
+  ['decimal_5fto_5fbcd',['decimal_to_bcd',['../group__utils.html#ga8c10bb1f9a5bb82b67c6980182193c54',1,'decimal_to_bcd(uint8_t decimal):&#160;utils.c'],['../group__utils.html#ga8c10bb1f9a5bb82b67c6980182193c54',1,'decimal_to_bcd(uint8_t decimal):&#160;utils.c']]],
+  ['delta_5fx',['delta_x',['../structmouse__packet.html#ada6da69ab3d4f4b471ffe88827e8754c',1,'mouse_packet']]],
+  ['delta_5fy',['delta_y',['../structmouse__packet.html#a7699dbabc822179a121331d93fee1301',1,'mouse_packet']]],
+  ['direction',['direction',['../structplayer.html#a8f54e9f41016004732115c10e844deb8',1,'player']]],
+  ['draw_5fammo',['draw_ammo',['../group__ammo.html#ga4d649b8b03319d3a2cdc2f171f9112ea',1,'draw_ammo(uint8_t *base_ptr):&#160;ammo.c'],['../group__ammo.html#ga4d649b8b03319d3a2cdc2f171f9112ea',1,'draw_ammo(uint8_t *base_ptr):&#160;ammo.c']]],
+  ['draw_5fcircle',['draw_circle',['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c'],['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c'],['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c']]],
+  ['draw_5fnumbers',['draw_numbers',['../group__numbers.html#ga957a3e5ec5d985ee4c890b5f34ac9511',1,'draw_numbers(uint8_t *base_ptr, uint16_t x, uint16_t y, uint8_t n):&#160;numbers.c'],['../group__numbers.html#ga957a3e5ec5d985ee4c890b5f34ac9511',1,'draw_numbers(uint8_t *base_ptr, uint16_t x, uint16_t y, uint8_t n):&#160;numbers.c']]],
+  ['draw_5fplayers',['draw_players',['../group__player.html#gae147e3272cf07f0fce5c511256eb7d04',1,'draw_players(uint8_t *base_ptr):&#160;player.c'],['../group__player.html#gae147e3272cf07f0fce5c511256eb7d04',1,'draw_players(uint8_t *base_ptr):&#160;player.c']]],
+  ['draw_5fprojectiles',['draw_projectiles',['../group__projectiles.html#gae77390eb18c5b9c31165e891a1ab4b19',1,'draw_projectiles(uint8_t *base_ptr):&#160;projectiles.c'],['../group__projectiles.html#gae77390eb18c5b9c31165e891a1ab4b19',1,'draw_projectiles(uint8_t *base_ptr):&#160;projectiles.c']]]
+];

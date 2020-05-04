@@ -1,0 +1,80 @@
+\hypertarget{group__utils}{}\section{utils}
+\label{group__utils}\index{utils@{utils}}
+
+
+Utility functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}{util\+\_\+sys\+\_\+inb} (int port, uint8\+\_\+t $\ast$value)
+\begin{DoxyCompactList}\small\item\em Reads a byte from memory. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__utils_ga304fc85c5c7fb06010deb07c6dd16b81}{bcd\+\_\+to\+\_\+decimal} (uint8\+\_\+t hex)
+\begin{DoxyCompactList}\small\item\em Converts a value from bcd format to decimal format. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__utils_ga8c10bb1f9a5bb82b67c6980182193c54}{decimal\+\_\+to\+\_\+bcd} (uint8\+\_\+t decimal)
+\begin{DoxyCompactList}\small\item\em Converts a value from decimal format to bcd format. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__utils_ga304fc85c5c7fb06010deb07c6dd16b81}\label{group__utils_ga304fc85c5c7fb06010deb07c6dd16b81}} 
+\index{utils@{utils}!bcd\+\_\+to\+\_\+decimal@{bcd\+\_\+to\+\_\+decimal}}
+\index{bcd\+\_\+to\+\_\+decimal@{bcd\+\_\+to\+\_\+decimal}!utils@{utils}}
+\subsubsection{\texorpdfstring{bcd\+\_\+to\+\_\+decimal()}{bcd\_to\_decimal()}}
+{\footnotesize\ttfamily uint8\+\_\+t bcd\+\_\+to\+\_\+decimal (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{hex }\end{DoxyParamCaption})}
+
+
+
+Converts a value from bcd format to decimal format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hex} & The value in bcd format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value in decimal format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__utils_ga8c10bb1f9a5bb82b67c6980182193c54}\label{group__utils_ga8c10bb1f9a5bb82b67c6980182193c54}} 
+\index{utils@{utils}!decimal\+\_\+to\+\_\+bcd@{decimal\+\_\+to\+\_\+bcd}}
+\index{decimal\+\_\+to\+\_\+bcd@{decimal\+\_\+to\+\_\+bcd}!utils@{utils}}
+\subsubsection{\texorpdfstring{decimal\+\_\+to\+\_\+bcd()}{decimal\_to\_bcd()}}
+{\footnotesize\ttfamily uint8\+\_\+t decimal\+\_\+to\+\_\+bcd (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{decimal }\end{DoxyParamCaption})}
+
+
+
+Converts a value from decimal format to bcd format. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em decimal} & The value in decimal format\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value in bcd format 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}\label{group__utils_ga2b56f50ba159e9d5115ed1a75eff15d9}} 
+\index{utils@{utils}!util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}}
+\index{util\+\_\+sys\+\_\+inb@{util\+\_\+sys\+\_\+inb}!utils@{utils}}
+\subsubsection{\texorpdfstring{util\+\_\+sys\+\_\+inb()}{util\_sys\_inb()}}
+{\footnotesize\ttfamily int util\+\_\+sys\+\_\+inb (\begin{DoxyParamCaption}\item[{int}]{port,  }\item[{uint8\+\_\+t $\ast$}]{value }\end{DoxyParamCaption})}
+
+
+
+Reads a byte from memory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em port} & The memory address (normally in hexadecimal) \\
+\hline
+{\em value} & A pointer to a byte, which will be rewritten with the value in memory\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, otherwise it was not successful 
+\end{DoxyReturn}

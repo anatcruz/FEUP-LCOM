@@ -1,0 +1,73 @@
+\hypertarget{core__game__settings_8h}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/core\+\_\+game\+\_\+settings.h File Reference}
+\label{core__game__settings_8h}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/core\+\_\+game\+\_\+settings.\+h@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/core\+\_\+game\+\_\+settings.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+Include dependency graph for core\+\_\+game\+\_\+settings.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{core__game__settings_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{core__game__settings_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__core__game__settings_gae7e72ac62497c693b7972e5b7aa2b42a}{get\+\_\+planet\+\_\+radius} ()
+\item 
+float \hyperlink{group__core__game__settings_ga7a058129c2abf0cc41fbd17f5265710d}{get\+\_\+planet\+\_\+gravity} ()
+\item 
+void \hyperlink{group__core__game__settings_ga9ad9d5a1de42dfd1bb9c35f918eb51ff}{set\+\_\+planet\+\_\+gravity} (float g)
+\item 
+float \hyperlink{group__core__game__settings_ga15eb947de263d29d6c97bae746737fa8}{get\+\_\+projectile\+\_\+shooting\+\_\+speed} ()
+\item 
+void \hyperlink{group__core__game__settings_ga5eeb5440c01178975630413285bee384}{set\+\_\+projectile\+\_\+shooting\+\_\+speed} (float speed)
+\item 
+uint8\+\_\+t \hyperlink{group__core__game__settings_ga10fcc8a3f6a22ea214e0b5e9f28362f8}{get\+\_\+projectile\+\_\+shooting\+\_\+cooldown} ()
+\item 
+void \hyperlink{group__core__game__settings_gaa78d2a1d2f17c5e37268f9b6d32ff885}{set\+\_\+projectile\+\_\+shooting\+\_\+cooldown} (uint8\+\_\+t cooldown)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_ga0ba9dec3f44eebdfb14f0671b61f1b4e}{get\+\_\+projectile\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga1d9f0dd4963fce752d49aea50e9c9d74}{set\+\_\+projectile\+\_\+color} (uint32\+\_\+t color)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_ga614dd4319b2fe76e2a08747473836c0c}{get\+\_\+player1\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga7d2df33bf9002ff71c661a521df4c279}{set\+\_\+player1\+\_\+color} (uint32\+\_\+t color)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_gade5cf065ae24753f7fb8e73df7f8aa8f}{get\+\_\+player2\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga03b1fe954023f0f81abcbf5e962e1169}{set\+\_\+player2\+\_\+color} (uint32\+\_\+t color)
+\item 
+float \hyperlink{group__core__game__settings_ga1eee074a8161cfbb24eab5bfab97369d}{get\+\_\+player\+\_\+size} ()
+\item 
+void \hyperlink{group__core__game__settings_ga0a444c4577d885de9a65789ed1f0a49e}{set\+\_\+player\+\_\+size} (float size)
+\item 
+float \hyperlink{group__core__game__settings_gaff00b21783e221feea599cb41520ebb8}{get\+\_\+player\+\_\+acceleration} ()
+\item 
+void \hyperlink{group__core__game__settings_gaf015b3fb5da34e2af0913a665b53f440}{set\+\_\+player\+\_\+acceleration} (float acc)
+\item 
+bool \hyperlink{group__core__game__settings_ga0288cff6bde3e658e0bea4e88a367039}{get\+\_\+bouncy\+\_\+walls} ()
+\item 
+void \hyperlink{group__core__game__settings_ga3d00a4e0dab9454c1176e82699a2d510}{set\+\_\+bouncy\+\_\+walls} (bool bouncy)
+\item 
+bool \hyperlink{group__core__game__settings_gae294ba27e3b2bf1d347ed563ee1327f7}{get\+\_\+disable\+\_\+gravity} ()
+\item 
+void \hyperlink{group__core__game__settings_gaef0357b1d6d13d5efcde0ebc880ef5ae}{set\+\_\+disable\+\_\+gravity} (bool disable)
+\item 
+bool \hyperlink{group__core__game__settings_gaf19a3bae554ca2a2ae3213aef7f9f208}{get\+\_\+infinite\+\_\+ammo} ()
+\item 
+void \hyperlink{group__core__game__settings_ga098db2a1aea09dead03ad58bb667bff9}{set\+\_\+infinite\+\_\+ammo} (bool infinite)
+\item 
+bool \hyperlink{group__core__game__settings_gae98ea18abc06d0d144350c2c6018bdb9}{get\+\_\+disable\+\_\+wall\+\_\+damage} ()
+\item 
+void \hyperlink{group__core__game__settings_gaf4298289f3e03eb97347eb6a3865ec60}{set\+\_\+disable\+\_\+wall\+\_\+damage} (bool damage)
+\end{DoxyCompactItemize}

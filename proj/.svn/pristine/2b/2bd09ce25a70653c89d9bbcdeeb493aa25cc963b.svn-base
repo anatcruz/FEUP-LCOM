@@ -1,0 +1,42 @@
+\hypertarget{projectiles_8h}{}\section{projectiles.\+h File Reference}
+\label{projectiles_8h}\index{projectiles.\+h@{projectiles.\+h}}
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gravity.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vector2.\+h\char`\"{}}\newline
+Include dependency graph for projectiles.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=253pt]{projectiles_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{projectiles_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structprojectile}{projectile}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structprojectile}{projectile} \hyperlink{group__projectiles_ga0ecdecffd31e7e21a2db68fb1aef8f23}{projectile}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s bullets. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__projectiles_ga5694db4d07322ea0cb9792dd0409dcd6}{get\+\_\+n\+\_\+projectiles} ()
+\item 
+\hyperlink{structprojectile}{projectile} $\ast$ \hyperlink{group__projectiles_ga83c71feca8610bd78396e078b96c7607}{get\+\_\+proj\+\_\+array} ()
+\item 
+void \hyperlink{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}{projectile\+\_\+alloc} (uint8\+\_\+t \hyperlink{projectiles_8c_a72f6a4ef5d831709c1c10ff632d608ec}{n\+\_\+projectiles})
+\item 
+void \hyperlink{group__projectiles_ga1dcccbbcaf5fbc336ec52666ff0960ac}{new\+\_\+projectile} (\hyperlink{structvector2}{vector2} pos, \hyperlink{structvector2}{vector2} speed)
+\begin{DoxyCompactList}\small\item\em Spawns a new projectile with the given position and velocity. \end{DoxyCompactList}\item 
+void \hyperlink{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19}{draw\+\_\+projectiles} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the projectiles on the given buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}

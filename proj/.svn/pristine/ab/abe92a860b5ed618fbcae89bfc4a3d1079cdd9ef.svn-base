@@ -1,0 +1,152 @@
+#include "daniel_debug.h"
+#include <stdio.h>
+#include <math.h>
+
+#include "video_card.h"
+#include "kbc.h"
+#include "keyboard.h"
+#include "timer.h"
+#include "vector2.h"
+#include <stdio.h>
+#include "gravity.h"
+
+#define BREAK_ESC_KEY 0x81
+#define DELTA_T 0.03333333333
+
+extern bool two_byte_scancode;
+
+extern bool    keyboard_make;
+extern uint8_t keyboard_size;
+extern uint8_t keyboard_bytes[2];
+
+void wait_for_enter();
+
+void gravity_test() {
+  if (keyboard_ih_subscribe() != 0)
+    return;
+   
+  int r, ipc_status;
+  message msg;
+  bool esc_key_pressed = false;
+  /////////////////////////////////////
+
+  if (timer_ih_subscribe() != 0)
+    return;
+
+  /////////////////////////////////////
+
+  gravity_object dot;
+  dot.position.x = 10;
+  dot.position.y = 10;
+  dot.velocity.x = 50;
+  dot.velocity.y = -10;
+
+  vector2 screen_center;
+  screen_center.x = get_hres() / 2;
+  screen_center.y = get_vres() / 2;
+
+  while (!esc_key_pressed)
+  { /*You may want to use a different condition*/ /*Get a request message.*/
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0)
+    {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status))
+    { /*received notification*/
+      //printf("HI\n");
+      switch (_ENDPOINT_P(msg.m_source))
+      {
+      case HARDWARE: /*hardware interrupt notification*/
+        if (msg.m_notify.interrupts & KEYBOARD_MASK)
+        {     /*subscribed interrupt*/
+          kbc_ih();
+          if (keyboard_ih2()) {
+            if (keyboard_bytes[0] == BREAK_ESC_KEY) {
+              esc_key_pressed = true;
+            }
+          }
+        }
+
+        if (msg.m_notify.interrupts & TIMER_MASK)
+        {     /*subscribed interrupt*/
+          timer_int_handler();
+
+          // FILE *fp;
+          // fp = fopen("/home/lcom/labs/proj/ debug.txt", "w+");
+          // fprintf(fp, "%d\n", timer_get_counter());
+          // fclose(fp);
+
+          if (timer_get_counter() % 2 == 0) {
+            set_rectangle(get_buffer_base_ptr(), (uint16_t) screen_center.x, (uint16_t) screen_center.y, 10, 10, 123123123);
+
+            update_gravity_object(&dot, gravity_acc_vector(screen_center, 4000000, &dot), DELTA_T);
+            set_rectangle(get_buffer_base_ptr(), (uint16_t) dot.position.x, (uint16_t) dot.position.y, 3, 3, 123123123);
+          }
+        }
+
+        break;
+      default:
+        break; /*no other notifications expected: do nothing*/
+      }
+    }
+    else
+    { /*received a standard message, not a notification*/ /*no standard messages expected: do nothing*/
+    } 
+  }
+  ///////////////////////////////////
+  keyboard_ih_unsubscribe();
+  timer_ih_unsubscribe();
+  ////////////////////////////////
+}
+
+void d_main() {
+    gravity_test();
+
+}
+
+void wait_for_enter() {
+
+  if (keyboard_ih_subscribe() != 0)
+    return;
+   
+  int r, ipc_status;
+  message msg;
+  bool esc_key_pressed = false;
+
+  while (!esc_key_pressed)
+  { /*You may want to use a different condition*/ /*Get a request message.*/
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0)
+    {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status))
+    { /*received notification*/
+      //printf("HI\n");
+      switch (_ENDPOINT_P(msg.m_source))
+      {
+      case HARDWARE: /*hardware interrupt notification*/
+        if (msg.m_notify.interrupts & KEYBOARD_MASK)
+        {     /*subscribed interrupt*/
+          kbc_ih();
+          if (keyboard_ih2()) {
+            if (keyboard_bytes[0] == BREAK_ESC_KEY) {
+              esc_key_pressed = true;
+            }
+          }
+        }
+        break;
+      default:
+        break; /*no other notifications expected: do nothing*/
+      }
+    }
+    else
+    { /*received a standard message, not a notification*/ /*no standard messages expected: do nothing*/
+    }
+
+    
+  }
+
+  keyboard_ih_unsubscribe();
+}

@@ -1,0 +1,81 @@
+\hypertarget{rtc_8c}{}\section{rtc.\+c File Reference}
+\label{rtc_8c}\index{rtc.\+c@{rtc.\+c}}
+{\ttfamily \#include \char`\"{}rtc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}utils.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$minix/sysutil.\+h$>$}\newline
+Include dependency graph for rtc.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{rtc_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__rtc_ga94b0c84824555e206801ea5a59eaa8fb}{rtc\+\_\+get\+\_\+hour} ()
+\item 
+uint8\+\_\+t \hyperlink{group__rtc_ga045f10751f73dcf26ec496d24332e067}{rtc\+\_\+get\+\_\+minute} ()
+\item 
+uint8\+\_\+t \hyperlink{group__rtc_ga900a6f54c5751abfa35460384278ec84}{rtc\+\_\+get\+\_\+second} ()
+\item 
+bool \hyperlink{group__rtc_ga55d98e39c0c2bf246ef774491c31b593}{rtc\+\_\+ih} ()
+\begin{DoxyCompactList}\small\item\em Handles R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_gaa9a633f60d6ee3b237a80b408647908c}{rtc\+\_\+ih\+\_\+subscribe} ()
+\begin{DoxyCompactList}\small\item\em Subscribes to R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga9c629cc80f25b7d9d4e19fb6f6de8ea4}{rtc\+\_\+ih\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_gaacd5a961df48ee02b0d95588cbe00be5}{rtc\+\_\+ih\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disables R\+TC interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__rtc_ga272e00608ea1e5f0e931ae7a566c2af4}{rtc\+\_\+ih\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enables R\+TC interrupts. \end{DoxyCompactList}\item 
+void \hyperlink{group__rtc_ga9d32737436e666dcd33816dd240321a8}{rtc\+\_\+write\+\_\+reg} (uint8\+\_\+t reg, uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes the R\+TC register at position reg. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{group__rtc_ga967406c372c2ba0b6b18c4784d5b1ce2}{rtc\+\_\+read\+\_\+reg} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Reads the R\+TC register at position reg. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}{hour} = 0
+\item 
+static uint8\+\_\+t \hyperlink{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}{minute} = 0
+\item 
+static uint8\+\_\+t \hyperlink{rtc_8c_a8459fc4e94de7eefc74991e41779c8fc}{second} = 0
+\item 
+static int \hyperlink{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}{rtc\+\_\+hook\+\_\+id} = \hyperlink{group__rtc_gac93f7885d306a82906ee65bdbf0db65d}{R\+T\+C\+\_\+\+H\+O\+O\+K\+\_\+\+ID}
+\item 
+static uint32\+\_\+t \hyperlink{rtc_8c_a25f650d5a49abb0c1d5433f4e5012cbf}{rtc\+\_\+counter} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}\label{rtc_8c_ae5af4ff48939d13d480f87e56a9385d6}} 
+\index{rtc.\+c@{rtc.\+c}!hour@{hour}}
+\index{hour@{hour}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{hour}{hour}}
+{\footnotesize\ttfamily uint8\+\_\+t hour = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}\label{rtc_8c_a8ff981ec55c945940f4a0da7d8709b3c}} 
+\index{rtc.\+c@{rtc.\+c}!minute@{minute}}
+\index{minute@{minute}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{minute}{minute}}
+{\footnotesize\ttfamily uint8\+\_\+t minute = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{rtc_8c_a25f650d5a49abb0c1d5433f4e5012cbf}\label{rtc_8c_a25f650d5a49abb0c1d5433f4e5012cbf}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+counter@{rtc\+\_\+counter}}
+\index{rtc\+\_\+counter@{rtc\+\_\+counter}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+counter}{rtc\_counter}}
+{\footnotesize\ttfamily uint32\+\_\+t rtc\+\_\+counter = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}\label{rtc_8c_a6c52a1d32571a429369253ce7c3a3d7a}} 
+\index{rtc.\+c@{rtc.\+c}!rtc\+\_\+hook\+\_\+id@{rtc\+\_\+hook\+\_\+id}}
+\index{rtc\+\_\+hook\+\_\+id@{rtc\+\_\+hook\+\_\+id}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{rtc\+\_\+hook\+\_\+id}{rtc\_hook\_id}}
+{\footnotesize\ttfamily int rtc\+\_\+hook\+\_\+id = \hyperlink{group__rtc_gac93f7885d306a82906ee65bdbf0db65d}{R\+T\+C\+\_\+\+H\+O\+O\+K\+\_\+\+ID}\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{rtc_8c_a8459fc4e94de7eefc74991e41779c8fc}\label{rtc_8c_a8459fc4e94de7eefc74991e41779c8fc}} 
+\index{rtc.\+c@{rtc.\+c}!second@{second}}
+\index{second@{second}!rtc.\+c@{rtc.\+c}}
+\subsubsection{\texorpdfstring{second}{second}}
+{\footnotesize\ttfamily uint8\+\_\+t second = 0\hspace{0.3cm}{\ttfamily [static]}}
+

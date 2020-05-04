@@ -1,0 +1,25 @@
+\hypertarget{vector2_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vector2.c File Reference}
+\label{vector2_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vector2.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/vector2.\+c}}
+{\ttfamily \#include \char`\"{}vector2.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+Include dependency graph for vector2.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{vector2_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_ga8a53b9698cf1172ab388531dcd3d8399}{vector2\+\_\+add} (\hyperlink{structvector2}{vector2} v1, \hyperlink{structvector2}{vector2} v2)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_ga7a403a2bce25c9ee0fd5e6fc30a8f9ea}{vector2\+\_\+subtract} (\hyperlink{structvector2}{vector2} v1, \hyperlink{structvector2}{vector2} v2)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_gab71f45ca9825acdbf70c639cf4a5d09c}{vector2\+\_\+scalar\+\_\+product} (\hyperlink{structvector2}{vector2} v, float k)
+\item 
+float \hyperlink{group__vector2_ga03173bb05b63e8723fc6e54cf55dff71}{vector2\+\_\+norm} (\hyperlink{structvector2}{vector2} v)
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__vector2_gaa3e831b3dbed8e51233f48de98c3266e}{vector2\+\_\+normalized} (\hyperlink{structvector2}{vector2} v)
+\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+#pragma once
+
+#include <stdint.h>
+#include <stdbool.h>
+
+/**
+ * @return Whether or not projectiles bounce back from the walls of the screen
+ */
+bool get_bouncy_walls();
+
+/**
+ * @param bouncy Whether or not projectiles bounce back from the walls of the screen
+ */
+void set_bouncy_walls(bool bouncy);
+
+/**
+ * @return Whether or not gravity is disabled
+ */
+bool get_disable_gravity();
+
+/**
+ * @param disable Whether or not gravity is disabled
+ */
+void set_disable_gravity(bool disable);
+
+/**
+ * @return Whether or not infinite ammo is enabled
+ */
+bool get_infinite_ammo();
+
+/**
+ * @param infinite Whether or not infinite ammo is enabled
+ */
+void set_infinite_ammo(bool infinite);
+
+/**
+ * @return Whether or not wall damage is disabled
+ */
+bool get_disable_wall_damage();
+
+/**
+ * @param damage Whether or not wall damage is disabled
+ */
+void set_disable_wall_damage(bool damage);
+
+/** @} end of core_game_settings */

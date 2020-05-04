@@ -1,0 +1,74 @@
+\hypertarget{group__gravity}{}\section{gravity}
+\label{group__gravity}\index{gravity@{gravity}}
+
+
+Gravity-\/related functions.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgravity__object}{gravity\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Struct that contains the position and velocity of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{group__gravity_ga5aec6ca0c05d29e1a2708c89b0f27228}\label{group__gravity_ga5aec6ca0c05d29e1a2708c89b0f27228}} 
+typedef struct \hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{group__gravity_ga5aec6ca0c05d29e1a2708c89b0f27228}{gravity\+\_\+object}
+\begin{DoxyCompactList}\small\item\em Struct that contains the position and velocity of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__gravity_gadecebe4cd578161d35b325249079f7b9}{gravity\+\_\+acc\+\_\+vector} (\hyperlink{structvector2}{vector2} body\+\_\+pos, float body\+\_\+grav\+\_\+parameter, const \hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$obj)
+\begin{DoxyCompactList}\small\item\em Calculates the gravitational pull of a given body on \hyperlink{structgravity__object}{gravity\+\_\+object} obj. \end{DoxyCompactList}\item 
+void \hyperlink{group__gravity_ga2cf5adbf1029afdd7b7cdd00eadc8771}{update\+\_\+gravity\+\_\+object} (\hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$obj, \hyperlink{structvector2}{vector2} acc, float delta)
+\begin{DoxyCompactList}\small\item\em Updates the velocity and position of obj, using something similar to the \href{https://en.wikipedia.org/wiki/Euler_method}{\tt Euler method} \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Gravity-\/related functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__gravity_gadecebe4cd578161d35b325249079f7b9}\label{group__gravity_gadecebe4cd578161d35b325249079f7b9}} 
+\index{gravity@{gravity}!gravity\+\_\+acc\+\_\+vector@{gravity\+\_\+acc\+\_\+vector}}
+\index{gravity\+\_\+acc\+\_\+vector@{gravity\+\_\+acc\+\_\+vector}!gravity@{gravity}}
+\subsubsection{\texorpdfstring{gravity\+\_\+acc\+\_\+vector()}{gravity\_acc\_vector()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} gravity\+\_\+acc\+\_\+vector (\begin{DoxyParamCaption}\item[{\hyperlink{structvector2}{vector2}}]{body\+\_\+pos,  }\item[{float}]{body\+\_\+grav\+\_\+parameter,  }\item[{const \hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$}]{obj }\end{DoxyParamCaption})}
+
+
+
+Calculates the gravitational pull of a given body on \hyperlink{structgravity__object}{gravity\+\_\+object} obj. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em body\+\_\+pos} & The position of our body \\
+\hline
+{\em body\+\_\+grav\+\_\+parameter} & The \href{https://en.wikipedia.org/wiki/Standard_gravitational_parameter}{\tt gravitational parameter} of the body \\
+\hline
+{\em obj} & A pointer to the object whose gravitational acceleration will be calculated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The gravitational acceleration vector of obj 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__gravity_ga2cf5adbf1029afdd7b7cdd00eadc8771}\label{group__gravity_ga2cf5adbf1029afdd7b7cdd00eadc8771}} 
+\index{gravity@{gravity}!update\+\_\+gravity\+\_\+object@{update\+\_\+gravity\+\_\+object}}
+\index{update\+\_\+gravity\+\_\+object@{update\+\_\+gravity\+\_\+object}!gravity@{gravity}}
+\subsubsection{\texorpdfstring{update\+\_\+gravity\+\_\+object()}{update\_gravity\_object()}}
+{\footnotesize\ttfamily void update\+\_\+gravity\+\_\+object (\begin{DoxyParamCaption}\item[{\hyperlink{structgravity__object}{gravity\+\_\+object} $\ast$}]{obj,  }\item[{\hyperlink{structvector2}{vector2}}]{acc,  }\item[{float}]{delta }\end{DoxyParamCaption})}
+
+
+
+Updates the velocity and position of obj, using something similar to the \href{https://en.wikipedia.org/wiki/Euler_method}{\tt Euler method} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em obj} & A pointer to the object whose state will be updated \\
+\hline
+{\em acc} & The acceleration that obj is subjected to \\
+\hline
+{\em delta} & The time delta in seconds \\
+\hline
+\end{DoxyParams}

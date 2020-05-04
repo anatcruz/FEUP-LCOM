@@ -1,0 +1,13 @@
+#pragma once
+#include <stdio.h>
+#include <math.h>
+#include <stdio.h>
+#include <stdbool.h>
+#include <lcom/lab5.h>
+#include <lcom/xpm.h>
+
+void core_game_loop();
+
+void load_xpms();
+
+void draw_transparent_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img, bool invert);

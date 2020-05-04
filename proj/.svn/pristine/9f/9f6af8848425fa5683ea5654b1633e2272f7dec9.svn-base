@@ -1,0 +1,14 @@
+\hypertarget{structgravity__object}{}\section{gravity\+\_\+object Struct Reference}
+\label{structgravity__object}\index{gravity\+\_\+object@{gravity\+\_\+object}}
+
+
+Struct that contains the position and velocity of an object.  
+
+
+
+
+{\ttfamily \#include $<$gravity.\+h$>$}
+
+
+
+Collaboration diagram for gravity\+\_\+object\+:

@@ -1,0 +1,16 @@
+\hypertarget{structkeyboard__packet}{}\section{keyboard\+\_\+packet Struct Reference}
+\label{structkeyboard__packet}\index{keyboard\+\_\+packet@{keyboard\+\_\+packet}}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structkeyboard__packet_a46e4c05d20a047ec169f60d3167e912e}\label{structkeyboard__packet_a46e4c05d20a047ec169f60d3167e912e}} 
+uint8\+\_\+t {\bfseries bytes} \mbox{[}2\mbox{]}
+\item 
+\mbox{\Hypertarget{structkeyboard__packet_a712aa6778c25fe5f5a87add171dbde7d}\label{structkeyboard__packet_a712aa6778c25fe5f5a87add171dbde7d}} 
+uint8\+\_\+t {\bfseries n\+\_\+bytes}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+keyboard.\+h\end{DoxyCompactItemize}

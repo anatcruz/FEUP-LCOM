@@ -1,0 +1,50 @@
+\hypertarget{mouse_8c}{}\section{mouse.\+c File Reference}
+\label{mouse_8c}\index{mouse.\+c@{mouse.\+c}}
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}kbc.\+h\char`\"{}}\newline
+Include dependency graph for mouse.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{mouse_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void() \hyperlink{group__mouse_gaed4404005e4c565ac36656307386e0ac}{mouse\+\_\+ih} (void)
+\begin{DoxyCompactList}\small\item\em The first part of mouse interrupt handling. \end{DoxyCompactList}\item 
+bool \hyperlink{group__mouse_gaf9c7f5ebd99c28946ab2184325ffa5f4}{mouse\+\_\+parse\+\_\+packet} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} $\ast$packet)
+\begin{DoxyCompactList}\small\item\em The second part of mouse interrupt handling. \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga8f2981a74d75d33c2e4bec9a93314711}{mouse\+\_\+send\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the mouse. \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga6061042abde98af7b169c463bc203aee}{mouse\+\_\+ih\+\_\+subscribe} ()
+\begin{DoxyCompactList}\small\item\em Subscribes to mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga42e7f57ba1a7deeac5f9ba73bb00b80b}{mouse\+\_\+ih\+\_\+unsubscribe} ()
+\begin{DoxyCompactList}\small\item\em Unsubscribes to mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_gad806e677c27eae4034eeecb456323378}{mouse\+\_\+ih\+\_\+disable} ()
+\begin{DoxyCompactList}\small\item\em Disables mouse interrupts. \end{DoxyCompactList}\item 
+int \hyperlink{group__mouse_ga0d1a2cd4eaf9a059b2ce3899ea8edc62}{mouse\+\_\+ih\+\_\+enable} ()
+\begin{DoxyCompactList}\small\item\em Enables mouse interrupts. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{mouse_8c_a37cad7cad93664f8a1ed1b0258fe958b}{mouse\+\_\+hook\+\_\+id} = \hyperlink{group__mouse_gab68ffa76160866a0585aead19b67a130}{M\+O\+U\+S\+E\+\_\+\+H\+O\+O\+K\+\_\+\+ID}
+\item 
+uint8\+\_\+t \hyperlink{mouse_8c_aec82064a6795ef73e30e4c1873dca2c6}{mouse\+\_\+byte}
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{mouse_8c_aec82064a6795ef73e30e4c1873dca2c6}\label{mouse_8c_aec82064a6795ef73e30e4c1873dca2c6}} 
+\index{mouse.\+c@{mouse.\+c}!mouse\+\_\+byte@{mouse\+\_\+byte}}
+\index{mouse\+\_\+byte@{mouse\+\_\+byte}!mouse.\+c@{mouse.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+byte}{mouse\_byte}}
+{\footnotesize\ttfamily uint8\+\_\+t mouse\+\_\+byte}
+
+\mbox{\Hypertarget{mouse_8c_a37cad7cad93664f8a1ed1b0258fe958b}\label{mouse_8c_a37cad7cad93664f8a1ed1b0258fe958b}} 
+\index{mouse.\+c@{mouse.\+c}!mouse\+\_\+hook\+\_\+id@{mouse\+\_\+hook\+\_\+id}}
+\index{mouse\+\_\+hook\+\_\+id@{mouse\+\_\+hook\+\_\+id}!mouse.\+c@{mouse.\+c}}
+\subsubsection{\texorpdfstring{mouse\+\_\+hook\+\_\+id}{mouse\_hook\_id}}
+{\footnotesize\ttfamily int mouse\+\_\+hook\+\_\+id = \hyperlink{group__mouse_gab68ffa76160866a0585aead19b67a130}{M\+O\+U\+S\+E\+\_\+\+H\+O\+O\+K\+\_\+\+ID}}
+

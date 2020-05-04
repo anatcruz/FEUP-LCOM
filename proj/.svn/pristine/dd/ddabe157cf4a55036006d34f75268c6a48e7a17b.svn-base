@@ -1,0 +1,29 @@
+#include "teresa_debug.h"
+#include <stdio.h>
+#include "circle.h"
+#include "player.h"
+#include "video_card.h"
+#include "triangle.h"
+#include "Menu.h"
+#include "game.h"
+
+
+extern void wait_for_enter();
+void t_main() {
+    //drawOptionsMenu();
+    // drawHelpMenu();
+    //drawMainMenu();
+    letsplay();
+    wait_for_enter();
+
+}
+//codigo para debug
+  // FILE *fp;
+            // fp = fopen("/home/lcom/labs/proj/debug.txt", "w+");
+            // fprintf(fp, "%d\n", j);
+            // fclose(fp);
+
+
+
+
+

@@ -1,0 +1,121 @@
+\hypertarget{structmouse__packet}{}\section{mouse\+\_\+packet Struct Reference}
+\label{structmouse__packet}\index{mouse\+\_\+packet@{mouse\+\_\+packet}}
+
+
+Struct that represents a mouse packet. This struct was provided by one of L\+C\+OM\textquotesingle{}s header files.  
+
+
+
+
+{\ttfamily \#include $<$mouse.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structmouse__packet_a89fe01e2d4cf73b27993d65029aff235}{bytes} \mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em mouse packet raw bytes \end{DoxyCompactList}\item 
+bool \hyperlink{structmouse__packet_abbf74dbbb9f15eefcd8500a92e0d9385}{rb}
+\begin{DoxyCompactList}\small\item\em right mouse button pressed \end{DoxyCompactList}\item 
+bool \hyperlink{structmouse__packet_ae010190682edcfeb246d109ff3d4d7ba}{mb}
+\begin{DoxyCompactList}\small\item\em middle mouse button pressed \end{DoxyCompactList}\item 
+bool \hyperlink{structmouse__packet_a2cc1266e0b4b2162696a91f235034271}{lb}
+\begin{DoxyCompactList}\small\item\em left mouse button pressed \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmouse__packet_ada6da69ab3d4f4b471ffe88827e8754c}{delta\+\_\+x}
+\begin{DoxyCompactList}\small\item\em mouse x-\/displacement\+: rightwards is positive \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{structmouse__packet_a7699dbabc822179a121331d93fee1301}{delta\+\_\+y}
+\begin{DoxyCompactList}\small\item\em mouse y-\/displacement\+: upwards is positive \end{DoxyCompactList}\item 
+bool \hyperlink{structmouse__packet_a34fd9f358287cbbc00b4a2e2d9ca894c}{x\+\_\+ov}
+\begin{DoxyCompactList}\small\item\em x-\/displacement overflow \end{DoxyCompactList}\item 
+bool \hyperlink{structmouse__packet_af53b041fcbe6de2aca94b8ef4189705a}{y\+\_\+ov}
+\begin{DoxyCompactList}\small\item\em y-\/displacement overflow \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents a mouse packet. This struct was provided by one of L\+C\+OM\textquotesingle{}s header files. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structmouse__packet_a89fe01e2d4cf73b27993d65029aff235}\label{structmouse__packet_a89fe01e2d4cf73b27993d65029aff235}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!bytes@{bytes}}
+\index{bytes@{bytes}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily uint8\+\_\+t bytes\mbox{[}3\mbox{]}}
+
+
+
+mouse packet raw bytes 
+
+\mbox{\Hypertarget{structmouse__packet_ada6da69ab3d4f4b471ffe88827e8754c}\label{structmouse__packet_ada6da69ab3d4f4b471ffe88827e8754c}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!delta\+\_\+x@{delta\+\_\+x}}
+\index{delta\+\_\+x@{delta\+\_\+x}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{delta\+\_\+x}{delta\_x}}
+{\footnotesize\ttfamily int16\+\_\+t delta\+\_\+x}
+
+
+
+mouse x-\/displacement\+: rightwards is positive 
+
+\mbox{\Hypertarget{structmouse__packet_a7699dbabc822179a121331d93fee1301}\label{structmouse__packet_a7699dbabc822179a121331d93fee1301}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!delta\+\_\+y@{delta\+\_\+y}}
+\index{delta\+\_\+y@{delta\+\_\+y}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{delta\+\_\+y}{delta\_y}}
+{\footnotesize\ttfamily int16\+\_\+t delta\+\_\+y}
+
+
+
+mouse y-\/displacement\+: upwards is positive 
+
+\mbox{\Hypertarget{structmouse__packet_a2cc1266e0b4b2162696a91f235034271}\label{structmouse__packet_a2cc1266e0b4b2162696a91f235034271}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!lb@{lb}}
+\index{lb@{lb}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{lb}{lb}}
+{\footnotesize\ttfamily bool lb}
+
+
+
+left mouse button pressed 
+
+\mbox{\Hypertarget{structmouse__packet_ae010190682edcfeb246d109ff3d4d7ba}\label{structmouse__packet_ae010190682edcfeb246d109ff3d4d7ba}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!mb@{mb}}
+\index{mb@{mb}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{mb}{mb}}
+{\footnotesize\ttfamily bool mb}
+
+
+
+middle mouse button pressed 
+
+\mbox{\Hypertarget{structmouse__packet_abbf74dbbb9f15eefcd8500a92e0d9385}\label{structmouse__packet_abbf74dbbb9f15eefcd8500a92e0d9385}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!rb@{rb}}
+\index{rb@{rb}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{rb}{rb}}
+{\footnotesize\ttfamily bool rb}
+
+
+
+right mouse button pressed 
+
+\mbox{\Hypertarget{structmouse__packet_a34fd9f358287cbbc00b4a2e2d9ca894c}\label{structmouse__packet_a34fd9f358287cbbc00b4a2e2d9ca894c}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!x\+\_\+ov@{x\+\_\+ov}}
+\index{x\+\_\+ov@{x\+\_\+ov}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{x\+\_\+ov}{x\_ov}}
+{\footnotesize\ttfamily bool x\+\_\+ov}
+
+
+
+x-\/displacement overflow 
+
+\mbox{\Hypertarget{structmouse__packet_af53b041fcbe6de2aca94b8ef4189705a}\label{structmouse__packet_af53b041fcbe6de2aca94b8ef4189705a}} 
+\index{mouse\+\_\+packet@{mouse\+\_\+packet}!y\+\_\+ov@{y\+\_\+ov}}
+\index{y\+\_\+ov@{y\+\_\+ov}!mouse\+\_\+packet@{mouse\+\_\+packet}}
+\subsubsection{\texorpdfstring{y\+\_\+ov}{y\_ov}}
+{\footnotesize\ttfamily bool y\+\_\+ov}
+
+
+
+y-\/displacement overflow 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{mouse_8h}{mouse.\+h}\end{DoxyCompactItemize}

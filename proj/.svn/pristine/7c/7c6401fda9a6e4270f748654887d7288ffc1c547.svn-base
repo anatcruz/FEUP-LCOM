@@ -1,0 +1,5 @@
+#include "daniel_debug.h"
+#include <stdio.h>
+void d_main() {
+    printf("uvcuvefI\n");
+}

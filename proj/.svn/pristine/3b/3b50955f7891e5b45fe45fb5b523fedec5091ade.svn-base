@@ -1,0 +1,49 @@
+\hypertarget{structkeyboard__packet}{}\section{keyboard\+\_\+packet Struct Reference}
+\label{structkeyboard__packet}\index{keyboard\+\_\+packet@{keyboard\+\_\+packet}}
+
+
+Struct that represents a keyboard packet.  
+
+
+
+
+{\ttfamily \#include $<$keyboard.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{structkeyboard__packet_a46e4c05d20a047ec169f60d3167e912e}{bytes} \mbox{[}2\mbox{]}
+\begin{DoxyCompactList}\small\item\em The raw bytes of the keyboard packet. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structkeyboard__packet_a712aa6778c25fe5f5a87add171dbde7d}{n\+\_\+bytes}
+\begin{DoxyCompactList}\small\item\em The number of bytes in the packet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents a keyboard packet. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structkeyboard__packet_a46e4c05d20a047ec169f60d3167e912e}\label{structkeyboard__packet_a46e4c05d20a047ec169f60d3167e912e}} 
+\index{keyboard\+\_\+packet@{keyboard\+\_\+packet}!bytes@{bytes}}
+\index{bytes@{bytes}!keyboard\+\_\+packet@{keyboard\+\_\+packet}}
+\subsubsection{\texorpdfstring{bytes}{bytes}}
+{\footnotesize\ttfamily uint8\+\_\+t bytes\mbox{[}2\mbox{]}}
+
+
+
+The raw bytes of the keyboard packet. 
+
+\mbox{\Hypertarget{structkeyboard__packet_a712aa6778c25fe5f5a87add171dbde7d}\label{structkeyboard__packet_a712aa6778c25fe5f5a87add171dbde7d}} 
+\index{keyboard\+\_\+packet@{keyboard\+\_\+packet}!n\+\_\+bytes@{n\+\_\+bytes}}
+\index{n\+\_\+bytes@{n\+\_\+bytes}!keyboard\+\_\+packet@{keyboard\+\_\+packet}}
+\subsubsection{\texorpdfstring{n\+\_\+bytes}{n\_bytes}}
+{\footnotesize\ttfamily uint8\+\_\+t n\+\_\+bytes}
+
+
+
+The number of bytes in the packet. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/\hyperlink{keyboard_8h}{keyboard.\+h}\end{DoxyCompactItemize}

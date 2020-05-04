@@ -1,0 +1,8 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <stdint.h>
+#include "video_card.h"
+
+void draw_circle(uint8_t *base_ptr,uint16_t x1,uint16_t y1,uint16_t r, uint32_t color);
+
+

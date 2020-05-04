@@ -1,0 +1,419 @@
+\hypertarget{group__kbc}{}\section{kbc}
+\label{group__kbc}\index{kbc@{kbc}}
+
+
+Functions related to the keyboard and mouse controller.  
+
+
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__kbc_gab414f096b1781939124cd2ff672edb59}{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}~20000
+\item 
+\#define \hyperlink{group__kbc_ga82a39176e42fe8f48025521b9674cdc6}{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY}~B\+IT(7)
+\item 
+\#define \hyperlink{group__kbc_ga34599ca5c55cb9be3b235d7422aff45c}{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT}~B\+IT(6)
+\item 
+\#define \hyperlink{group__kbc_gaaa796d09d1e94025da456738295342f2}{K\+B\+C\+\_\+\+A\+UX}~B\+IT(5)
+\item 
+\#define \hyperlink{group__kbc_ga869c99dd1e3e026e766b3a1c75729df1}{K\+B\+C\+\_\+\+I\+NH}~B\+IT(4)
+\item 
+\#define \hyperlink{group__kbc_ga933a8846def486d800a725dc3959a74b}{K\+B\+C\+\_\+\+A2}~B\+IT(3)
+\item 
+\#define \hyperlink{group__kbc_ga9e3fddced5da8ee918cc20e74ff124d8}{K\+B\+C\+\_\+\+S\+YS}~B\+IT(2)
+\item 
+\#define \hyperlink{group__kbc_gac1649d41f8ba9a02fa70ec4e600d5e4a}{K\+B\+C\+\_\+\+I\+BF}~B\+IT(1)
+\item 
+\#define \hyperlink{group__kbc_ga36930de8a703505c95fe133095dcfe06}{K\+B\+C\+\_\+\+O\+BF}~B\+IT(0)
+\item 
+\#define \hyperlink{group__kbc_ga34b14687d83496940a236351fbbb1aea}{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__kbc_ga693314276867029f4c094442a261159f}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG}~0x64
+\item 
+\#define \hyperlink{group__kbc_ga1ccde68b2b6d4e45b50eef1403e10bb7}{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga44b2468c0ea248ca480a8863b3f78c34}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga67a2de56fabfdf65bfa20c50f8b77422}{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM}~0x20
+\item 
+\#define \hyperlink{group__kbc_ga09cb7b27cd3f4d0408f453da78ca294e}{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM}~0x60
+\item 
+\#define \hyperlink{group__kbc_ga3add1395817336a078643ed6e0175ad6}{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST}~0x\+AA
+\item 
+\#define \hyperlink{group__kbc_gab389a48497ca01296ca29c83c8eab2cd}{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AB
+\item 
+\#define \hyperlink{group__kbc_ga80e8aea5305350df2cc8811712caa6cc}{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AD
+\item 
+\#define \hyperlink{group__kbc_ga728cbb4bd95a78097c116e7d4ce099a8}{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+AE
+\item 
+\#define \hyperlink{group__kbc_ga1feec59f57ba28933fbe3516f30b1d14}{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}~0x\+A7
+\item 
+\#define \hyperlink{group__kbc_ga2c0f7ed5ff3b86d06f0e95600a5f736f}{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}~0x\+A8
+\item 
+\#define \hyperlink{group__kbc_ga19f3f409be0e3cfa750c56408ef50f92}{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}~0x\+A9
+\item 
+\#define \hyperlink{group__kbc_ga27c4267800118ec8c413f75f0bc45dc3}{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}~0\+X\+D4
+\item 
+\#define \hyperlink{group__kbc_ga474cbc1b6540f557c0440d718b288ddd}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2}~B\+IT(5)
+\item 
+\#define \hyperlink{group__kbc_ga698b737cbe2182ee299347f00bc55ac1}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS}~B\+IT(4)
+\item 
+\#define \hyperlink{group__kbc_ga35fe39f07554845d7c27a0b8d775cf25}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2}~B\+IT(1)
+\item 
+\#define \hyperlink{group__kbc_ga0574cae4394dc24a596d50361f31a1b3}{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT}~B\+IT(0)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__kbc_ga594c74b8ef8c0d8a660bcdb729b1f381}{kbc\+\_\+delay} (int delay)
+\begin{DoxyCompactList}\small\item\em Blocks the program by delay microseconds. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121}{kbc\+\_\+write\+\_\+command} (uint8\+\_\+t command)
+\begin{DoxyCompactList}\small\item\em Sends a command to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52}{kbc\+\_\+write\+\_\+command\+\_\+arg} (uint8\+\_\+t arg)
+\begin{DoxyCompactList}\small\item\em Sends an argument to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga65f11cca39a73154ab68dabac8b12683}{kbc\+\_\+read\+\_\+command\+\_\+result} (uint8\+\_\+t $\ast$result)
+\begin{DoxyCompactList}\small\item\em Reads a command result from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b}{kbc\+\_\+read\+\_\+command\+\_\+byte} (uint8\+\_\+t $\ast$command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Reads the command byte from the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9}{kbc\+\_\+write\+\_\+command\+\_\+byte} (uint8\+\_\+t command\+\_\+byte)
+\begin{DoxyCompactList}\small\item\em Sends a command byte to the kbc. \end{DoxyCompactList}\item 
+int \hyperlink{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc}{kbc\+\_\+read\+\_\+status} (uint8\+\_\+t $\ast$status)
+\begin{DoxyCompactList}\small\item\em Reads the status of the kbc. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Functions related to the keyboard and mouse controller. 
+
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__kbc_ga933a8846def486d800a725dc3959a74b}\label{group__kbc_ga933a8846def486d800a725dc3959a74b}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+A2@{K\+B\+C\+\_\+\+A2}}
+\index{K\+B\+C\+\_\+\+A2@{K\+B\+C\+\_\+\+A2}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+A2}{KBC\_A2}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+A2~B\+IT(3)}
+
+\mbox{\Hypertarget{group__kbc_gaaa796d09d1e94025da456738295342f2}\label{group__kbc_gaaa796d09d1e94025da456738295342f2}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+A\+UX@{K\+B\+C\+\_\+\+A\+UX}}
+\index{K\+B\+C\+\_\+\+A\+UX@{K\+B\+C\+\_\+\+A\+UX}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+A\+UX}{KBC\_AUX}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+A\+UX~B\+IT(5)}
+
+\mbox{\Hypertarget{group__kbc_gab389a48497ca01296ca29c83c8eab2cd}\label{group__kbc_gab389a48497ca01296ca29c83c8eab2cd}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\index{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}{KBC\_CHECK\_KB\_INTERFACE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+K\+B\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE~0x\+AB}
+
+\mbox{\Hypertarget{group__kbc_ga19f3f409be0e3cfa750c56408ef50f92}\label{group__kbc_ga19f3f409be0e3cfa750c56408ef50f92}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\index{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}{KBC\_CHECK\_MOUSE\_INTERFACE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+H\+E\+C\+K\+\_\+\+M\+O\+U\+S\+E\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE~0x\+A9}
+
+\mbox{\Hypertarget{group__kbc_ga44b2468c0ea248ca480a8863b3f78c34}\label{group__kbc_ga44b2468c0ea248ca480a8863b3f78c34}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG}{KBC\_COM\_ARG\_REG}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+A\+R\+G\+\_\+\+R\+EG~0x60}
+
+\mbox{\Hypertarget{group__kbc_ga698b737cbe2182ee299347f00bc55ac1}\label{group__kbc_ga698b737cbe2182ee299347f00bc55ac1}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS}{KBC\_COM\_BYTE\_DIS}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+IS~B\+IT(4)}
+
+\mbox{\Hypertarget{group__kbc_ga474cbc1b6540f557c0440d718b288ddd}\label{group__kbc_ga474cbc1b6540f557c0440d718b288ddd}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2}{KBC\_COM\_BYTE\_DIS2}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+D\+I\+S2~B\+IT(5)}
+
+\mbox{\Hypertarget{group__kbc_ga0574cae4394dc24a596d50361f31a1b3}\label{group__kbc_ga0574cae4394dc24a596d50361f31a1b3}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT}{KBC\_COM\_BYTE\_INT}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+NT~B\+IT(0)}
+
+\mbox{\Hypertarget{group__kbc_ga35fe39f07554845d7c27a0b8d775cf25}\label{group__kbc_ga35fe39f07554845d7c27a0b8d775cf25}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2}{KBC\_COM\_BYTE\_INT2}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+B\+Y\+T\+E\+\_\+\+I\+N\+T2~B\+IT(1)}
+
+\mbox{\Hypertarget{group__kbc_ga693314276867029f4c094442a261159f}\label{group__kbc_ga693314276867029f4c094442a261159f}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG}}
+\index{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG}{KBC\_COM\_REG}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+C\+O\+M\+\_\+\+R\+EG~0x64}
+
+\mbox{\Hypertarget{group__kbc_ga80e8aea5305350df2cc8811712caa6cc}\label{group__kbc_ga80e8aea5305350df2cc8811712caa6cc}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\index{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}{KBC\_DISABLE\_KBD\_INTERFACE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE~0x\+AD}
+
+\mbox{\Hypertarget{group__kbc_ga1feec59f57ba28933fbe3516f30b1d14}\label{group__kbc_ga1feec59f57ba28933fbe3516f30b1d14}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}}
+\index{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}{KBC\_DISABLE\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+D\+I\+S\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE~0x\+A7}
+
+\mbox{\Hypertarget{group__kbc_ga728cbb4bd95a78097c116e7d4ce099a8}\label{group__kbc_ga728cbb4bd95a78097c116e7d4ce099a8}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}}
+\index{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE@{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE}{KBC\_ENABLE\_KBD\_INTERFACE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+K\+B\+D\+\_\+\+I\+N\+T\+E\+R\+F\+A\+CE~0x\+AE}
+
+\mbox{\Hypertarget{group__kbc_ga2c0f7ed5ff3b86d06f0e95600a5f736f}\label{group__kbc_ga2c0f7ed5ff3b86d06f0e95600a5f736f}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}}
+\index{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE}{KBC\_ENABLE\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+E\+N\+A\+B\+L\+E\+\_\+\+M\+O\+U\+SE~0x\+A8}
+
+\mbox{\Hypertarget{group__kbc_gac1649d41f8ba9a02fa70ec4e600d5e4a}\label{group__kbc_gac1649d41f8ba9a02fa70ec4e600d5e4a}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+I\+BF@{K\+B\+C\+\_\+\+I\+BF}}
+\index{K\+B\+C\+\_\+\+I\+BF@{K\+B\+C\+\_\+\+I\+BF}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+I\+BF}{KBC\_IBF}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+I\+BF~B\+IT(1)}
+
+\mbox{\Hypertarget{group__kbc_ga869c99dd1e3e026e766b3a1c75729df1}\label{group__kbc_ga869c99dd1e3e026e766b3a1c75729df1}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+I\+NH@{K\+B\+C\+\_\+\+I\+NH}}
+\index{K\+B\+C\+\_\+\+I\+NH@{K\+B\+C\+\_\+\+I\+NH}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+I\+NH}{KBC\_INH}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+I\+NH~B\+IT(4)}
+
+\mbox{\Hypertarget{group__kbc_ga36930de8a703505c95fe133095dcfe06}\label{group__kbc_ga36930de8a703505c95fe133095dcfe06}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+O\+BF@{K\+B\+C\+\_\+\+O\+BF}}
+\index{K\+B\+C\+\_\+\+O\+BF@{K\+B\+C\+\_\+\+O\+BF}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+O\+BF}{KBC\_OBF}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+O\+BF~B\+IT(0)}
+
+\mbox{\Hypertarget{group__kbc_ga1ccde68b2b6d4e45b50eef1403e10bb7}\label{group__kbc_ga1ccde68b2b6d4e45b50eef1403e10bb7}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF@{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF}}
+\index{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF@{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF}{KBC\_OUT\_BUF}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+O\+U\+T\+\_\+\+B\+UF~0x60}
+
+\mbox{\Hypertarget{group__kbc_ga82a39176e42fe8f48025521b9674cdc6}\label{group__kbc_ga82a39176e42fe8f48025521b9674cdc6}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+P\+A\+R\+I\+TY@{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY}}
+\index{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY@{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+P\+A\+R\+I\+TY}{KBC\_PARITY}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+P\+A\+R\+I\+TY~B\+IT(7)}
+
+\mbox{\Hypertarget{group__kbc_ga67a2de56fabfdf65bfa20c50f8b77422}\label{group__kbc_ga67a2de56fabfdf65bfa20c50f8b77422}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM@{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM}}
+\index{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM@{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM}{KBC\_READ\_COM}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+R\+E\+A\+D\+\_\+\+C\+OM~0x20}
+
+\mbox{\Hypertarget{group__kbc_ga3add1395817336a078643ed6e0175ad6}\label{group__kbc_ga3add1395817336a078643ed6e0175ad6}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST@{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST}}
+\index{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST@{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST}{KBC\_SELF\_TEST}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+S\+E\+L\+F\+\_\+\+T\+E\+ST~0x\+AA}
+
+\mbox{\Hypertarget{group__kbc_ga34b14687d83496940a236351fbbb1aea}\label{group__kbc_ga34b14687d83496940a236351fbbb1aea}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}}
+\index{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG@{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG}{KBC\_STAT\_REG}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+S\+T\+A\+T\+\_\+\+R\+EG~0x64}
+
+\mbox{\Hypertarget{group__kbc_ga9e3fddced5da8ee918cc20e74ff124d8}\label{group__kbc_ga9e3fddced5da8ee918cc20e74ff124d8}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+S\+YS@{K\+B\+C\+\_\+\+S\+YS}}
+\index{K\+B\+C\+\_\+\+S\+YS@{K\+B\+C\+\_\+\+S\+YS}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+S\+YS}{KBC\_SYS}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+S\+YS~B\+IT(2)}
+
+\mbox{\Hypertarget{group__kbc_gab414f096b1781939124cd2ff672edb59}\label{group__kbc_gab414f096b1781939124cd2ff672edb59}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY@{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}}
+\index{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY@{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY}{KBC\_TICK\_DELAY}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+T\+I\+C\+K\+\_\+\+D\+E\+L\+AY~20000}
+
+\mbox{\Hypertarget{group__kbc_ga34599ca5c55cb9be3b235d7422aff45c}\label{group__kbc_ga34599ca5c55cb9be3b235d7422aff45c}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT@{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT@{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT}{KBC\_TIMEOUT}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+T\+I\+M\+E\+O\+UT~B\+IT(6)}
+
+\mbox{\Hypertarget{group__kbc_ga27c4267800118ec8c413f75f0bc45dc3}\label{group__kbc_ga27c4267800118ec8c413f75f0bc45dc3}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}}
+\index{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE@{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE}{KBC\_WRITE\_BYTE\_TO\_MOUSE}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+Y\+T\+E\+\_\+\+T\+O\+\_\+\+M\+O\+U\+SE~0\+X\+D4}
+
+\mbox{\Hypertarget{group__kbc_ga09cb7b27cd3f4d0408f453da78ca294e}\label{group__kbc_ga09cb7b27cd3f4d0408f453da78ca294e}} 
+\index{kbc@{kbc}!K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM@{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM}}
+\index{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM@{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM}{KBC\_WRITE\_COM}}
+{\footnotesize\ttfamily \#define K\+B\+C\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+OM~0x60}
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__kbc_ga594c74b8ef8c0d8a660bcdb729b1f381}\label{group__kbc_ga594c74b8ef8c0d8a660bcdb729b1f381}} 
+\index{kbc@{kbc}!kbc\+\_\+delay@{kbc\+\_\+delay}}
+\index{kbc\+\_\+delay@{kbc\+\_\+delay}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+delay()}{kbc\_delay()}}
+{\footnotesize\ttfamily void kbc\+\_\+delay (\begin{DoxyParamCaption}\item[{int}]{delay }\end{DoxyParamCaption})}
+
+
+
+Blocks the program by delay microseconds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em delay} & The number of microseconds the program will be delayed \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b}\label{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b}} 
+\index{kbc@{kbc}!kbc\+\_\+read\+\_\+command\+\_\+byte@{kbc\+\_\+read\+\_\+command\+\_\+byte}}
+\index{kbc\+\_\+read\+\_\+command\+\_\+byte@{kbc\+\_\+read\+\_\+command\+\_\+byte}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+read\+\_\+command\+\_\+byte()}{kbc\_read\_command\_byte()}}
+{\footnotesize\ttfamily int kbc\+\_\+read\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+Reads the command byte from the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & A pointer to the byte which will be rewritten \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_gadc6d5fbf9c3a43d168962776591ac75b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga65f11cca39a73154ab68dabac8b12683}\label{group__kbc_ga65f11cca39a73154ab68dabac8b12683}} 
+\index{kbc@{kbc}!kbc\+\_\+read\+\_\+command\+\_\+result@{kbc\+\_\+read\+\_\+command\+\_\+result}}
+\index{kbc\+\_\+read\+\_\+command\+\_\+result@{kbc\+\_\+read\+\_\+command\+\_\+result}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+read\+\_\+command\+\_\+result()}{kbc\_read\_command\_result()}}
+{\footnotesize\ttfamily int kbc\+\_\+read\+\_\+command\+\_\+result (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{result }\end{DoxyParamCaption})}
+
+
+
+Reads a command result from the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em result} & A pointer to the byte which will be rewritten \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga65f11cca39a73154ab68dabac8b12683_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc}\label{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc}} 
+\index{kbc@{kbc}!kbc\+\_\+read\+\_\+status@{kbc\+\_\+read\+\_\+status}}
+\index{kbc\+\_\+read\+\_\+status@{kbc\+\_\+read\+\_\+status}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+read\+\_\+status()}{kbc\_read\_status()}}
+{\footnotesize\ttfamily int kbc\+\_\+read\+\_\+status (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{status }\end{DoxyParamCaption})}
+
+
+
+Reads the status of the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & A pointer to the byte which will be rewritten \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{group__kbc_gaa4c58a11cd49c54cc0eb02a79010a9cc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121}\label{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121}} 
+\index{kbc@{kbc}!kbc\+\_\+write\+\_\+command@{kbc\+\_\+write\+\_\+command}}
+\index{kbc\+\_\+write\+\_\+command@{kbc\+\_\+write\+\_\+command}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+write\+\_\+command()}{kbc\_write\_command()}}
+{\footnotesize\ttfamily int kbc\+\_\+write\+\_\+command (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command }\end{DoxyParamCaption})}
+
+
+
+Sends a command to the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & The command byte to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga8c467e640bc33719fe3ed7bcb73f2121_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52}\label{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52}} 
+\index{kbc@{kbc}!kbc\+\_\+write\+\_\+command\+\_\+arg@{kbc\+\_\+write\+\_\+command\+\_\+arg}}
+\index{kbc\+\_\+write\+\_\+command\+\_\+arg@{kbc\+\_\+write\+\_\+command\+\_\+arg}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+write\+\_\+command\+\_\+arg()}{kbc\_write\_command\_arg()}}
+{\footnotesize\ttfamily int kbc\+\_\+write\+\_\+command\+\_\+arg (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{arg }\end{DoxyParamCaption})}
+
+
+
+Sends an argument to the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & The argument byte to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga24f1a4d1bcb60a73ebd6cee462191a52_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9}\label{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9}} 
+\index{kbc@{kbc}!kbc\+\_\+write\+\_\+command\+\_\+byte@{kbc\+\_\+write\+\_\+command\+\_\+byte}}
+\index{kbc\+\_\+write\+\_\+command\+\_\+byte@{kbc\+\_\+write\+\_\+command\+\_\+byte}!kbc@{kbc}}
+\subsubsection{\texorpdfstring{kbc\+\_\+write\+\_\+command\+\_\+byte()}{kbc\_write\_command\_byte()}}
+{\footnotesize\ttfamily int kbc\+\_\+write\+\_\+command\+\_\+byte (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{command\+\_\+byte }\end{DoxyParamCaption})}
+
+
+
+Sends a command byte to the kbc. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command\+\_\+byte} & The command byte to be sent \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 if successful, something else otherwise 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__kbc_ga5e840dccbbe5abccff8ca66f78c476c9_cgraph}
+\end{center}
+\end{figure}

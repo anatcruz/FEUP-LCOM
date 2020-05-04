@@ -1,0 +1,4 @@
+<map id="kbc_ih" name="kbc_ih">
+<area shape="rect" id="node2" href="$group__kbc.html#gaa4c58a11cd49c54cc0eb02a79010a9cc" title="Reads the status of the kbc. " alt="" coords="113,5,232,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="280,31,371,57"/>
+</map>

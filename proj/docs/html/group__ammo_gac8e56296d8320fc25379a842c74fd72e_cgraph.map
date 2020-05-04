@@ -1,0 +1,7 @@
+<map id="spawn_ammo" name="spawn_ammo">
+<area shape="rect" id="node2" href="$group__ammo.html#gafd32649160360f67e00c8dc8186edeef" title="get_ammo" alt="" coords="182,5,265,32"/>
+<area shape="rect" id="node3" href="$group__core__game__settings.html#ga7a058129c2abf0cc41fbd17f5265710d" title="get_planet_gravity" alt="" coords="159,56,287,83"/>
+<area shape="rect" id="node4" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="187,107,259,133"/>
+<area shape="rect" id="node5" href="$group__video__card.html#gad5999dee7ae30ea14b13e2e2e5a92c88" title="get_vres" alt="" coords="187,157,259,184"/>
+<area shape="rect" id="node6" href="$group__core__game__settings.html#gae294ba27e3b2bf1d347ed563ee1327f7" title="get_disable_gravity" alt="" coords="156,208,291,235"/>
+</map>

@@ -1,0 +1,8 @@
+var searchData=
+[
+  ['set_5fpixel',['set_pixel',['../group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff',1,'set_pixel(uint8_t *base_ptr, uint16_t x, uint16_t y, uint32_t color):&#160;video_card.c'],['../group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff',1,'set_pixel(uint8_t *base_ptr, uint16_t x, uint16_t y, uint32_t color):&#160;video_card.c']]],
+  ['set_5frectangle',['set_rectangle',['../group__video__card.html#ga88795d0238c894e7d54c134b69305976',1,'set_rectangle(uint8_t *base_ptr, uint16_t x, uint16_t y, uint16_t len_x, uint16_t len_y, uint32_t color):&#160;video_card.c'],['../group__video__card.html#ga88795d0238c894e7d54c134b69305976',1,'set_rectangle(uint8_t *base_ptr, uint16_t x, uint16_t y, uint16_t len_x, uint16_t len_y, uint32_t color):&#160;video_card.c']]],
+  ['set_5fxpm_5fimage',['set_xpm_image',['../group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12',1,'set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img):&#160;video_card.c'],['../group__video__card.html#gacd25f5efb8e27da60488e6b317be5e12',1,'set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img):&#160;video_card.c']]],
+  ['shooting_5fcooldown',['shooting_cooldown',['../structplayer.html#a93e6353ab4b2c8e528bfe9789f7996ee',1,'player']]],
+  ['state',['state',['../structplayer.html#a4e4005a0bb3af3d6876952a7cca49163',1,'player']]]
+];

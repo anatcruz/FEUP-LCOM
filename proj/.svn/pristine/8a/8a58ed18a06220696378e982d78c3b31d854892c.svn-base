@@ -1,0 +1,366 @@
+\hypertarget{group__core__game__loop}{}\section{core\+\_\+game\+\_\+loop}
+\label{group__core__game__loop}\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+
+
+Houses all the game logic, physics, collisions, rendering and interrupt-\/handling functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__core__game__loop_ga46e6c6f53965490e91d8629d528ec797}{gravity\+\_\+step} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level physics function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}{explode\+\_\+player} (uint8\+\_\+t \hyperlink{structplayer}{player})
+\begin{DoxyCompactList}\small\item\em Explodes one of the players Rather unsurprisingly, calls to this function usually imply the end of the game. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gadffa4aa993db001bdee35fbce31dc00b}{player\+\_\+deal\+\_\+damage} (uint8\+\_\+t \hyperlink{structplayer}{player}, uint16\+\_\+t damage)
+\begin{DoxyCompactList}\small\item\em Deals damage one of the players. If the player doesn\textquotesingle{}t have enough HP to take the hit, \hyperlink{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}{explode\+\_\+player(uint8\+\_\+t player)} is called and the game ends. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927}{player\+\_\+shoot} (\hyperlink{structplayer}{player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Spawns a projectile in front of p, with a given velocity. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga79bddd8b336f6be116bfa658dd949e2e}{shooting} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level shooting function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga53d6cc2e012c3f117efb3cd959af4af4}{collision} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level collision-\/checking function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga9f1bba2db0aa13b5749945e9679a28bc}{draw\+\_\+life\+\_\+bars} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the players\textquotesingle{} life bars. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga33240cb1f9e3570ad230d7e081888dd6}{draw\+\_\+transparent\+\_\+image} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img, bool invert)
+\begin{DoxyCompactList}\small\item\em Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that white pixels do not get drawn. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gade0334b547fb581566867d040aa7608a}{draw\+\_\+message} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em If the game ended, displays a message on the top of the screen. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga40e143893b9f0cd6ae25ab8e3017b5b2}{draw\+\_\+ammo\+\_\+numbers} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the ammunition numbers, letting them know how many bullets they have. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga56c5cf8a568cff737ff95520cbe6b405}{draw} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level frame-\/rendering function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga46fea93bf5d63e93090fbb95b742b881}{game\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em The high-\/level game loop function. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_ga3675a504daf73491a060c7462420df07}{draw\+\_\+sun} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)
+\begin{DoxyCompactList}\small\item\em Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that only pixels from a given distance from the center of the screen get drawn. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gac82e7d55ed069f5d0c396c20b97337e9}{load\+\_\+xpms} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+P\+Ms, if they have not been already loaded. \end{DoxyCompactList}\item 
+void \hyperlink{group__core__game__loop_gaa06ba1be9bd4796cb317a83db95966f2}{core\+\_\+game\+\_\+loop} ()
+\begin{DoxyCompactList}\small\item\em The highest-\/level function of this module. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Houses all the game logic, physics, collisions, rendering and interrupt-\/handling functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__core__game__loop_ga53d6cc2e012c3f117efb3cd959af4af4}\label{group__core__game__loop_ga53d6cc2e012c3f117efb3cd959af4af4}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!collision@{collision}}
+\index{collision@{collision}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{collision()}{collision()}}
+{\footnotesize\ttfamily void collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The high-\/level collision-\/checking function. 
+
+It performs collision checks and processing for each player, projectile and ammo Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__core__game__loop_ga53d6cc2e012c3f117efb3cd959af4af4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_gaa06ba1be9bd4796cb317a83db95966f2}\label{group__core__game__loop_gaa06ba1be9bd4796cb317a83db95966f2}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{core\+\_\+game\+\_\+loop()}{core\_game\_loop()}}
+{\footnotesize\ttfamily void core\+\_\+game\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The highest-\/level function of this module. 
+
+It deals not only with interruption subscribing/handling/unsubscribing but also with game related initialization Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__core__game__loop_gaa06ba1be9bd4796cb317a83db95966f2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga56c5cf8a568cff737ff95520cbe6b405}\label{group__core__game__loop_ga56c5cf8a568cff737ff95520cbe6b405}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw@{draw}}
+\index{draw@{draw}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw()}{draw()}}
+{\footnotesize\ttfamily void draw (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The high-\/level frame-\/rendering function. 
+
+It copies a background buffer (a buffer with background static stuff) to the double buffer, draws all the game-\/related objects and UI, and finishes off by copying the double buffer to the frame buffer. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_ga56c5cf8a568cff737ff95520cbe6b405_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga40e143893b9f0cd6ae25ab8e3017b5b2}\label{group__core__game__loop_ga40e143893b9f0cd6ae25ab8e3017b5b2}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw\+\_\+ammo\+\_\+numbers@{draw\+\_\+ammo\+\_\+numbers}}
+\index{draw\+\_\+ammo\+\_\+numbers@{draw\+\_\+ammo\+\_\+numbers}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw\+\_\+ammo\+\_\+numbers()}{draw\_ammo\_numbers()}}
+{\footnotesize\ttfamily void draw\+\_\+ammo\+\_\+numbers (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Draws the ammunition numbers, letting them know how many bullets they have. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_ga40e143893b9f0cd6ae25ab8e3017b5b2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga9f1bba2db0aa13b5749945e9679a28bc}\label{group__core__game__loop_ga9f1bba2db0aa13b5749945e9679a28bc}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw\+\_\+life\+\_\+bars@{draw\+\_\+life\+\_\+bars}}
+\index{draw\+\_\+life\+\_\+bars@{draw\+\_\+life\+\_\+bars}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw\+\_\+life\+\_\+bars()}{draw\_life\_bars()}}
+{\footnotesize\ttfamily void draw\+\_\+life\+\_\+bars (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Draws the players\textquotesingle{} life bars. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_ga9f1bba2db0aa13b5749945e9679a28bc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_gade0334b547fb581566867d040aa7608a}\label{group__core__game__loop_gade0334b547fb581566867d040aa7608a}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw\+\_\+message@{draw\+\_\+message}}
+\index{draw\+\_\+message@{draw\+\_\+message}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw\+\_\+message()}{draw\_message()}}
+{\footnotesize\ttfamily void draw\+\_\+message (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+If the game ended, displays a message on the top of the screen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_gade0334b547fb581566867d040aa7608a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga3675a504daf73491a060c7462420df07}\label{group__core__game__loop_ga3675a504daf73491a060c7462420df07}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw\+\_\+sun@{draw\+\_\+sun}}
+\index{draw\+\_\+sun@{draw\+\_\+sun}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw\+\_\+sun()}{draw\_sun()}}
+{\footnotesize\ttfamily void draw\+\_\+sun (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{img }\end{DoxyParamCaption})}
+
+
+
+Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that only pixels from a given distance from the center of the screen get drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the xpm image (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the xpm image (counting rightwards from the left) \\
+\hline
+{\em img} & The xpm image (see \href{https://web.fe.up.pt/~pfs/aulas/lcom2019/labs/lab5/src/doc/structxpm__image__t.html}{\tt this}) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{group__core__game__loop_ga3675a504daf73491a060c7462420df07_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga33240cb1f9e3570ad230d7e081888dd6}\label{group__core__game__loop_ga33240cb1f9e3570ad230d7e081888dd6}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!draw\+\_\+transparent\+\_\+image@{draw\+\_\+transparent\+\_\+image}}
+\index{draw\+\_\+transparent\+\_\+image@{draw\+\_\+transparent\+\_\+image}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{draw\+\_\+transparent\+\_\+image()}{draw\_transparent\_image()}}
+{\footnotesize\ttfamily void draw\+\_\+transparent\+\_\+image (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{xpm\+\_\+image\+\_\+t}]{img,  }\item[{bool}]{invert }\end{DoxyParamCaption})}
+
+
+
+Pretty much the same as \hyperlink{group__video__card_gacd25f5efb8e27da60488e6b317be5e12}{set\+\_\+xpm\+\_\+image(uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, xpm\+\_\+image\+\_\+t img)}, with the notable exception that white pixels do not get drawn. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x} & The x coordinate of the top left corner of the xpm image (counting downwards from the top) \\
+\hline
+{\em y} & The y coordinate of the top left corner of the xpm image (counting rightwards from the left) \\
+\hline
+{\em img} & The xpm image (see \href{https://web.fe.up.pt/~pfs/aulas/lcom2019/labs/lab5/src/doc/structxpm__image__t.html}{\tt this}) \\
+\hline
+{\em invert} & Whether or not the image pixels should be inverted while drawn (white becomes black, etc) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{group__core__game__loop_ga33240cb1f9e3570ad230d7e081888dd6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}\label{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!explode\+\_\+player@{explode\+\_\+player}}
+\index{explode\+\_\+player@{explode\+\_\+player}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{explode\+\_\+player()}{explode\_player()}}
+{\footnotesize\ttfamily void explode\+\_\+player (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{player }\end{DoxyParamCaption})}
+
+
+
+Explodes one of the players Rather unsurprisingly, calls to this function usually imply the end of the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The number of the player about to be exploded \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=277pt]{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga46fea93bf5d63e93090fbb95b742b881}\label{group__core__game__loop_ga46fea93bf5d63e93090fbb95b742b881}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!game\+\_\+loop@{game\+\_\+loop}}
+\index{game\+\_\+loop@{game\+\_\+loop}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{game\+\_\+loop()}{game\_loop()}}
+{\footnotesize\ttfamily void game\+\_\+loop (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The high-\/level game loop function. 
+
+Gets called every frame Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{group__core__game__loop_ga46fea93bf5d63e93090fbb95b742b881_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga46e6c6f53965490e91d8629d528ec797}\label{group__core__game__loop_ga46e6c6f53965490e91d8629d528ec797}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!gravity\+\_\+step@{gravity\+\_\+step}}
+\index{gravity\+\_\+step@{gravity\+\_\+step}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{gravity\+\_\+step()}{gravity\_step()}}
+{\footnotesize\ttfamily void gravity\+\_\+step (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The high-\/level physics function. 
+
+It updates all of the game objects\textquotesingle{} position for the next frame (players, projectiles and ammo). One can this of this function as a single step of the physics simulation. Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_ga46e6c6f53965490e91d8629d528ec797_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_gac82e7d55ed069f5d0c396c20b97337e9}\label{group__core__game__loop_gac82e7d55ed069f5d0c396c20b97337e9}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!load\+\_\+xpms@{load\+\_\+xpms}}
+\index{load\+\_\+xpms@{load\+\_\+xpms}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{load\+\_\+xpms()}{load\_xpms()}}
+{\footnotesize\ttfamily void load\+\_\+xpms (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Loads the X\+P\+Ms, if they have not been already loaded. 
+
+\mbox{\Hypertarget{group__core__game__loop_gadffa4aa993db001bdee35fbce31dc00b}\label{group__core__game__loop_gadffa4aa993db001bdee35fbce31dc00b}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!player\+\_\+deal\+\_\+damage@{player\+\_\+deal\+\_\+damage}}
+\index{player\+\_\+deal\+\_\+damage@{player\+\_\+deal\+\_\+damage}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{player\+\_\+deal\+\_\+damage()}{player\_deal\_damage()}}
+{\footnotesize\ttfamily void player\+\_\+deal\+\_\+damage (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{player,  }\item[{uint16\+\_\+t}]{damage }\end{DoxyParamCaption})}
+
+
+
+Deals damage one of the players. If the player doesn\textquotesingle{}t have enough HP to take the hit, \hyperlink{group__core__game__loop_ga549153b90f3cb4e43291079eb5d893bf}{explode\+\_\+player(uint8\+\_\+t player)} is called and the game ends. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The number of the player about to be damaged \\
+\hline
+{\em damage} & The amount of damage to be taken by the player, measured in pixels \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_gadffa4aa993db001bdee35fbce31dc00b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927}\label{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!player\+\_\+shoot@{player\+\_\+shoot}}
+\index{player\+\_\+shoot@{player\+\_\+shoot}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{player\+\_\+shoot()}{player\_shoot()}}
+{\footnotesize\ttfamily void player\+\_\+shoot (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+Spawns a projectile in front of p, with a given velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player that wants to shoot \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__core__game__loop_ga79bddd8b336f6be116bfa658dd949e2e}\label{group__core__game__loop_ga79bddd8b336f6be116bfa658dd949e2e}} 
+\index{core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}!shooting@{shooting}}
+\index{shooting@{shooting}!core\+\_\+game\+\_\+loop@{core\+\_\+game\+\_\+loop}}
+\subsubsection{\texorpdfstring{shooting()}{shooting()}}
+{\footnotesize\ttfamily void shooting (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+The high-\/level shooting function. 
+
+For each player it checks if the shooting conditions are met, and if so, calls \hyperlink{group__core__game__loop_ga7ffe05c55466ca7e6c94b73b63c22927}{player\+\_\+shoot(player $\ast$p)} Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__core__game__loop_ga79bddd8b336f6be116bfa658dd949e2e_cgraph}
+\end{center}
+\end{figure}

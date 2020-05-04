@@ -1,0 +1,37 @@
+\hypertarget{structgravity__object}{}\section{gravity\+\_\+object Struct Reference}
+\label{structgravity__object}\index{gravity\+\_\+object@{gravity\+\_\+object}}
+
+
+Struct that contains the position and velocity of an object.  
+
+
+
+
+{\ttfamily \#include $<$gravity.\+h$>$}
+
+
+
+Collaboration diagram for gravity\+\_\+object\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structgravity__object__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structgravity__object_a55d093fd989c09df2b1a0516b8828d31}\label{structgravity__object_a55d093fd989c09df2b1a0516b8828d31}} 
+\hyperlink{structvector2}{vector2} \hyperlink{structgravity__object_a55d093fd989c09df2b1a0516b8828d31}{position}
+\begin{DoxyCompactList}\small\item\em The position of an object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structgravity__object_ab38e0d342e3fc457159742966beadd5d}\label{structgravity__object_ab38e0d342e3fc457159742966beadd5d}} 
+\hyperlink{structvector2}{vector2} \hyperlink{structgravity__object_ab38e0d342e3fc457159742966beadd5d}{velocity}
+\begin{DoxyCompactList}\small\item\em The velocity of an object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that contains the position and velocity of an object. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+gravity.\+h\end{DoxyCompactItemize}

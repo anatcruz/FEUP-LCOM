@@ -1,0 +1,33 @@
+\hypertarget{structres}{}\section{res Struct Reference}
+\label{structres}\index{res@{res}}
+
+
+{\ttfamily \#include $<$teresa\+\_\+debug.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{structres_ac51334f57ef8b81c0629c9421798c344}{m}
+\item 
+float \hyperlink{structres_a83fc1af92e29717b4513d121b0c72c7d}{b}
+\end{DoxyCompactItemize}
+
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structres_a83fc1af92e29717b4513d121b0c72c7d}\label{structres_a83fc1af92e29717b4513d121b0c72c7d}} 
+\index{res@{res}!b@{b}}
+\index{b@{b}!res@{res}}
+\subsubsection{\texorpdfstring{b}{b}}
+{\footnotesize\ttfamily float b}
+
+\mbox{\Hypertarget{structres_ac51334f57ef8b81c0629c9421798c344}\label{structres_ac51334f57ef8b81c0629c9421798c344}} 
+\index{res@{res}!m@{m}}
+\index{m@{m}!res@{res}}
+\subsubsection{\texorpdfstring{m}{m}}
+{\footnotesize\ttfamily float m}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{teresa__debug_8h}{teresa\+\_\+debug.\+h}\end{DoxyCompactItemize}

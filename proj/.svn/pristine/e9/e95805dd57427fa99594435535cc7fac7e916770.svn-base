@@ -1,0 +1,13 @@
+#pragma once
+
+#include "vector2.h"
+
+typedef struct gravity_object
+{
+    vector2 position;
+    vector2 velocity;
+} gravity_object;
+
+vector2 gravity_acc_vector(vector2 body_pos, float body_grav_parameter, const gravity_object *obj);
+
+void update_gravity_object(gravity_object *obj, vector2 acc, float delta);

@@ -1,0 +1,197 @@
+#include "Menu.h"
+#include "video_card.h"
+#include "core_game_settings.h"
+#include "core_game_loop.h"
+#include <lcom/lab5.h>
+#include <lcom/xpm.h>
+#include "playbutton.xpm"
+#include "helpbutton.xpm"
+#include "optionsbutton.xpm"
+#include "exitbutton.xpm"
+#include "title.xpm"
+#include "mouserb.xpm"
+#include "mouselb.xpm"
+#include "mouse.xpm"
+#include "leftarrow.xpm"
+#include "rightarrow.xpm"
+#include "spacebar.xpm"
+#include "right.xpm"
+#include "up.xpm"
+#include "left.xpm"
+#include "player1.xpm"
+#include "player2.xpm"
+#include "move.xpm"
+#include "shoot.xpm"
+#include "accelerate.xpm"
+#include "back.xpm"
+
+
+extern xpm_image_t nebula_background_img;
+static xpm_image_t playbutton_img;
+static xpm_image_t helpbutton_img;
+static xpm_image_t optionsbutton_img;
+static xpm_image_t exitbutton_img;
+static xpm_image_t title_img;
+static xpm_image_t mouserb_img;
+static xpm_image_t mouselb_img;
+static xpm_image_t mouse_img;
+static xpm_image_t leftarrow_img;
+static xpm_image_t rightarrow_img;
+static xpm_image_t spacebar_img;
+static xpm_image_t right_img;
+static xpm_image_t up_img;
+static xpm_image_t left_img;
+static xpm_image_t player1_img;
+static xpm_image_t player2_img;    
+static xpm_image_t move_img;
+static xpm_image_t shoot_img;
+static xpm_image_t accelerate_img;
+static xpm_image_t back_img;                                                   
+
+void load_xpm_menu() {
+  enum xpm_image_type type = XPM_8_8_8_8;
+
+  if (playbutton_img.bytes == NULL) {
+    xpm_load(playbutton_xpm, type, &playbutton_img);
+  }
+
+  if (helpbutton_img.bytes == NULL) {
+    xpm_load(helpbutton_xpm, type, &helpbutton_img);
+  }
+
+  if (optionsbutton_img.bytes == NULL) {
+    xpm_load(optionsbutton_xpm, type, &optionsbutton_img);
+  }
+
+  if (exitbutton_img.bytes == NULL) {
+    xpm_load(exitbutton_xpm, type, &exitbutton_img);
+  }
+
+  if (title_img.bytes == NULL) {
+    xpm_load(title_xpm, type, &title_img);
+  }
+
+  if (mouserb_img.bytes == NULL) {
+    xpm_load(mouserb_xpm, type, &mouserb_img);
+  }
+
+  if (mouselb_img.bytes == NULL) {
+    xpm_load(mouselb_xpm, type, &mouselb_img);
+  }
+
+  if (mouse_img.bytes == NULL) {
+    xpm_load(mouse_xpm, type, &mouse_img);
+  }
+
+  if (leftarrow_img.bytes == NULL) {
+    xpm_load(leftarrow_xpm, type, &leftarrow_img);
+  }
+
+  if (rightarrow_img.bytes == NULL) {
+    xpm_load(rightarrow_xpm, type, &rightarrow_img);
+  }
+
+  if (spacebar_img.bytes == NULL) {
+    xpm_load(spacebar_xpm, type, &spacebar_img);
+  }
+
+  if (right_img.bytes == NULL) {
+    xpm_load(right_xpm, type, &right_img);
+  }
+
+  if (up_img.bytes == NULL) {
+    xpm_load(up_xpm, type, &up_img);
+  }
+  
+  if (left_img.bytes == NULL) {
+    xpm_load(left_xpm, type, &left_img);
+  }
+
+  if (player1_img.bytes == NULL) {
+    xpm_load(player1_xpm, type, &player1_img);
+  }
+
+  if (player2_img.bytes == NULL) {
+    xpm_load(player2_xpm, type, &player2_img);
+  }
+
+  if (shoot_img.bytes == NULL) {
+    xpm_load(shoot_xpm, type, &shoot_img);
+  }
+
+  if (move_img.bytes == NULL) {
+    xpm_load(move_xpm, type, &move_img);
+  }
+
+  if (accelerate_img.bytes == NULL) {
+    xpm_load(accelerate_xpm, type, &accelerate_img);
+  }
+
+  if (back_img.bytes == NULL) {
+    xpm_load(back_xpm, type, &back_img);
+  }
+}
+
+
+void drawbutton(uint8_t *base_ptr, uint16_t x, uint16_t y, uint16_t len_x, uint16_t len_y, uint32_t color){
+  uint16_t stop_x = x + len_x;
+  uint16_t stop_y = y + len_y;
+
+  for(; x < stop_x; x++){
+    set_pixel(get_buffer_base_ptr(),x,y,-1);
+  }
+  
+  for(; x < stop_x; x++){
+    set_pixel(get_buffer_base_ptr(),x,stop_y,-1);
+  }
+  
+  for(; y < stop_y; y++){
+    set_pixel(get_buffer_base_ptr(),x,y,-1);
+  }
+
+  for(; y < stop_y; y++){
+    set_pixel(get_buffer_base_ptr(),stop_x,y,-1);
+  }
+}
+
+void drawMainMenu(){
+
+  load_xpms();
+  load_xpm_menu();
+  set_xpm_image(get_buffer_base_ptr(), 0, 0, nebula_background_img);
+  //drawbutton(get_buffer_base_ptr(),500,250,150,100,0xb2b2b2);
+  draw_transparent_image(get_buffer_base_ptr(),300,100,title_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),500,250,playbutton_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),500,350,helpbutton_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),500,450,optionsbutton_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),1000,495,exitbutton_img,true);
+}
+
+void drawHelpMenu(){
+  
+  load_xpms();
+  load_xpm_menu();
+  set_xpm_image(get_buffer_base_ptr(), 0, 0, nebula_background_img);
+  draw_transparent_image(get_buffer_base_ptr(),500,40,helpbutton_img,true);
+  
+  draw_transparent_image(get_buffer_base_ptr(),100,60,player1_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),850,60,player2_img,true);
+  
+  draw_transparent_image(get_buffer_base_ptr(),480,170,accelerate_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),510,310,move_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),515,450,shoot_img,true);
+  
+  draw_transparent_image(get_buffer_base_ptr(),870,160,mouserb_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),873,300,mouse_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),819,320,leftarrow_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),950,320,rightarrow_img,true);
+  draw_transparent_image(get_buffer_base_ptr(),873,440,mouselb_img,true);
+
+  set_xpm_image(get_buffer_base_ptr(),140,170,up_img);
+  set_xpm_image(get_buffer_base_ptr(),200,300,right_img);
+  set_xpm_image(get_buffer_base_ptr(),90,300,left_img);
+  set_xpm_image(get_buffer_base_ptr(),100,469,spacebar_img);
+
+  draw_transparent_image(get_buffer_base_ptr(),1000,500,back_img,true);
+  
+}

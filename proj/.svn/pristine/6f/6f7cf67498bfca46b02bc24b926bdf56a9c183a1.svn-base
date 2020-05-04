@@ -1,0 +1,71 @@
+\hypertarget{group__circle}{}\section{circle}
+\label{group__circle}\index{circle@{circle}}
+
+
+Circle drawing and collision-\/checking functions.  
+
+
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__circle_gaf097cd6cfd9dde8acf534b2c2e1dbabd}{local\+\_\+pixel} (uint16\+\_\+t x\+\_\+pixel, uint16\+\_\+t y\+\_\+pixel, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t r)
+\begin{DoxyCompactList}\small\item\em Checks whether or not a given point is inside a circle. \end{DoxyCompactList}\item 
+void \hyperlink{group__circle_gad0932d378de29bbdb27306adf7927591}{draw\+\_\+circle} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t r, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a circle on the given buffer with the given center, radius and color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Circle drawing and collision-\/checking functions. 
+
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__circle_gad0932d378de29bbdb27306adf7927591}\label{group__circle_gad0932d378de29bbdb27306adf7927591}} 
+\index{circle@{circle}!draw\+\_\+circle@{draw\+\_\+circle}}
+\index{draw\+\_\+circle@{draw\+\_\+circle}!circle@{circle}}
+\subsubsection{\texorpdfstring{draw\+\_\+circle()}{draw\_circle()}}
+{\footnotesize\ttfamily void draw\+\_\+circle (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint16\+\_\+t}]{r,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+
+
+Draws a circle on the given buffer with the given center, radius and color. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+{\em x1} & The x coordinate of the center of the circle \\
+\hline
+{\em y1} & The y coordinate of the center of the circle \\
+\hline
+{\em r} & The radius of the circle \\
+\hline
+{\em color} & The color of the circle \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__circle_gaf097cd6cfd9dde8acf534b2c2e1dbabd}\label{group__circle_gaf097cd6cfd9dde8acf534b2c2e1dbabd}} 
+\index{circle@{circle}!local\+\_\+pixel@{local\+\_\+pixel}}
+\index{local\+\_\+pixel@{local\+\_\+pixel}!circle@{circle}}
+\subsubsection{\texorpdfstring{local\+\_\+pixel()}{local\_pixel()}}
+{\footnotesize\ttfamily bool local\+\_\+pixel (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x\+\_\+pixel,  }\item[{uint16\+\_\+t}]{y\+\_\+pixel,  }\item[{uint16\+\_\+t}]{x1,  }\item[{uint16\+\_\+t}]{y1,  }\item[{uint16\+\_\+t}]{r }\end{DoxyParamCaption})}
+
+
+
+Checks whether or not a given point is inside a circle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x\+\_\+pixel} & The x coordinate of the point to be checked \\
+\hline
+{\em y\+\_\+pixel} & The y coordinate of the point to be checked \\
+\hline
+{\em x1} & The x coordinate of the center of the circle \\
+\hline
+{\em y1} & The y coordinate of the center of the circle \\
+\hline
+{\em r} & The radius of the circle\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the pixel is inside of the circle, otherwise false 
+\end{DoxyReturn}

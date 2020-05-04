@@ -1,0 +1,153 @@
+#include "core_game_loop.h"
+
+#include <stdio.h>
+#include <math.h>
+#include <stdio.h>
+
+#include "video_card.h"
+#include "kbc.h"
+#include "keyboard.h"
+#include "timer.h"
+#include "vector2.h"
+#include "gravity.h"
+#include "keyboard.h"
+#include "mouse.h"
+#include "player.h"
+#include "projectiles.h"
+
+#define BREAK_ESC_KEY 0x81
+#define DELTA_T 0.03333333333
+
+static vector2  screen_center;
+static uint8_t *double_buffer;
+
+void gravity_step() {
+  vector2 p1_acc = gravity_acc_vector(screen_center, 4000000, &(get_player(1)->state));
+
+  update_gravity_object(&(get_player(1)->state), p1_acc, DELTA_T);
+
+  get_triangle(get_player(1));
+
+  vector2 p2_acc; p2_acc.x=0; p2_acc.y=0;//gravity_acc_vector(screen_center, 4000000, &(get_player(2)->state));
+  
+  update_gravity_object(&(get_player(2)->state), p2_acc, DELTA_T);
+
+  get_triangle(get_player(2));
+
+  projectile * proj_array = get_proj_array();
+  uint8_t n_projectiles = get_n_projectiles();
+
+  for (uint8_t i = 0; i < n_projectiles; i++) {
+
+    if (proj_array[i].active) {
+      vector2 proj_acc = gravity_acc_vector(screen_center, 4000000, &(proj_array[i].grav));
+      
+      update_gravity_object(&(proj_array[i].grav), proj_acc, DELTA_T);
+    }
+  }
+}
+
+void shooting() {
+
+}
+
+void collision() {
+
+}
+
+void draw() {
+  memset(double_buffer, 0, get_hres() * get_vres() * get_bytes_per_pixel());
+  draw_projectiles(double_buffer);
+  draw_players(double_buffer);
+  memcpy(get_buffer_base_ptr(), double_buffer, get_hres() * get_vres() * get_bytes_per_pixel());
+}
+
+void game_loop() {
+  update_players_headings();
+  gravity_step();
+  shooting();
+  collision();
+  draw();
+}
+
+void core_game_loop() {
+  ///////////////////////
+  //Driver initialization
+  if (keyboard_ih_subscribe() != 0) return;
+  if (timer_ih_subscribe()    != 0) return;
+  //if (mouse_ih_subscribe()    != 0) return;
+
+  int r, ipc_status; // Some variables related to the IH loop
+  message msg;
+
+  keyboard_packet k_packet;
+  // mouse_packet    m_packet;
+
+  double_buffer = (uint8_t *)malloc(get_hres() * get_vres() * get_bytes_per_pixel());
+
+  screen_center.x = get_hres() / 2;
+  screen_center.y = get_vres() / 2;
+  ///////////////////////
+  //Game-related stuff initialization
+
+  get_player(1)->state.position.x = 400;
+  get_player(1)->state.position.y = 30;
+  get_player(1)->state.velocity.x = 45;
+  get_player(1)->state.velocity.y = -10;
+  get_player(1)->alive            = true;
+
+  get_player(2)->state.position.x = get_hres()/2;
+  get_player(2)->state.position.y = get_vres()/2;
+
+  projectile_alloc(10);
+  ///////////////////////
+  //The IH loop itself
+  bool esc_key_pressed = false;
+  while (!esc_key_pressed)
+  { /*You may want to use a different condition*/ /*Get a request message.*/
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0)
+    {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status))
+    { /*received notification*/
+      //printf("HI\n");
+      switch (_ENDPOINT_P(msg.m_source))
+      {
+      case HARDWARE: /*hardware interrupt notification*/
+        if (msg.m_notify.interrupts & KEYBOARD_MASK)
+        {     /*subscribed interrupt*/
+          kbc_ih();
+          if (keyboard_ih2(&k_packet)) {
+            handle_player1_input(k_packet);
+
+            if ((k_packet.n_bytes == 1) && (k_packet.bytes[0] == BREAK_ESC_KEY)) {
+              esc_key_pressed = true;
+            }
+          }
+        }
+
+        if (msg.m_notify.interrupts & TIMER_MASK)
+        {     /*subscribed interrupt*/
+          timer_int_handler();
+          if (timer_get_counter() % 2 == 0) {
+            game_loop();
+          }
+        }
+
+        break;
+      default:
+        break; /*no other notifications expected: do nothing*/
+      }
+    }
+    else
+    { /*received a standard message, not a notification*/ /*no standard messages expected: do nothing*/
+    } 
+  }
+  ///////////////////////
+  //Driver unsubs
+  if (keyboard_ih_unsubscribe() != 0) return;
+  if (timer_ih_unsubscribe()    != 0) return;
+  //if (mouse_ih_unsubscribe()    != 0) return;
+}

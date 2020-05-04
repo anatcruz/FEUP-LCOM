@@ -1,0 +1,37 @@
+\hypertarget{triangle_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/triangle.c File Reference}
+\label{triangle_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/triangle.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/triangle.\+c}}
+{\ttfamily \#include \char`\"{}triangle.\+h\char`\"{}}\newline
+Include dependency graph for triangle.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{triangle_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__triangle_gaa849ba110cf7f4a6199c4a728b0084f1}{check\+\_\+pixel} (float x\+\_\+pixel, float y\+\_\+pixel, float x1, float y1, float x2, float y2, float x3, float y3)
+\begin{DoxyCompactList}\small\item\em Checks whether or not a given point is inside a triangle. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{triangle_8c_a81d593af1d8442c360cfb1aa6e19c46a}{give\+\_\+max} (int16\+\_\+t x1, int16\+\_\+t x2, int16\+\_\+t x3)
+\item 
+int16\+\_\+t \hyperlink{triangle_8c_a65f9c241623e3fc1fd20df1ef9b14307}{give\+\_\+min} (int16\+\_\+t x1, int16\+\_\+t x2, int16\+\_\+t x3)
+\item 
+void \hyperlink{group__triangle_ga7debe2af7dc5ecd4b384f7c1b254c38c}{triangle\+\_\+draw} (uint8\+\_\+t $\ast$base\+\_\+ptr, int16\+\_\+t x1, int16\+\_\+t y1, int16\+\_\+t x2, int16\+\_\+t y2, int16\+\_\+t x3, int16\+\_\+t y3, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a triangle on the given buffer with the given vertices and color. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{triangle_8c_a81d593af1d8442c360cfb1aa6e19c46a}\label{triangle_8c_a81d593af1d8442c360cfb1aa6e19c46a}} 
+\index{triangle.\+c@{triangle.\+c}!give\+\_\+max@{give\+\_\+max}}
+\index{give\+\_\+max@{give\+\_\+max}!triangle.\+c@{triangle.\+c}}
+\subsubsection{\texorpdfstring{give\+\_\+max()}{give\_max()}}
+{\footnotesize\ttfamily int16\+\_\+t give\+\_\+max (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x1,  }\item[{int16\+\_\+t}]{x2,  }\item[{int16\+\_\+t}]{x3 }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{triangle_8c_a65f9c241623e3fc1fd20df1ef9b14307}\label{triangle_8c_a65f9c241623e3fc1fd20df1ef9b14307}} 
+\index{triangle.\+c@{triangle.\+c}!give\+\_\+min@{give\+\_\+min}}
+\index{give\+\_\+min@{give\+\_\+min}!triangle.\+c@{triangle.\+c}}
+\subsubsection{\texorpdfstring{give\+\_\+min()}{give\_min()}}
+{\footnotesize\ttfamily int16\+\_\+t give\+\_\+min (\begin{DoxyParamCaption}\item[{int16\+\_\+t}]{x1,  }\item[{int16\+\_\+t}]{x2,  }\item[{int16\+\_\+t}]{x3 }\end{DoxyParamCaption})}
+

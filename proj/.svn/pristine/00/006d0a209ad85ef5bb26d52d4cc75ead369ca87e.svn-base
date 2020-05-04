@@ -1,0 +1,52 @@
+\hypertarget{structammo}{}\section{ammo Struct Reference}
+\label{structammo}\index{ammo@{ammo}}
+
+
+Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets.  
+
+
+
+
+{\ttfamily \#include $<$ammo.\+h$>$}
+
+
+
+Collaboration diagram for ammo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structammo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structammo_a0ad521a11f45a9309c1549873d5ed8b3}\label{structammo_a0ad521a11f45a9309c1549873d5ed8b3}} 
+\hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{structammo_a0ad521a11f45a9309c1549873d5ed8b3}{grav}
+\begin{DoxyCompactList}\small\item\em The position and velocity of the ammo. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_a03c996f9fcf0e10baeb3e700be0c409a}\label{structammo_a03c996f9fcf0e10baeb3e700be0c409a}} 
+bool \hyperlink{structammo_a03c996f9fcf0e10baeb3e700be0c409a}{active}
+\begin{DoxyCompactList}\small\item\em You can think of this as whether or not the ammo exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_a5050a760c11da521cd4aee6336f6529f}\label{structammo_a5050a760c11da521cd4aee6336f6529f}} 
+float \hyperlink{structammo_a5050a760c11da521cd4aee6336f6529f}{radius}
+\begin{DoxyCompactList}\small\item\em The radius of the outer circle. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}\label{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}} 
+float \hyperlink{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}{inner\+\_\+radius}
+\begin{DoxyCompactList}\small\item\em The radius of the inner circle (for rendering purposes) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}\label{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}} 
+uint32\+\_\+t \hyperlink{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}{color}
+\begin{DoxyCompactList}\small\item\em The color of the ammo (gold, silver or bronze) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_ae59c9b7ba560b778d5fe7b70de5abace}\label{structammo_ae59c9b7ba560b778d5fe7b70de5abace}} 
+uint32\+\_\+t \hyperlink{structammo_ae59c9b7ba560b778d5fe7b70de5abace}{edge\+\_\+color}
+\begin{DoxyCompactList}\small\item\em The color of the edge of the ammo (darker than the main color) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{structammo_a76fcb1d819bf5074623ac90bfab0abf9}\label{structammo_a76fcb1d819bf5074623ac90bfab0abf9}} 
+uint8\+\_\+t \hyperlink{structammo_a76fcb1d819bf5074623ac90bfab0abf9}{n\+\_\+bullets}
+\begin{DoxyCompactList}\small\item\em The number of bullets this ammo gives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets. 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+ammo.\+h\end{DoxyCompactItemize}

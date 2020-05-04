@@ -1,0 +1,392 @@
+\hypertarget{group__player}{}\section{player}
+\label{group__player}\index{player@{player}}
+
+
+Player-\/related functions.  
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structplayer}{player}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{group__player_gaa6441831ca40c537df57bf5b100fe713}{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}~0x4b
+\item 
+\#define \hyperlink{group__player_ga9c277826f74bdfa51a6d700e375d8bd2}{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}~0x4d
+\item 
+\#define \hyperlink{group__player_ga4c048fa9c31af5ad7cec35c5e4d0e806}{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}~0x48
+\item 
+\#define \hyperlink{group__player_ga489741c78d117de7cbc8544cec35a4de}{S\+P\+A\+C\+E\+B\+A\+R\+\_\+M}~0x39
+\item 
+\#define \hyperlink{group__player_ga777380ce149416afb395315a19273a7e}{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}~0xcb
+\item 
+\#define \hyperlink{group__player_ga6f2ca85f4bfc04c397b6102fef176a54}{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}~0xcd
+\item 
+\#define \hyperlink{group__player_ga4f3122df972204e9abdee036dc0196fd}{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}~0xc8
+\item 
+\#define \hyperlink{group__player_gae4c8da10f184b1d26ee3797d744512b8}{S\+P\+A\+C\+E\+B\+A\+R\+\_\+B}~0xb9
+\item 
+\#define \hyperlink{group__player_ga57b8aa2e404b5fb79a64f44ce8c071d8}{D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT}~20
+\item 
+\#define \hyperlink{group__player_ga1f5d790ef3cd6eba2604b90705a1eb6b}{A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET}~2.\+5
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{structplayer}{player} \hyperlink{group__player_gaf40a611aff74b489090a3f7f5bedc72d}{player}
+\begin{DoxyCompactList}\small\item\em Struct that represents one of our game\textquotesingle{}s players. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__player_gaee1b03a13fbb3fe40a1d0f4ba9c0392b}{get\+\_\+triangle} (\hyperlink{structplayer}{player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em It computes the player\textquotesingle{}s triangle\textquotesingle{}s vertices (\hyperlink{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}{player.\+p1x}, \hyperlink{structplayer_a7fa638c52e431ce5053b8dfcc787c778}{player.\+p1y}, \hyperlink{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}{player.\+p2x}, etc.), given the player\textquotesingle{}s position and orientation. \end{DoxyCompactList}\item 
+\hyperlink{structplayer}{player} $\ast$ \hyperlink{group__player_gab297abc01f8234e00c40e1a2aa9b76dd}{get\+\_\+player} (uint8\+\_\+t \hyperlink{structplayer}{player})
+\item 
+void \hyperlink{group__player_ga0380e53567fbcd1f4944881c14c1ea26}{update\+\_\+players\+\_\+headings} ()
+\begin{DoxyCompactList}\small\item\em Updates the players\textquotesingle{} orientations with the given \hyperlink{structplayer_a54480a9ce1ccb383229691dd88d55103}{player.\+input\+\_\+direction\+\_\+delta}. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_gaba5c1d6b1b36aefd3412c607540f274e}{handle\+\_\+player1\+\_\+input} (\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} p1)
+\begin{DoxyCompactList}\small\item\em Updates player 1\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_ga34127316334c60ca280028fbaa2a4c44}{handle\+\_\+player2\+\_\+input} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p2)
+\begin{DoxyCompactList}\small\item\em Updates player 2\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_gae147e3272cf07f0fce5c511256eb7d04}{draw\+\_\+players} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the players (that are alive) on the given buffer. \end{DoxyCompactList}\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__player_ga42e681c6fb77fee7d6cab5a84759d796}{get\+\_\+player\+\_\+normalized\+\_\+heading} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_gadc4c7fcd8773da2ab9aa8b3329753c5f}{players\+\_\+colide} ()
+\item 
+bool \hyperlink{group__player_ga24b1f0fee3e9f443541b9dd9ad9fe8b4}{player\+\_\+touches\+\_\+circle} (\hyperlink{structplayer}{player} $\ast$p, uint16\+\_\+t circle\+\_\+x, uint16\+\_\+t circle\+\_\+y, uint16\+\_\+t radius)
+\item 
+bool \hyperlink{group__player_ga431d0f0637a43f73720bb50437bba5a3}{player\+\_\+hits\+\_\+top} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_ga08801e3ed5f697e05464b59448b55161}{player\+\_\+hits\+\_\+bottom} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_ga48320119b999429e803eeeea71f826e6}{player\+\_\+hits\+\_\+right} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_gafbba6449a23607a36fed909033f3c559}{player\+\_\+hits\+\_\+left} (\hyperlink{structplayer}{player} $\ast$p)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Player-\/related functions. 
+
+You may be interested in how two players with different input devices (keyboard and mouse) can be represented by the same struct. We have a have an abstraction layer in the struct player (\hyperlink{structplayer_a26eb3b2626daf93d534a3504a6fc663b}{player.\+input\+\_\+accelerate} , \hyperlink{structplayer_a0ac2a27628c9f628fe4f01e522845372}{player.\+input\+\_\+shooting} and \hyperlink{structplayer_a54480a9ce1ccb383229691dd88d55103}{player.\+input\+\_\+direction\+\_\+delta}) that gets updated with different functions (\hyperlink{group__player_gaba5c1d6b1b36aefd3412c607540f274e}{handle\+\_\+player1\+\_\+input(keyboard\+\_\+packet p1)} and \hyperlink{group__player_ga34127316334c60ca280028fbaa2a4c44}{handle\+\_\+player2\+\_\+input(mouse\+\_\+packet p2)}). 
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group__player_ga1f5d790ef3cd6eba2604b90705a1eb6b}\label{group__player_ga1f5d790ef3cd6eba2604b90705a1eb6b}} 
+\index{player@{player}!A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET@{A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET}}
+\index{A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET@{A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET}!player@{player}}
+\subsubsection{\texorpdfstring{A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET}{ANGLE\_OFFSET}}
+{\footnotesize\ttfamily \#define A\+N\+G\+L\+E\+\_\+\+O\+F\+F\+S\+ET~2.\+5}
+
+\mbox{\Hypertarget{group__player_ga57b8aa2e404b5fb79a64f44ce8c071d8}\label{group__player_ga57b8aa2e404b5fb79a64f44ce8c071d8}} 
+\index{player@{player}!D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT@{D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT}}
+\index{D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT@{D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT}!player@{player}}
+\subsubsection{\texorpdfstring{D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT}{DIST\_FROM\_MIDDLE\_POINT}}
+{\footnotesize\ttfamily \#define D\+I\+S\+T\+\_\+\+F\+R\+O\+M\+\_\+\+M\+I\+D\+D\+L\+E\+\_\+\+P\+O\+I\+NT~20}
+
+\mbox{\Hypertarget{group__player_ga777380ce149416afb395315a19273a7e}\label{group__player_ga777380ce149416afb395315a19273a7e}} 
+\index{player@{player}!L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}}
+\index{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}!player@{player}}
+\subsubsection{\texorpdfstring{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}{LEFT\_BUTTON\_B}}
+{\footnotesize\ttfamily \#define L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B~0xcb}
+
+\mbox{\Hypertarget{group__player_gaa6441831ca40c537df57bf5b100fe713}\label{group__player_gaa6441831ca40c537df57bf5b100fe713}} 
+\index{player@{player}!L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}}
+\index{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}!player@{player}}
+\subsubsection{\texorpdfstring{L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}{LEFT\_BUTTON\_M}}
+{\footnotesize\ttfamily \#define L\+E\+F\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M~0x4b}
+
+\mbox{\Hypertarget{group__player_ga6f2ca85f4bfc04c397b6102fef176a54}\label{group__player_ga6f2ca85f4bfc04c397b6102fef176a54}} 
+\index{player@{player}!R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}}
+\index{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}!player@{player}}
+\subsubsection{\texorpdfstring{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}{RIGHT\_BUTTON\_B}}
+{\footnotesize\ttfamily \#define R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B~0xcd}
+
+\mbox{\Hypertarget{group__player_ga9c277826f74bdfa51a6d700e375d8bd2}\label{group__player_ga9c277826f74bdfa51a6d700e375d8bd2}} 
+\index{player@{player}!R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}}
+\index{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}!player@{player}}
+\subsubsection{\texorpdfstring{R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}{RIGHT\_BUTTON\_M}}
+{\footnotesize\ttfamily \#define R\+I\+G\+H\+T\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M~0x4d}
+
+\mbox{\Hypertarget{group__player_gae4c8da10f184b1d26ee3797d744512b8}\label{group__player_gae4c8da10f184b1d26ee3797d744512b8}} 
+\index{player@{player}!S\+P\+A\+C\+E\+B\+A\+R\+\_\+B@{S\+P\+A\+C\+E\+B\+A\+R\+\_\+B}}
+\index{S\+P\+A\+C\+E\+B\+A\+R\+\_\+B@{S\+P\+A\+C\+E\+B\+A\+R\+\_\+B}!player@{player}}
+\subsubsection{\texorpdfstring{S\+P\+A\+C\+E\+B\+A\+R\+\_\+B}{SPACEBAR\_B}}
+{\footnotesize\ttfamily \#define S\+P\+A\+C\+E\+B\+A\+R\+\_\+B~0xb9}
+
+\mbox{\Hypertarget{group__player_ga489741c78d117de7cbc8544cec35a4de}\label{group__player_ga489741c78d117de7cbc8544cec35a4de}} 
+\index{player@{player}!S\+P\+A\+C\+E\+B\+A\+R\+\_\+M@{S\+P\+A\+C\+E\+B\+A\+R\+\_\+M}}
+\index{S\+P\+A\+C\+E\+B\+A\+R\+\_\+M@{S\+P\+A\+C\+E\+B\+A\+R\+\_\+M}!player@{player}}
+\subsubsection{\texorpdfstring{S\+P\+A\+C\+E\+B\+A\+R\+\_\+M}{SPACEBAR\_M}}
+{\footnotesize\ttfamily \#define S\+P\+A\+C\+E\+B\+A\+R\+\_\+M~0x39}
+
+\mbox{\Hypertarget{group__player_ga4f3122df972204e9abdee036dc0196fd}\label{group__player_ga4f3122df972204e9abdee036dc0196fd}} 
+\index{player@{player}!U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}}
+\index{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B@{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}!player@{player}}
+\subsubsection{\texorpdfstring{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B}{UP\_BUTTON\_B}}
+{\footnotesize\ttfamily \#define U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+B~0xc8}
+
+\mbox{\Hypertarget{group__player_ga4c048fa9c31af5ad7cec35c5e4d0e806}\label{group__player_ga4c048fa9c31af5ad7cec35c5e4d0e806}} 
+\index{player@{player}!U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}}
+\index{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M@{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}!player@{player}}
+\subsubsection{\texorpdfstring{U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M}{UP\_BUTTON\_M}}
+{\footnotesize\ttfamily \#define U\+P\+\_\+\+B\+U\+T\+T\+O\+N\+\_\+M~0x48}
+
+
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{group__player_gaf40a611aff74b489090a3f7f5bedc72d}\label{group__player_gaf40a611aff74b489090a3f7f5bedc72d}} 
+\index{player@{player}!player@{player}}
+\index{player@{player}!player@{player}}
+\subsubsection{\texorpdfstring{player}{player}}
+{\footnotesize\ttfamily typedef struct \hyperlink{structplayer}{player} \hyperlink{structplayer}{player}}
+
+
+
+Struct that represents one of our game\textquotesingle{}s players. 
+
+The players, in our game, are represented by triangles. The reason the players\textquotesingle{} vertices are stored in the struct is because they necessary, not only for triangle drawing, but also for collision checking. Therefore, for sake of both convenience and efficiency, the players\textquotesingle{} vertices are only computed once per frame and stored in the struct itself. 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{group__player_gae147e3272cf07f0fce5c511256eb7d04}\label{group__player_gae147e3272cf07f0fce5c511256eb7d04}} 
+\index{player@{player}!draw\+\_\+players@{draw\+\_\+players}}
+\index{draw\+\_\+players@{draw\+\_\+players}!player@{player}}
+\subsubsection{\texorpdfstring{draw\+\_\+players()}{draw\_players()}}
+{\footnotesize\ttfamily void draw\+\_\+players (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr }\end{DoxyParamCaption})}
+
+
+
+Draws the players (that are alive) on the given buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em base\+\_\+ptr} & A pointer to a buffer (must be equal in size to the frame buffer) \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__player_gae147e3272cf07f0fce5c511256eb7d04_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_gab297abc01f8234e00c40e1a2aa9b76dd}\label{group__player_gab297abc01f8234e00c40e1a2aa9b76dd}} 
+\index{player@{player}!get\+\_\+player@{get\+\_\+player}}
+\index{get\+\_\+player@{get\+\_\+player}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+player()}{get\_player()}}
+{\footnotesize\ttfamily \hyperlink{structplayer}{player}$\ast$ get\+\_\+player (\begin{DoxyParamCaption}\item[{uint8\+\_\+t}]{player }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & The number of the player (either 1 or 2) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A player pointer 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__player_ga42e681c6fb77fee7d6cab5a84759d796}\label{group__player_ga42e681c6fb77fee7d6cab5a84759d796}} 
+\index{player@{player}!get\+\_\+player\+\_\+normalized\+\_\+heading@{get\+\_\+player\+\_\+normalized\+\_\+heading}}
+\index{get\+\_\+player\+\_\+normalized\+\_\+heading@{get\+\_\+player\+\_\+normalized\+\_\+heading}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+player\+\_\+normalized\+\_\+heading()}{get\_player\_normalized\_heading()}}
+{\footnotesize\ttfamily \hyperlink{structvector2}{vector2} get\+\_\+player\+\_\+normalized\+\_\+heading (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to a player whose heading we want \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The heading as a normalized \hyperlink{structvector2}{vector2} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{group__player_gaee1b03a13fbb3fe40a1d0f4ba9c0392b}\label{group__player_gaee1b03a13fbb3fe40a1d0f4ba9c0392b}} 
+\index{player@{player}!get\+\_\+triangle@{get\+\_\+triangle}}
+\index{get\+\_\+triangle@{get\+\_\+triangle}!player@{player}}
+\subsubsection{\texorpdfstring{get\+\_\+triangle()}{get\_triangle()}}
+{\footnotesize\ttfamily void get\+\_\+triangle (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+
+It computes the player\textquotesingle{}s triangle\textquotesingle{}s vertices (\hyperlink{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}{player.\+p1x}, \hyperlink{structplayer_a7fa638c52e431ce5053b8dfcc787c778}{player.\+p1y}, \hyperlink{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}{player.\+p2x}, etc.), given the player\textquotesingle{}s position and orientation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to he player whose vertices are going to get updated \\
+\hline
+\end{DoxyParams}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=268pt]{group__player_gaee1b03a13fbb3fe40a1d0f4ba9c0392b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_gaba5c1d6b1b36aefd3412c607540f274e}\label{group__player_gaba5c1d6b1b36aefd3412c607540f274e}} 
+\index{player@{player}!handle\+\_\+player1\+\_\+input@{handle\+\_\+player1\+\_\+input}}
+\index{handle\+\_\+player1\+\_\+input@{handle\+\_\+player1\+\_\+input}!player@{player}}
+\subsubsection{\texorpdfstring{handle\+\_\+player1\+\_\+input()}{handle\_player1\_input()}}
+{\footnotesize\ttfamily void handle\+\_\+player1\+\_\+input (\begin{DoxyParamCaption}\item[{\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet}}]{p1 }\end{DoxyParamCaption})}
+
+
+
+Updates player 1\textquotesingle{}s inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p1} & The keyboard packet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__player_ga34127316334c60ca280028fbaa2a4c44}\label{group__player_ga34127316334c60ca280028fbaa2a4c44}} 
+\index{player@{player}!handle\+\_\+player2\+\_\+input@{handle\+\_\+player2\+\_\+input}}
+\index{handle\+\_\+player2\+\_\+input@{handle\+\_\+player2\+\_\+input}!player@{player}}
+\subsubsection{\texorpdfstring{handle\+\_\+player2\+\_\+input()}{handle\_player2\_input()}}
+{\footnotesize\ttfamily void handle\+\_\+player2\+\_\+input (\begin{DoxyParamCaption}\item[{\hyperlink{structmouse__packet}{mouse\+\_\+packet}}]{p2 }\end{DoxyParamCaption})}
+
+
+
+Updates player 2\textquotesingle{}s inputs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p2} & The mouse packet \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{group__player_ga08801e3ed5f697e05464b59448b55161}\label{group__player_ga08801e3ed5f697e05464b59448b55161}} 
+\index{player@{player}!player\+\_\+hits\+\_\+bottom@{player\+\_\+hits\+\_\+bottom}}
+\index{player\+\_\+hits\+\_\+bottom@{player\+\_\+hits\+\_\+bottom}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+hits\+\_\+bottom()}{player\_hits\_bottom()}}
+{\footnotesize\ttfamily bool player\+\_\+hits\+\_\+bottom (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is hitting the bottom of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__player_ga08801e3ed5f697e05464b59448b55161_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_gafbba6449a23607a36fed909033f3c559}\label{group__player_gafbba6449a23607a36fed909033f3c559}} 
+\index{player@{player}!player\+\_\+hits\+\_\+left@{player\+\_\+hits\+\_\+left}}
+\index{player\+\_\+hits\+\_\+left@{player\+\_\+hits\+\_\+left}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+hits\+\_\+left()}{player\_hits\_left()}}
+{\footnotesize\ttfamily bool player\+\_\+hits\+\_\+left (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is hitting the left of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{group__player_gafbba6449a23607a36fed909033f3c559_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_ga48320119b999429e803eeeea71f826e6}\label{group__player_ga48320119b999429e803eeeea71f826e6}} 
+\index{player@{player}!player\+\_\+hits\+\_\+right@{player\+\_\+hits\+\_\+right}}
+\index{player\+\_\+hits\+\_\+right@{player\+\_\+hits\+\_\+right}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+hits\+\_\+right()}{player\_hits\_right()}}
+{\footnotesize\ttfamily bool player\+\_\+hits\+\_\+right (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is hitting the right of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group__player_ga48320119b999429e803eeeea71f826e6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_ga431d0f0637a43f73720bb50437bba5a3}\label{group__player_ga431d0f0637a43f73720bb50437bba5a3}} 
+\index{player@{player}!player\+\_\+hits\+\_\+top@{player\+\_\+hits\+\_\+top}}
+\index{player\+\_\+hits\+\_\+top@{player\+\_\+hits\+\_\+top}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+hits\+\_\+top()}{player\_hits\_top()}}
+{\footnotesize\ttfamily bool player\+\_\+hits\+\_\+top (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player we want to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is hitting the top of the screen, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{group__player_ga431d0f0637a43f73720bb50437bba5a3_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_ga24b1f0fee3e9f443541b9dd9ad9fe8b4}\label{group__player_ga24b1f0fee3e9f443541b9dd9ad9fe8b4}} 
+\index{player@{player}!player\+\_\+touches\+\_\+circle@{player\+\_\+touches\+\_\+circle}}
+\index{player\+\_\+touches\+\_\+circle@{player\+\_\+touches\+\_\+circle}!player@{player}}
+\subsubsection{\texorpdfstring{player\+\_\+touches\+\_\+circle()}{player\_touches\_circle()}}
+{\footnotesize\ttfamily bool player\+\_\+touches\+\_\+circle (\begin{DoxyParamCaption}\item[{\hyperlink{structplayer}{player} $\ast$}]{p,  }\item[{uint16\+\_\+t}]{circle\+\_\+x,  }\item[{uint16\+\_\+t}]{circle\+\_\+y,  }\item[{uint16\+\_\+t}]{radius }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & A pointer to the player we want to check \\
+\hline
+{\em circle\+\_\+x} & The x coordinate of the circle \\
+\hline
+{\em circle\+\_\+y} & The y coordinate of the circle \\
+\hline
+{\em radius} & The radius of the circle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player is touching the circle, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{group__player_ga24b1f0fee3e9f443541b9dd9ad9fe8b4_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_gadc4c7fcd8773da2ab9aa8b3329753c5f}\label{group__player_gadc4c7fcd8773da2ab9aa8b3329753c5f}} 
+\index{player@{player}!players\+\_\+colide@{players\+\_\+colide}}
+\index{players\+\_\+colide@{players\+\_\+colide}!player@{player}}
+\subsubsection{\texorpdfstring{players\+\_\+colide()}{players\_colide()}}
+{\footnotesize\ttfamily bool players\+\_\+colide (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+true if the players are touching each other, otherwise false 
+\end{DoxyReturn}
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{group__player_gadc4c7fcd8773da2ab9aa8b3329753c5f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group__player_ga0380e53567fbcd1f4944881c14c1ea26}\label{group__player_ga0380e53567fbcd1f4944881c14c1ea26}} 
+\index{player@{player}!update\+\_\+players\+\_\+headings@{update\+\_\+players\+\_\+headings}}
+\index{update\+\_\+players\+\_\+headings@{update\+\_\+players\+\_\+headings}!player@{player}}
+\subsubsection{\texorpdfstring{update\+\_\+players\+\_\+headings()}{update\_players\_headings()}}
+{\footnotesize\ttfamily void update\+\_\+players\+\_\+headings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the players\textquotesingle{} orientations with the given \hyperlink{structplayer_a54480a9ce1ccb383229691dd88d55103}{player.\+input\+\_\+direction\+\_\+delta}. 
+

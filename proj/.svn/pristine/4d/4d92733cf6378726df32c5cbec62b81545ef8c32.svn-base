@@ -1,0 +1,118 @@
+\hypertarget{structammo}{}\section{ammo Struct Reference}
+\label{structammo}\index{ammo@{ammo}}
+
+
+Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets.  
+
+
+
+
+{\ttfamily \#include $<$ammo.\+h$>$}
+
+
+
+Collaboration diagram for ammo\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{structammo__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structgravity__object}{gravity\+\_\+object} \hyperlink{structammo_a0ad521a11f45a9309c1549873d5ed8b3}{grav}
+\begin{DoxyCompactList}\small\item\em The position and velocity of the ammo. \end{DoxyCompactList}\item 
+bool \hyperlink{structammo_a03c996f9fcf0e10baeb3e700be0c409a}{active}
+\begin{DoxyCompactList}\small\item\em You can think of this as whether or not the ammo exists. \end{DoxyCompactList}\item 
+float \hyperlink{structammo_a5050a760c11da521cd4aee6336f6529f}{radius}
+\begin{DoxyCompactList}\small\item\em The radius of the outer circle. \end{DoxyCompactList}\item 
+float \hyperlink{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}{inner\+\_\+radius}
+\begin{DoxyCompactList}\small\item\em The radius of the inner circle (for rendering purposes) \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}{color}
+\begin{DoxyCompactList}\small\item\em The color of the ammo (gold, silver or bronze) \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{structammo_ae59c9b7ba560b778d5fe7b70de5abace}{edge\+\_\+color}
+\begin{DoxyCompactList}\small\item\em The color of the edge of the ammo (darker than the main color) \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{structammo_a76fcb1d819bf5074623ac90bfab0abf9}{n\+\_\+bullets}
+\begin{DoxyCompactList}\small\item\em The number of bullets this ammo gives. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Struct that represents one of the ammo \char`\"{}balls\char`\"{} that give you more bullets. 
+
+\subsection{Field Documentation}
+\mbox{\Hypertarget{structammo_a03c996f9fcf0e10baeb3e700be0c409a}\label{structammo_a03c996f9fcf0e10baeb3e700be0c409a}} 
+\index{ammo@{ammo}!active@{active}}
+\index{active@{active}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{active}{active}}
+{\footnotesize\ttfamily bool active}
+
+
+
+You can think of this as whether or not the ammo exists. 
+
+\mbox{\Hypertarget{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}\label{structammo_a66b2ef8398a8bbb0f5816f22a7b138da}} 
+\index{ammo@{ammo}!color@{color}}
+\index{color@{color}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{color}{color}}
+{\footnotesize\ttfamily uint32\+\_\+t color}
+
+
+
+The color of the ammo (gold, silver or bronze) 
+
+\mbox{\Hypertarget{structammo_ae59c9b7ba560b778d5fe7b70de5abace}\label{structammo_ae59c9b7ba560b778d5fe7b70de5abace}} 
+\index{ammo@{ammo}!edge\+\_\+color@{edge\+\_\+color}}
+\index{edge\+\_\+color@{edge\+\_\+color}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{edge\+\_\+color}{edge\_color}}
+{\footnotesize\ttfamily uint32\+\_\+t edge\+\_\+color}
+
+
+
+The color of the edge of the ammo (darker than the main color) 
+
+\mbox{\Hypertarget{structammo_a0ad521a11f45a9309c1549873d5ed8b3}\label{structammo_a0ad521a11f45a9309c1549873d5ed8b3}} 
+\index{ammo@{ammo}!grav@{grav}}
+\index{grav@{grav}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{grav}{grav}}
+{\footnotesize\ttfamily \hyperlink{structgravity__object}{gravity\+\_\+object} grav}
+
+
+
+The position and velocity of the ammo. 
+
+\mbox{\Hypertarget{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}\label{structammo_a1fc579177a47c35c7cb5cf18df4cfbfa}} 
+\index{ammo@{ammo}!inner\+\_\+radius@{inner\+\_\+radius}}
+\index{inner\+\_\+radius@{inner\+\_\+radius}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{inner\+\_\+radius}{inner\_radius}}
+{\footnotesize\ttfamily float inner\+\_\+radius}
+
+
+
+The radius of the inner circle (for rendering purposes) 
+
+\mbox{\Hypertarget{structammo_a76fcb1d819bf5074623ac90bfab0abf9}\label{structammo_a76fcb1d819bf5074623ac90bfab0abf9}} 
+\index{ammo@{ammo}!n\+\_\+bullets@{n\+\_\+bullets}}
+\index{n\+\_\+bullets@{n\+\_\+bullets}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{n\+\_\+bullets}{n\_bullets}}
+{\footnotesize\ttfamily uint8\+\_\+t n\+\_\+bullets}
+
+
+
+The number of bullets this ammo gives. 
+
+\mbox{\Hypertarget{structammo_a5050a760c11da521cd4aee6336f6529f}\label{structammo_a5050a760c11da521cd4aee6336f6529f}} 
+\index{ammo@{ammo}!radius@{radius}}
+\index{radius@{radius}!ammo@{ammo}}
+\subsubsection{\texorpdfstring{radius}{radius}}
+{\footnotesize\ttfamily float radius}
+
+
+
+The radius of the outer circle. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ammo_8h}{ammo.\+h}\end{DoxyCompactItemize}

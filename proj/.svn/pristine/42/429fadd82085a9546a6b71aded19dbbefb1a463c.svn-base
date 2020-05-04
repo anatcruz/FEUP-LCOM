@@ -1,0 +1,4 @@
+<map id="vg_draw_hline" name="vg_draw_hline">
+<area shape="rect" id="node2" href="$group__video__card.html#ga88795d0238c894e7d54c134b69305976" title="Draws a rectangle on the given buffer at the given coordinates with the given lenght and height to th..." alt="" coords="159,5,259,32"/>
+<area shape="rect" id="node3" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="307,5,381,32"/>
+</map>

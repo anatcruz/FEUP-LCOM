@@ -1,0 +1,7 @@
+<map id="draw_ammo" name="draw_ammo">
+<area shape="rect" id="node2" href="$ammo_8c.html#afeab7f4d0245826cf8d0314728091a76" title="draw_1ammo" alt="" coords="147,56,247,83"/>
+<area shape="rect" id="node3" href="$group__circle.html#gad0932d378de29bbdb27306adf7927591" title="Draws a circle on the given buffer with the given center, radius and color. " alt="" coords="320,5,408,32"/>
+<area shape="rect" id="node5" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="485,56,560,83"/>
+<area shape="rect" id="node6" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="295,107,433,133"/>
+<area shape="rect" id="node4" href="$group__circle.html#gaf097cd6cfd9dde8acf534b2c2e1dbabd" title="Checks whether or not a given point is inside a circle. " alt="" coords="481,5,564,32"/>
+</map>

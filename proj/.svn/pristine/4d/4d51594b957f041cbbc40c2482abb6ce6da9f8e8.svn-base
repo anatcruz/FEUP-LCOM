@@ -1,0 +1,113 @@
+\hypertarget{player_8c}{}\section{player.\+c File Reference}
+\label{player_8c}\index{player.\+c@{player.\+c}}
+{\ttfamily \#include \char`\"{}player.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}triangle.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+settings.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}video\+\_\+card.\+h\char`\"{}}\newline
+Include dependency graph for player.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{player_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group__player_gaee1b03a13fbb3fe40a1d0f4ba9c0392b}{get\+\_\+triangle} (\hyperlink{structplayer}{player} $\ast$p)
+\begin{DoxyCompactList}\small\item\em It computes the player\textquotesingle{}s triangle\textquotesingle{}s vertices (\hyperlink{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}{player.\+p1x}, \hyperlink{structplayer_a7fa638c52e431ce5053b8dfcc787c778}{player.\+p1y}, \hyperlink{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}{player.\+p2x}, etc.), given the player\textquotesingle{}s position and orientation. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_ga0380e53567fbcd1f4944881c14c1ea26}{update\+\_\+players\+\_\+headings} ()
+\begin{DoxyCompactList}\small\item\em Updates the players\textquotesingle{} orientations with the given \hyperlink{structplayer_a54480a9ce1ccb383229691dd88d55103}{player.\+input\+\_\+direction\+\_\+delta}. \end{DoxyCompactList}\item 
+\hyperlink{structplayer}{player} $\ast$ \hyperlink{group__player_gab297abc01f8234e00c40e1a2aa9b76dd}{get\+\_\+player} (uint8\+\_\+t \hyperlink{structplayer}{player})
+\item 
+void \hyperlink{group__player_gae147e3272cf07f0fce5c511256eb7d04}{draw\+\_\+players} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the players (that are alive) on the given buffer. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_gaba5c1d6b1b36aefd3412c607540f274e}{handle\+\_\+player1\+\_\+input} (\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} p1)
+\begin{DoxyCompactList}\small\item\em Updates player 1\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+void \hyperlink{group__player_ga34127316334c60ca280028fbaa2a4c44}{handle\+\_\+player2\+\_\+input} (\hyperlink{structmouse__packet}{mouse\+\_\+packet} p2)
+\begin{DoxyCompactList}\small\item\em Updates player 2\textquotesingle{}s inputs. \end{DoxyCompactList}\item 
+\hyperlink{structvector2}{vector2} \hyperlink{group__player_ga42e681c6fb77fee7d6cab5a84759d796}{get\+\_\+player\+\_\+normalized\+\_\+heading} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_gadc4c7fcd8773da2ab9aa8b3329753c5f}{players\+\_\+colide} ()
+\item 
+bool \hyperlink{group__player_ga24b1f0fee3e9f443541b9dd9ad9fe8b4}{player\+\_\+touches\+\_\+circle} (\hyperlink{structplayer}{player} $\ast$p, uint16\+\_\+t circle\+\_\+x, uint16\+\_\+t circle\+\_\+y, uint16\+\_\+t radius)
+\item 
+bool \hyperlink{player_8c_abc67c5a040186f28dd3e6e1dff8f2ccd}{dot\+\_\+hits\+\_\+top} (uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+bool \hyperlink{player_8c_ac81a20483dd62ab70e7b2b9aa60fe2b6}{dot\+\_\+hits\+\_\+bottom} (uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+bool \hyperlink{player_8c_ab7660c5cb0a393337f114bff5cefdf63}{dot\+\_\+hits\+\_\+right} (uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+bool \hyperlink{player_8c_a5d345b75437bbb21b253c312fc6dac93}{dot\+\_\+hits\+\_\+left} (uint16\+\_\+t x, uint16\+\_\+t y)
+\item 
+bool \hyperlink{group__player_ga431d0f0637a43f73720bb50437bba5a3}{player\+\_\+hits\+\_\+top} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_ga08801e3ed5f697e05464b59448b55161}{player\+\_\+hits\+\_\+bottom} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_ga48320119b999429e803eeeea71f826e6}{player\+\_\+hits\+\_\+right} (\hyperlink{structplayer}{player} $\ast$p)
+\item 
+bool \hyperlink{group__player_gafbba6449a23607a36fed909033f3c559}{player\+\_\+hits\+\_\+left} (\hyperlink{structplayer}{player} $\ast$p)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structplayer}{player} \hyperlink{player_8c_a3404c7c4a1c99f6aee0c851c24c5482b}{player1}
+\item 
+\hyperlink{structplayer}{player} \hyperlink{player_8c_a003e923b470ecd7d8358f790df776f10}{player2}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{player_8c_ac81a20483dd62ab70e7b2b9aa60fe2b6}\label{player_8c_ac81a20483dd62ab70e7b2b9aa60fe2b6}} 
+\index{player.\+c@{player.\+c}!dot\+\_\+hits\+\_\+bottom@{dot\+\_\+hits\+\_\+bottom}}
+\index{dot\+\_\+hits\+\_\+bottom@{dot\+\_\+hits\+\_\+bottom}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{dot\+\_\+hits\+\_\+bottom()}{dot\_hits\_bottom()}}
+{\footnotesize\ttfamily bool dot\+\_\+hits\+\_\+bottom (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{player_8c_ac81a20483dd62ab70e7b2b9aa60fe2b6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8c_a5d345b75437bbb21b253c312fc6dac93}\label{player_8c_a5d345b75437bbb21b253c312fc6dac93}} 
+\index{player.\+c@{player.\+c}!dot\+\_\+hits\+\_\+left@{dot\+\_\+hits\+\_\+left}}
+\index{dot\+\_\+hits\+\_\+left@{dot\+\_\+hits\+\_\+left}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{dot\+\_\+hits\+\_\+left()}{dot\_hits\_left()}}
+{\footnotesize\ttfamily bool dot\+\_\+hits\+\_\+left (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{player_8c_ab7660c5cb0a393337f114bff5cefdf63}\label{player_8c_ab7660c5cb0a393337f114bff5cefdf63}} 
+\index{player.\+c@{player.\+c}!dot\+\_\+hits\+\_\+right@{dot\+\_\+hits\+\_\+right}}
+\index{dot\+\_\+hits\+\_\+right@{dot\+\_\+hits\+\_\+right}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{dot\+\_\+hits\+\_\+right()}{dot\_hits\_right()}}
+{\footnotesize\ttfamily bool dot\+\_\+hits\+\_\+right (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{player_8c_ab7660c5cb0a393337f114bff5cefdf63_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{player_8c_abc67c5a040186f28dd3e6e1dff8f2ccd}\label{player_8c_abc67c5a040186f28dd3e6e1dff8f2ccd}} 
+\index{player.\+c@{player.\+c}!dot\+\_\+hits\+\_\+top@{dot\+\_\+hits\+\_\+top}}
+\index{dot\+\_\+hits\+\_\+top@{dot\+\_\+hits\+\_\+top}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{dot\+\_\+hits\+\_\+top()}{dot\_hits\_top()}}
+{\footnotesize\ttfamily bool dot\+\_\+hits\+\_\+top (\begin{DoxyParamCaption}\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{player_8c_a3404c7c4a1c99f6aee0c851c24c5482b}\label{player_8c_a3404c7c4a1c99f6aee0c851c24c5482b}} 
+\index{player.\+c@{player.\+c}!player1@{player1}}
+\index{player1@{player1}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{player1}{player1}}
+{\footnotesize\ttfamily \hyperlink{structplayer}{player} player1}
+
+\mbox{\Hypertarget{player_8c_a003e923b470ecd7d8358f790df776f10}\label{player_8c_a003e923b470ecd7d8358f790df776f10}} 
+\index{player.\+c@{player.\+c}!player2@{player2}}
+\index{player2@{player2}!player.\+c@{player.\+c}}
+\subsubsection{\texorpdfstring{player2}{player2}}
+{\footnotesize\ttfamily \hyperlink{structplayer}{player} player2}
+

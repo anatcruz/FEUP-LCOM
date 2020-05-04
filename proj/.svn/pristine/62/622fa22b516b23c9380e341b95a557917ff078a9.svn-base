@@ -1,0 +1,19 @@
+<map id="core_game_loop.c" name="core_game_loop.c">
+<area shape="rect" id="node2" href="$core__game__loop_8h.html" title="core_game_loop.h" alt="" coords="839,80,967,107"/>
+<area shape="rect" id="node7" href="$core__game__settings_8h.html" title="core_game_settings.h" alt="" coords="827,229,978,256"/>
+<area shape="rect" id="node10" href="$projectiles_8h.html" title="projectiles.h" alt="" coords="327,155,419,181"/>
+<area shape="rect" id="node11" href="$video__card_8h.html" title="video_card.h" alt="" coords="1277,304,1373,331"/>
+<area shape="rect" id="node13" href="$gravity_8h.html" title="gravity.h" alt="" coords="221,229,293,256"/>
+<area shape="rect" id="node14" href="$vector2_8h.html" title="vector2.h" alt="" coords="182,304,258,331"/>
+<area shape="rect" id="node15" href="$keyboard_8h.html" title="keyboard.h" alt="" coords="1573,229,1659,256"/>
+<area shape="rect" id="node16" href="$triangle_8h.html" title="triangle.h" alt="" coords="1192,229,1267,256"/>
+<area shape="rect" id="node17" href="$numbers_8h.html" title="numbers.h" alt="" coords="1336,155,1419,181"/>
+<area shape="rect" id="node18" href="$circle_8h.html" title="circle.h" alt="" coords="1053,229,1117,256"/>
+<area shape="rect" id="node19" href="$player_8h.html" title="player.h" alt="" coords="755,155,823,181"/>
+<area shape="rect" id="node20" href="$kbc_8h.html" title="kbc.h" alt="" coords="1494,229,1549,256"/>
+<area shape="rect" id="node21" href="$utils_8h.html" title="utils.h" alt="" coords="1427,304,1485,331"/>
+<area shape="rect" id="node22" href="$mouse_8h.html" title="mouse.h" alt="" coords="541,229,613,256"/>
+<area shape="rect" id="node23" href="$timer_8h.html" title="timer.h" alt="" coords="1662,304,1725,331"/>
+<area shape="rect" id="node24" href="$ammo_8h.html" title="ammo.h" alt="" coords="459,155,528,181"/>
+<area shape="rect" id="node25" href="$rtc_8h.html" title="rtc.h" alt="" coords="419,229,467,256"/>
+</map>

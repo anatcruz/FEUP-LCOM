@@ -1,0 +1,10 @@
+\section{Data Structures}
+Here are the data structures with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{structgravity__object}{gravity\+\_\+object} \\*Struct that contains the position and velocity of an object }{\pageref{structgravity__object}}{}
+\item\contentsline{section}{\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} \\*Struct that represents a keyboard packet }{\pageref{structkeyboard__packet}}{}
+\item\contentsline{section}{\hyperlink{structmouse__packet}{mouse\+\_\+packet} \\*Struct that represents a mouse packet. This struct was provided by one of L\+C\+OM\textquotesingle{}s header files }{\pageref{structmouse__packet}}{}
+\item\contentsline{section}{\hyperlink{structplayer}{player} \\*Struct that represents one of our game\textquotesingle{}s players }{\pageref{structplayer}}{}
+\item\contentsline{section}{\hyperlink{structprojectile}{projectile} \\*Struct that represents one of our game\textquotesingle{}s bullets }{\pageref{structprojectile}}{}
+\item\contentsline{section}{\hyperlink{structres}{res} }{\pageref{structres}}{}
+\item\contentsline{section}{\hyperlink{structvector2}{vector2} \\*Struct that represents a vector in 2d space }{\pageref{structvector2}}{}
+\end{DoxyCompactList}

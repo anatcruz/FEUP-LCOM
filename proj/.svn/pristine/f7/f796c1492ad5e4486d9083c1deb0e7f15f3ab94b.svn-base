@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['draw_5fcircle',['draw_circle',['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c'],['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c'],['../group__circle.html#gad0932d378de29bbdb27306adf7927591',1,'draw_circle(uint8_t *base_ptr, uint16_t x1, uint16_t y1, uint16_t r, uint32_t color):&#160;circle.c']]],
+  ['draw_5fplayers',['draw_players',['../group__player.html#gae147e3272cf07f0fce5c511256eb7d04',1,'draw_players(uint8_t *base_ptr):&#160;player.c'],['../group__player.html#gae147e3272cf07f0fce5c511256eb7d04',1,'draw_players(uint8_t *base_ptr):&#160;player.c']]],
+  ['draw_5fprojectiles',['draw_projectiles',['../group__projectiles.html#gae77390eb18c5b9c31165e891a1ab4b19',1,'draw_projectiles(uint8_t *base_ptr):&#160;projectiles.c'],['../group__projectiles.html#gae77390eb18c5b9c31165e891a1ab4b19',1,'draw_projectiles(uint8_t *base_ptr):&#160;projectiles.c']]]
+];

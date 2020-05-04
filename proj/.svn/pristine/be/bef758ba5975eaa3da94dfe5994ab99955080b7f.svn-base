@@ -1,0 +1,97 @@
+\hypertarget{_menu_8h}{}\section{Menu.\+h File Reference}
+\label{_menu_8h}\index{Menu.\+h@{Menu.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+loop.\+h\char`\"{}}\newline
+Include dependency graph for Menu.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{_menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_menu_8h_a730cfddc7cb680e1b1d4ad54d4a8be30}{set\+\_\+rectangle\+\_\+frame} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint16\+\_\+t len\+\_\+edge, uint32\+\_\+t color)
+\item 
+void \hyperlink{_menu_8h_aa59cc81964587bdbe8dcd981e8e6fd08}{load\+\_\+xpm\+\_\+menu} ()
+\item 
+void \hyperlink{_menu_8h_a06326bc3ce2fdfe90cb6eb3172159fd0}{draw\+Main\+Menu} ()
+\item 
+void \hyperlink{_menu_8h_a879287e331940c91b6b6b9dbb65474de}{draw\+Help\+Menu} ()
+\item 
+void \hyperlink{_menu_8h_a8be4d848c58721f26653059357806041}{draw\+Options\+Menu} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_menu_8h_a879287e331940c91b6b6b9dbb65474de}\label{_menu_8h_a879287e331940c91b6b6b9dbb65474de}} 
+\index{Menu.\+h@{Menu.\+h}!draw\+Help\+Menu@{draw\+Help\+Menu}}
+\index{draw\+Help\+Menu@{draw\+Help\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{draw\+Help\+Menu()}{drawHelpMenu()}}
+{\footnotesize\ttfamily void draw\+Help\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h_a879287e331940c91b6b6b9dbb65474de_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_menu_8h_a06326bc3ce2fdfe90cb6eb3172159fd0}\label{_menu_8h_a06326bc3ce2fdfe90cb6eb3172159fd0}} 
+\index{Menu.\+h@{Menu.\+h}!draw\+Main\+Menu@{draw\+Main\+Menu}}
+\index{draw\+Main\+Menu@{draw\+Main\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{draw\+Main\+Menu()}{drawMainMenu()}}
+{\footnotesize\ttfamily void draw\+Main\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h_a06326bc3ce2fdfe90cb6eb3172159fd0_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_menu_8h_a8be4d848c58721f26653059357806041}\label{_menu_8h_a8be4d848c58721f26653059357806041}} 
+\index{Menu.\+h@{Menu.\+h}!draw\+Options\+Menu@{draw\+Options\+Menu}}
+\index{draw\+Options\+Menu@{draw\+Options\+Menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{draw\+Options\+Menu()}{drawOptionsMenu()}}
+{\footnotesize\ttfamily void draw\+Options\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h_a8be4d848c58721f26653059357806041_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_menu_8h_aa59cc81964587bdbe8dcd981e8e6fd08}\label{_menu_8h_aa59cc81964587bdbe8dcd981e8e6fd08}} 
+\index{Menu.\+h@{Menu.\+h}!load\+\_\+xpm\+\_\+menu@{load\+\_\+xpm\+\_\+menu}}
+\index{load\+\_\+xpm\+\_\+menu@{load\+\_\+xpm\+\_\+menu}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{load\+\_\+xpm\+\_\+menu()}{load\_xpm\_menu()}}
+{\footnotesize\ttfamily void load\+\_\+xpm\+\_\+menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_menu_8h_a730cfddc7cb680e1b1d4ad54d4a8be30}\label{_menu_8h_a730cfddc7cb680e1b1d4ad54d4a8be30}} 
+\index{Menu.\+h@{Menu.\+h}!set\+\_\+rectangle\+\_\+frame@{set\+\_\+rectangle\+\_\+frame}}
+\index{set\+\_\+rectangle\+\_\+frame@{set\+\_\+rectangle\+\_\+frame}!Menu.\+h@{Menu.\+h}}
+\subsubsection{\texorpdfstring{set\+\_\+rectangle\+\_\+frame()}{set\_rectangle\_frame()}}
+{\footnotesize\ttfamily void set\+\_\+rectangle\+\_\+frame (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint16\+\_\+t}]{x,  }\item[{uint16\+\_\+t}]{y,  }\item[{uint16\+\_\+t}]{len\+\_\+x,  }\item[{uint16\+\_\+t}]{len\+\_\+y,  }\item[{uint16\+\_\+t}]{len\+\_\+edge,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h_a730cfddc7cb680e1b1d4ad54d4a8be30_cgraph}
+\end{center}
+\end{figure}

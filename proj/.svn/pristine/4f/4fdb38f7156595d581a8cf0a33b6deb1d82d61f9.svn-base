@@ -1,0 +1,142 @@
+#include "game.h"
+
+extern xpm_image_t mousepointer_img;
+
+game game_state;
+
+void handle_user_input(mouse_packet p1){
+  if(game_state.main_menu){
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,500,250,130,80)){
+      game_state.state = 1;
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,500,350,130,80)){
+      game_state.state = 2;
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,496,450,145,70)){
+      game_state.state = 3;
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,1000,500,130,80)){
+      game_state.exit = true;
+    }
+  }
+  else if(game_state.help_menu){
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,1000,520,130,50)){
+      game_state.state = 4;
+    }
+  }
+  else if(game_state.options_menu){
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,1000,520,130,50)){
+      game_state.state = 4;
+    }
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,395,100,85,50)){
+      set_bouncy_walls(true);
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,495,100,85,50)){
+      set_bouncy_walls(false);
+    }
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,395,200,85,50)){
+      set_disable_gravity(false);
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,495,200,85,50)){
+      set_disable_gravity(true);
+    }
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,395,300,85,50)){
+      set_infinite_ammo(true);
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,495,300,85,50)){
+      set_infinite_ammo(false);
+    }
+    if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,395,400,85,50)){
+      set_disable_wall_damage(false);
+    }
+    else if(p1.lb && checkpixel_inbutton(p1.delta_x,p1.delta_y,495,400,85,50)){
+      set_disable_wall_damage(true);
+    }
+  }
+}
+
+void handle_state(){
+  
+  int state = game_state.state;
+  
+  switch (state)
+  {
+  case 1:
+    core_game_loop();
+    break;
+  case 2:
+    drawHelpMenu();
+    break;
+  case 3:
+    drawOptionsMenu();
+    break;
+  case 4:
+    drawMainMenu();
+    break;
+  default:
+    break;
+  }
+
+}
+
+void mouse_mov(mouse_packet p1){
+  draw_transparent_image(get_buffer_base_ptr(),p1.delta_x,p1.delta_y,mousepointer_img,true);
+}
+
+void letsplay(){
+  if (timer_ih_subscribe()    != 0) return;
+  if (mouse_ih_subscribe()    != 0) return;
+
+  uint8_t temp;
+  util_sys_inb(KBC_OUT_BUF, &temp);
+
+  int r, ipc_status; // Some variables related to the IH loop
+  message msg;
+
+  mouse_packet    m_packet;
+
+  drawMainMenu();
+
+  while (!game_state.exit)
+  { /*You may want to use a different condition*/ /*Get a request message.*/
+    if ((r = driver_receive(ANY, &msg, &ipc_status)) != 0)
+    {
+      printf("driver_receive failed with: %d", r);
+      continue;
+    }
+    if (is_ipc_notify(ipc_status))
+    { /*received notification*/
+      //printf("HI\n");
+      switch (_ENDPOINT_P(msg.m_source))
+      {
+      case HARDWARE: /*hardware interrupt notification*/
+        if(msg.m_notify.interrupts & MOUSE_MASK)
+        {     /*subscribed interrupt*/
+          mouse_ih();
+          if(mouse_parse_packet(&m_packet)){
+            mouse_mov(m_packet);
+            handle_user_input(m_packet);
+          }
+
+        }
+
+        if (msg.m_notify.interrupts & TIMER_MASK)
+        {     /*subscribed interrupt*/
+          timer_int_handler();
+          if (timer_get_counter() % 2 == 0) {
+            handle_state();
+          }
+        }
+        break;
+      default:
+        break; /*no other notifications expected: do nothing*/
+      }
+    }
+    else
+    { /*received a standard message, not a notification*/ /*no standard messages expected: do nothing*/
+    } 
+  }
+
+  if (timer_ih_unsubscribe()    != 0) return;
+  if (mouse_ih_unsubscribe()    != 0) return;
+}

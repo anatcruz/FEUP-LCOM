@@ -1,0 +1,4 @@
+<map id="draw_number" name="draw_number">
+<area shape="rect" id="node2" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="185,5,260,32"/>
+<area shape="rect" id="node3" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="153,56,292,83"/>
+</map>

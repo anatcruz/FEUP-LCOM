@@ -1,0 +1,73 @@
+\hypertarget{projectiles_8c}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/projectiles.c File Reference}
+\label{projectiles_8c}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/projectiles.\+c@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/projectiles.\+c}}
+{\ttfamily \#include \char`\"{}projectiles.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+settings.\+h\char`\"{}}\newline
+Include dependency graph for projectiles.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{projectiles_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{group__projectiles_ga5694db4d07322ea0cb9792dd0409dcd6}{get\+\_\+n\+\_\+projectiles} ()
+\item 
+\hyperlink{structprojectile}{projectile} $\ast$ \hyperlink{group__projectiles_ga83c71feca8610bd78396e078b96c7607}{get\+\_\+proj\+\_\+array} ()
+\item 
+void \hyperlink{group__projectiles_ga1b3d00bd49fc0770838c70cb1d2d9e94}{projectile\+\_\+alloc} (uint8\+\_\+t n\+\_\+projectile)
+\item 
+void \hyperlink{group__projectiles_ga1dcccbbcaf5fbc336ec52666ff0960ac}{new\+\_\+projectile} (\hyperlink{structvector2}{vector2} pos, \hyperlink{structvector2}{vector2} speed)
+\begin{DoxyCompactList}\small\item\em Spawns a new projectile with the given position and velocity. \end{DoxyCompactList}\item 
+void \hyperlink{projectiles_8c_aae40adbd92044ccbd5c5c3e4b4f25223}{draw\+\_\+projectile} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint8\+\_\+t index)
+\item 
+void \hyperlink{group__projectiles_gae77390eb18c5b9c31165e891a1ab4b19}{draw\+\_\+projectiles} (uint8\+\_\+t $\ast$base\+\_\+ptr)
+\begin{DoxyCompactList}\small\item\em Draws the projectiles on the given buffer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{projectiles_8c_a72f6a4ef5d831709c1c10ff632d608ec}{n\+\_\+projectiles} = 0
+\item 
+static \hyperlink{structprojectile}{projectile} $\ast$ \hyperlink{projectiles_8c_a8e1467c5c61adaf6a330388f2337d313}{proj\+\_\+array} = N\+U\+LL
+\item 
+static uint8\+\_\+t \hyperlink{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}{n} = 0
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{projectiles_8c_aae40adbd92044ccbd5c5c3e4b4f25223}\label{projectiles_8c_aae40adbd92044ccbd5c5c3e4b4f25223}} 
+\index{projectiles.\+c@{projectiles.\+c}!draw\+\_\+projectile@{draw\+\_\+projectile}}
+\index{draw\+\_\+projectile@{draw\+\_\+projectile}!projectiles.\+c@{projectiles.\+c}}
+\subsubsection{\texorpdfstring{draw\+\_\+projectile()}{draw\_projectile()}}
+{\footnotesize\ttfamily void draw\+\_\+projectile (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{base\+\_\+ptr,  }\item[{uint8\+\_\+t}]{index }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=299pt]{projectiles_8c_aae40adbd92044ccbd5c5c3e4b4f25223_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}\label{projectiles_8c_a5a648f5ec00c526b0dfa2df7a272c6c0}} 
+\index{projectiles.\+c@{projectiles.\+c}!n@{n}}
+\index{n@{n}!projectiles.\+c@{projectiles.\+c}}
+\subsubsection{\texorpdfstring{n}{n}}
+{\footnotesize\ttfamily uint8\+\_\+t n = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{projectiles_8c_a72f6a4ef5d831709c1c10ff632d608ec}\label{projectiles_8c_a72f6a4ef5d831709c1c10ff632d608ec}} 
+\index{projectiles.\+c@{projectiles.\+c}!n\+\_\+projectiles@{n\+\_\+projectiles}}
+\index{n\+\_\+projectiles@{n\+\_\+projectiles}!projectiles.\+c@{projectiles.\+c}}
+\subsubsection{\texorpdfstring{n\+\_\+projectiles}{n\_projectiles}}
+{\footnotesize\ttfamily uint8\+\_\+t n\+\_\+projectiles = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{projectiles_8c_a8e1467c5c61adaf6a330388f2337d313}\label{projectiles_8c_a8e1467c5c61adaf6a330388f2337d313}} 
+\index{projectiles.\+c@{projectiles.\+c}!proj\+\_\+array@{proj\+\_\+array}}
+\index{proj\+\_\+array@{proj\+\_\+array}!projectiles.\+c@{projectiles.\+c}}
+\subsubsection{\texorpdfstring{proj\+\_\+array}{proj\_array}}
+{\footnotesize\ttfamily \hyperlink{structprojectile}{projectile}$\ast$ proj\+\_\+array = N\+U\+LL\hspace{0.3cm}{\ttfamily [static]}}
+

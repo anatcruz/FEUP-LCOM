@@ -1,0 +1,6 @@
+<map id="draw_message" name="draw_message">
+<area shape="rect" id="node2" href="$group__core__game__loop.html#ga33240cb1f9e3570ad230d7e081888dd6" title="Pretty much the same as set_xpm_image(uint8_t *base_ptr, uint16_t x, uint16_t y, xpm_image_t img)..." alt="" coords="164,31,328,57"/>
+<area shape="rect" id="node5" href="$group__video__card.html#ga8becb86f48f701c43e1c411f57f60c4d" title="get_hres" alt="" coords="210,81,282,108"/>
+<area shape="rect" id="node3" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="408,5,483,32"/>
+<area shape="rect" id="node4" href="$group__video__card.html#ga9f914dcc3574459a6f0f5fa903ad40e7" title="get_bytes_per_pixel" alt="" coords="376,56,515,83"/>
+</map>

@@ -1,0 +1,17 @@
+\hypertarget{circle_8c}{}\section{circle.\+c File Reference}
+\label{circle_8c}\index{circle.\+c@{circle.\+c}}
+{\ttfamily \#include \char`\"{}circle.\+h\char`\"{}}\newline
+Include dependency graph for circle.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{circle_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__circle_gaf097cd6cfd9dde8acf534b2c2e1dbabd}{local\+\_\+pixel} (uint16\+\_\+t x\+\_\+pixel, uint16\+\_\+t y\+\_\+pixel, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t r)
+\begin{DoxyCompactList}\small\item\em Checks whether or not a given point is inside a circle. \end{DoxyCompactList}\item 
+void \hyperlink{group__circle_gad0932d378de29bbdb27306adf7927591}{draw\+\_\+circle} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x1, uint16\+\_\+t y1, uint16\+\_\+t r, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em Draws a circle on the given buffer with the given center, radius and color. \end{DoxyCompactList}\end{DoxyCompactItemize}

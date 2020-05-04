@@ -1,0 +1,18 @@
+#pragma once
+
+#include "gravity.h"
+#include "video_card.h"
+
+typedef struct projectile
+{
+    gravity_object grav;
+    bool active;
+} projectile;
+
+void set_projectile_color(uint32_t color);
+
+void projectile_init(uint8_t n_projectiles);
+
+void new_projectile(vector2 pos, vector2 speed);
+
+void draw_projectiles();

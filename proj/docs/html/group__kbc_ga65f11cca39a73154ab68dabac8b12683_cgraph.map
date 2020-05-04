@@ -1,0 +1,5 @@
+<map id="kbc_read_command_result" name="kbc_read_command_result">
+<area shape="rect" id="node2" href="$group__kbc.html#gaa4c58a11cd49c54cc0eb02a79010a9cc" title="Reads the status of the kbc. " alt="" coords="232,5,351,32"/>
+<area shape="rect" id="node3" href="$group__utils.html#ga2b56f50ba159e9d5115ed1a75eff15d9" title="Reads a byte from memory. " alt="" coords="399,31,489,57"/>
+<area shape="rect" id="node4" href="$group__kbc.html#ga594c74b8ef8c0d8a660bcdb729b1f381" title="Blocks the program by delay microseconds. " alt="" coords="251,107,332,133"/>
+</map>

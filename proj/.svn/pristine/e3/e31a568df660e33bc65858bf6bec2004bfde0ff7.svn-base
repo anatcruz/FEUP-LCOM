@@ -1,0 +1,10 @@
+\section{Data Structures}
+Here are the data structures with brief descriptions\+:\begin{DoxyCompactList}
+\item\contentsline{section}{\hyperlink{structgravity__object}{gravity\+\_\+object} }{\pageref{structgravity__object}}{}
+\item\contentsline{section}{\hyperlink{structkeyboard__packet}{keyboard\+\_\+packet} }{\pageref{structkeyboard__packet}}{}
+\item\contentsline{section}{\hyperlink{structmouse__packet}{mouse\+\_\+packet} }{\pageref{structmouse__packet}}{}
+\item\contentsline{section}{\hyperlink{structplayer}{player} }{\pageref{structplayer}}{}
+\item\contentsline{section}{\hyperlink{structprojectile}{projectile} }{\pageref{structprojectile}}{}
+\item\contentsline{section}{\hyperlink{structres}{res} }{\pageref{structres}}{}
+\item\contentsline{section}{\hyperlink{structvector2}{vector2} }{\pageref{structvector2}}{}
+\end{DoxyCompactList}

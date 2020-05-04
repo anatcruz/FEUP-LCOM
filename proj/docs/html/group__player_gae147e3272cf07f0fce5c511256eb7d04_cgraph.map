@@ -1,0 +1,10 @@
+<map id="draw_players" name="draw_players">
+<area shape="rect" id="node2" href="$group__triangle.html#ga7debe2af7dc5ecd4b384f7c1b254c38c" title="Draws a triangle on the given buffer with the given vertices and color. " alt="" coords="165,81,263,108"/>
+<area shape="rect" id="node7" href="$group__core__game__settings.html#ga1eee074a8161cfbb24eab5bfab97369d" title="get_player_size" alt="" coords="157,132,271,159"/>
+<area shape="rect" id="node8" href="$group__core__game__settings.html#ga614dd4319b2fe76e2a08747473836c0c" title="get_player1_color" alt="" coords="152,183,276,209"/>
+<area shape="rect" id="node9" href="$group__core__game__settings.html#gade5cf065ae24753f7fb8e73df7f8aa8f" title="get_player2_color" alt="" coords="152,233,276,260"/>
+<area shape="rect" id="node3" href="$triangle_8c.html#a81d593af1d8442c360cfb1aa6e19c46a" title="give_max" alt="" coords="330,5,409,32"/>
+<area shape="rect" id="node4" href="$triangle_8c.html#a65f9c241623e3fc1fd20df1ef9b14307" title="give_min" alt="" coords="332,56,407,83"/>
+<area shape="rect" id="node5" href="$group__triangle.html#gaa849ba110cf7f4a6199c4a728b0084f1" title="Checks whether or not a given point is inside a triangle. " alt="" coords="324,107,415,133"/>
+<area shape="rect" id="node6" href="$group__video__card.html#ga5f6f4feebf127c7d02258175e5df35ff" title="Sets the pixel of the given buffer at the given coordinates to the given color. " alt="" coords="332,157,407,184"/>
+</map>

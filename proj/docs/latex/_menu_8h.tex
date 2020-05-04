@@ -1,0 +1,37 @@
+\hypertarget{_menu_8h}{}\section{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/\+Menu.h File Reference}
+\label{_menu_8h}\index{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/\+Menu.\+h@{/home/daniel/\+Desktop/\+L\+C\+O\+M\+\_\+root/\+M\+I\+N\+I\+X-\/\+L\+C\+O\+M/shared/proj/src/\+Menu.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}mouse.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+loop.\+h\char`\"{}}\newline
+Include dependency graph for Menu.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_menu_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{group___menu_ga730cfddc7cb680e1b1d4ad54d4a8be30}{set\+\_\+rectangle\+\_\+frame} (uint8\+\_\+t $\ast$base\+\_\+ptr, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y, uint16\+\_\+t len\+\_\+edge, uint32\+\_\+t color)
+\begin{DoxyCompactList}\small\item\em It draws the frame of a rectangle, used for buttons. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_gaa59cc81964587bdbe8dcd981e8e6fd08}{load\+\_\+xpm\+\_\+menu} ()
+\begin{DoxyCompactList}\small\item\em Loads the X\+P\+Ms for the menus, if they have not been already loaded. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga06326bc3ce2fdfe90cb6eb3172159fd0}{draw\+Main\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the main menu with the options\+: play, help, options and exit. It also displays the current time. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga879287e331940c91b6b6b9dbb65474de}{draw\+Help\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the help menu that explains the players\textquotesingle{} commands. \end{DoxyCompactList}\item 
+void \hyperlink{group___menu_ga8be4d848c58721f26653059357806041}{draw\+Options\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Draws the options menu that allows the players to change some settings like if the player s want bouncy walls, infinite ammo, be affected by gravity and if they want wall damage. \end{DoxyCompactList}\item 
+bool \hyperlink{group___menu_ga24808d404d0ba3711a2445fc0d876167}{checkpixel\+\_\+inbutton} (uint16\+\_\+t pixel\+\_\+x, uint16\+\_\+t pixel\+\_\+y, uint16\+\_\+t x, uint16\+\_\+t y, uint16\+\_\+t len\+\_\+x, uint16\+\_\+t len\+\_\+y)
+\begin{DoxyCompactList}\small\item\em Checks if a pixel is inside a rectangle. \end{DoxyCompactList}\end{DoxyCompactItemize}

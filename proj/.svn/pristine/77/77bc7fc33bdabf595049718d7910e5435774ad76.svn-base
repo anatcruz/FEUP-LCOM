@@ -1,0 +1,173 @@
+\hypertarget{core__game__settings_8c}{}\section{core\+\_\+game\+\_\+settings.\+c File Reference}
+\label{core__game__settings_8c}\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+{\ttfamily \#include \char`\"{}core\+\_\+game\+\_\+settings.\+h\char`\"{}}\newline
+Include dependency graph for core\+\_\+game\+\_\+settings.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{core__game__settings_8c__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{group__core__game__settings_gae7e72ac62497c693b7972e5b7aa2b42a}{get\+\_\+planet\+\_\+radius} ()
+\item 
+float \hyperlink{group__core__game__settings_ga7a058129c2abf0cc41fbd17f5265710d}{get\+\_\+planet\+\_\+gravity} ()
+\item 
+void \hyperlink{group__core__game__settings_ga9ad9d5a1de42dfd1bb9c35f918eb51ff}{set\+\_\+planet\+\_\+gravity} (float g)
+\item 
+float \hyperlink{group__core__game__settings_ga15eb947de263d29d6c97bae746737fa8}{get\+\_\+projectile\+\_\+shooting\+\_\+speed} ()
+\item 
+void \hyperlink{group__core__game__settings_ga5eeb5440c01178975630413285bee384}{set\+\_\+projectile\+\_\+shooting\+\_\+speed} (float speed)
+\item 
+uint8\+\_\+t \hyperlink{group__core__game__settings_ga10fcc8a3f6a22ea214e0b5e9f28362f8}{get\+\_\+projectile\+\_\+shooting\+\_\+cooldown} ()
+\item 
+void \hyperlink{group__core__game__settings_gaa78d2a1d2f17c5e37268f9b6d32ff885}{set\+\_\+projectile\+\_\+shooting\+\_\+cooldown} (uint8\+\_\+t cooldown)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_ga0ba9dec3f44eebdfb14f0671b61f1b4e}{get\+\_\+projectile\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga1d9f0dd4963fce752d49aea50e9c9d74}{set\+\_\+projectile\+\_\+color} (uint32\+\_\+t color)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_ga614dd4319b2fe76e2a08747473836c0c}{get\+\_\+player1\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga7d2df33bf9002ff71c661a521df4c279}{set\+\_\+player1\+\_\+color} (uint32\+\_\+t color)
+\item 
+uint32\+\_\+t \hyperlink{group__core__game__settings_gade5cf065ae24753f7fb8e73df7f8aa8f}{get\+\_\+player2\+\_\+color} ()
+\item 
+void \hyperlink{group__core__game__settings_ga03b1fe954023f0f81abcbf5e962e1169}{set\+\_\+player2\+\_\+color} (uint32\+\_\+t color)
+\item 
+float \hyperlink{group__core__game__settings_ga1eee074a8161cfbb24eab5bfab97369d}{get\+\_\+player\+\_\+size} ()
+\item 
+void \hyperlink{group__core__game__settings_ga0a444c4577d885de9a65789ed1f0a49e}{set\+\_\+player\+\_\+size} (float size)
+\item 
+float \hyperlink{group__core__game__settings_gaff00b21783e221feea599cb41520ebb8}{get\+\_\+player\+\_\+acceleration} ()
+\item 
+void \hyperlink{group__core__game__settings_gaf015b3fb5da34e2af0913a665b53f440}{set\+\_\+player\+\_\+acceleration} (float acc)
+\item 
+bool \hyperlink{group__core__game__settings_ga0288cff6bde3e658e0bea4e88a367039}{get\+\_\+bouncy\+\_\+walls} ()
+\item 
+void \hyperlink{group__core__game__settings_ga3d00a4e0dab9454c1176e82699a2d510}{set\+\_\+bouncy\+\_\+walls} (bool bouncy)
+\item 
+bool \hyperlink{group__core__game__settings_gae294ba27e3b2bf1d347ed563ee1327f7}{get\+\_\+disable\+\_\+gravity} ()
+\item 
+void \hyperlink{group__core__game__settings_gaef0357b1d6d13d5efcde0ebc880ef5ae}{set\+\_\+disable\+\_\+gravity} (bool disable)
+\item 
+bool \hyperlink{group__core__game__settings_gaf19a3bae554ca2a2ae3213aef7f9f208}{get\+\_\+infinite\+\_\+ammo} ()
+\item 
+void \hyperlink{group__core__game__settings_ga098db2a1aea09dead03ad58bb667bff9}{set\+\_\+infinite\+\_\+ammo} (bool infinite)
+\item 
+bool \hyperlink{group__core__game__settings_gae98ea18abc06d0d144350c2c6018bdb9}{get\+\_\+disable\+\_\+wall\+\_\+damage} ()
+\item 
+void \hyperlink{group__core__game__settings_gaf4298289f3e03eb97347eb6a3865ec60}{set\+\_\+disable\+\_\+wall\+\_\+damage} (bool damage)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+static uint16\+\_\+t \hyperlink{core__game__settings_8c_a36d347d6c41a3020e1fc869da7a24c30}{planet\+\_\+radius} = 47
+\item 
+static float \hyperlink{core__game__settings_8c_a16ba01c6fc1337065ea8a279094e5a64}{planet\+\_\+gravity} = 4000000
+\item 
+static float \hyperlink{core__game__settings_8c_a59eb0b538a61e8c2581ead711ce4046c}{projectile\+\_\+shooting\+\_\+speed} = 100
+\item 
+static uint8\+\_\+t \hyperlink{core__game__settings_8c_a84d7d5b25b65fad189f5bc47d7b4e84d}{projectile\+\_\+shooting\+\_\+cooldown} = 10
+\item 
+static uint32\+\_\+t \hyperlink{core__game__settings_8c_a61b5a129bdedb23fd0f2cd97ba7d638c}{projectile\+\_\+color} = -\/1
+\item 
+static uint32\+\_\+t \hyperlink{core__game__settings_8c_a8f825bdea3599e53f3dad4eca907fc88}{player1\+\_\+color} = -\/1
+\item 
+static uint32\+\_\+t \hyperlink{core__game__settings_8c_afa98cbf853c5efa1ffaa7bfd0e8edf38}{player2\+\_\+color} = -\/1
+\item 
+static float \hyperlink{core__game__settings_8c_a5395072e8b172885c7f5576d673bbfc1}{player\+\_\+size} = 20
+\item 
+float \hyperlink{core__game__settings_8c_a79f961b2372ce6595c9597a2488309a5}{player\+\_\+acceleration} = 100
+\item 
+bool \hyperlink{core__game__settings_8c_aa2ad74ee797ab0976f655efb2f3d9d7f}{bouncy\+\_\+walls} = false
+\item 
+bool \hyperlink{core__game__settings_8c_a32c29f99298af3c2c929f6b49cd0e1ac}{disable\+\_\+gravity} = false
+\item 
+bool \hyperlink{core__game__settings_8c_a7e87bd92fd18f22783f0f61b8fb51666}{infinite\+\_\+ammo} = false
+\item 
+bool \hyperlink{core__game__settings_8c_a9bb1909cbb8212d54758d37860ba650b}{disable\+\_\+wall\+\_\+damage} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{core__game__settings_8c_aa2ad74ee797ab0976f655efb2f3d9d7f}\label{core__game__settings_8c_aa2ad74ee797ab0976f655efb2f3d9d7f}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!bouncy\+\_\+walls@{bouncy\+\_\+walls}}
+\index{bouncy\+\_\+walls@{bouncy\+\_\+walls}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{bouncy\+\_\+walls}{bouncy\_walls}}
+{\footnotesize\ttfamily bool bouncy\+\_\+walls = false}
+
+\mbox{\Hypertarget{core__game__settings_8c_a32c29f99298af3c2c929f6b49cd0e1ac}\label{core__game__settings_8c_a32c29f99298af3c2c929f6b49cd0e1ac}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!disable\+\_\+gravity@{disable\+\_\+gravity}}
+\index{disable\+\_\+gravity@{disable\+\_\+gravity}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{disable\+\_\+gravity}{disable\_gravity}}
+{\footnotesize\ttfamily bool disable\+\_\+gravity = false}
+
+\mbox{\Hypertarget{core__game__settings_8c_a9bb1909cbb8212d54758d37860ba650b}\label{core__game__settings_8c_a9bb1909cbb8212d54758d37860ba650b}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!disable\+\_\+wall\+\_\+damage@{disable\+\_\+wall\+\_\+damage}}
+\index{disable\+\_\+wall\+\_\+damage@{disable\+\_\+wall\+\_\+damage}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{disable\+\_\+wall\+\_\+damage}{disable\_wall\_damage}}
+{\footnotesize\ttfamily bool disable\+\_\+wall\+\_\+damage = false}
+
+\mbox{\Hypertarget{core__game__settings_8c_a7e87bd92fd18f22783f0f61b8fb51666}\label{core__game__settings_8c_a7e87bd92fd18f22783f0f61b8fb51666}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!infinite\+\_\+ammo@{infinite\+\_\+ammo}}
+\index{infinite\+\_\+ammo@{infinite\+\_\+ammo}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{infinite\+\_\+ammo}{infinite\_ammo}}
+{\footnotesize\ttfamily bool infinite\+\_\+ammo = false}
+
+\mbox{\Hypertarget{core__game__settings_8c_a16ba01c6fc1337065ea8a279094e5a64}\label{core__game__settings_8c_a16ba01c6fc1337065ea8a279094e5a64}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!planet\+\_\+gravity@{planet\+\_\+gravity}}
+\index{planet\+\_\+gravity@{planet\+\_\+gravity}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{planet\+\_\+gravity}{planet\_gravity}}
+{\footnotesize\ttfamily float planet\+\_\+gravity = 4000000\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a36d347d6c41a3020e1fc869da7a24c30}\label{core__game__settings_8c_a36d347d6c41a3020e1fc869da7a24c30}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!planet\+\_\+radius@{planet\+\_\+radius}}
+\index{planet\+\_\+radius@{planet\+\_\+radius}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{planet\+\_\+radius}{planet\_radius}}
+{\footnotesize\ttfamily uint16\+\_\+t planet\+\_\+radius = 47\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a8f825bdea3599e53f3dad4eca907fc88}\label{core__game__settings_8c_a8f825bdea3599e53f3dad4eca907fc88}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!player1\+\_\+color@{player1\+\_\+color}}
+\index{player1\+\_\+color@{player1\+\_\+color}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{player1\+\_\+color}{player1\_color}}
+{\footnotesize\ttfamily uint32\+\_\+t player1\+\_\+color = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_afa98cbf853c5efa1ffaa7bfd0e8edf38}\label{core__game__settings_8c_afa98cbf853c5efa1ffaa7bfd0e8edf38}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!player2\+\_\+color@{player2\+\_\+color}}
+\index{player2\+\_\+color@{player2\+\_\+color}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{player2\+\_\+color}{player2\_color}}
+{\footnotesize\ttfamily uint32\+\_\+t player2\+\_\+color = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a79f961b2372ce6595c9597a2488309a5}\label{core__game__settings_8c_a79f961b2372ce6595c9597a2488309a5}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!player\+\_\+acceleration@{player\+\_\+acceleration}}
+\index{player\+\_\+acceleration@{player\+\_\+acceleration}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{player\+\_\+acceleration}{player\_acceleration}}
+{\footnotesize\ttfamily float player\+\_\+acceleration = 100}
+
+\mbox{\Hypertarget{core__game__settings_8c_a5395072e8b172885c7f5576d673bbfc1}\label{core__game__settings_8c_a5395072e8b172885c7f5576d673bbfc1}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!player\+\_\+size@{player\+\_\+size}}
+\index{player\+\_\+size@{player\+\_\+size}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{player\+\_\+size}{player\_size}}
+{\footnotesize\ttfamily float player\+\_\+size = 20\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a61b5a129bdedb23fd0f2cd97ba7d638c}\label{core__game__settings_8c_a61b5a129bdedb23fd0f2cd97ba7d638c}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!projectile\+\_\+color@{projectile\+\_\+color}}
+\index{projectile\+\_\+color@{projectile\+\_\+color}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{projectile\+\_\+color}{projectile\_color}}
+{\footnotesize\ttfamily uint32\+\_\+t projectile\+\_\+color = -\/1\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a84d7d5b25b65fad189f5bc47d7b4e84d}\label{core__game__settings_8c_a84d7d5b25b65fad189f5bc47d7b4e84d}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!projectile\+\_\+shooting\+\_\+cooldown@{projectile\+\_\+shooting\+\_\+cooldown}}
+\index{projectile\+\_\+shooting\+\_\+cooldown@{projectile\+\_\+shooting\+\_\+cooldown}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{projectile\+\_\+shooting\+\_\+cooldown}{projectile\_shooting\_cooldown}}
+{\footnotesize\ttfamily uint8\+\_\+t projectile\+\_\+shooting\+\_\+cooldown = 10\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{core__game__settings_8c_a59eb0b538a61e8c2581ead711ce4046c}\label{core__game__settings_8c_a59eb0b538a61e8c2581ead711ce4046c}} 
+\index{core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}!projectile\+\_\+shooting\+\_\+speed@{projectile\+\_\+shooting\+\_\+speed}}
+\index{projectile\+\_\+shooting\+\_\+speed@{projectile\+\_\+shooting\+\_\+speed}!core\+\_\+game\+\_\+settings.\+c@{core\+\_\+game\+\_\+settings.\+c}}
+\subsubsection{\texorpdfstring{projectile\+\_\+shooting\+\_\+speed}{projectile\_shooting\_speed}}
+{\footnotesize\ttfamily float projectile\+\_\+shooting\+\_\+speed = 100\hspace{0.3cm}{\ttfamily [static]}}
+

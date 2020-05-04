@@ -1,0 +1,56 @@
+\hypertarget{structplayer}{}\section{player Struct Reference}
+\label{structplayer}\index{player@{player}}
+
+
+Collaboration diagram for player\+:
+% FIG 0
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{structplayer_a4e4005a0bb3af3d6876952a7cca49163}\label{structplayer_a4e4005a0bb3af3d6876952a7cca49163}} 
+\hyperlink{structgravity__object}{gravity\+\_\+object} {\bfseries state}
+\item 
+\mbox{\Hypertarget{structplayer_a8f54e9f41016004732115c10e844deb8}\label{structplayer_a8f54e9f41016004732115c10e844deb8}} 
+float {\bfseries direction}
+\item 
+\mbox{\Hypertarget{structplayer_a23a0742ddb120a88b03c4eaa61daab72}\label{structplayer_a23a0742ddb120a88b03c4eaa61daab72}} 
+bool {\bfseries alive}
+\item 
+\mbox{\Hypertarget{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}\label{structplayer_ae0fa1b55cc1da566dc7bab4416193f2d}} 
+uint16\+\_\+t {\bfseries p1x}
+\item 
+\mbox{\Hypertarget{structplayer_a7fa638c52e431ce5053b8dfcc787c778}\label{structplayer_a7fa638c52e431ce5053b8dfcc787c778}} 
+uint16\+\_\+t {\bfseries p1y}
+\item 
+\mbox{\Hypertarget{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}\label{structplayer_a5a5d318b129ba83456be1f0a43e3e33a}} 
+uint16\+\_\+t {\bfseries p2x}
+\item 
+\mbox{\Hypertarget{structplayer_a6f1fb8d5e9e7c611aa39465a961d7cd1}\label{structplayer_a6f1fb8d5e9e7c611aa39465a961d7cd1}} 
+uint16\+\_\+t {\bfseries p2y}
+\item 
+\mbox{\Hypertarget{structplayer_a338c30a8d3c35fca3af6cc832ee472c0}\label{structplayer_a338c30a8d3c35fca3af6cc832ee472c0}} 
+uint16\+\_\+t {\bfseries p3x}
+\item 
+\mbox{\Hypertarget{structplayer_adfa7d386121c4c7dd78e6a3b19f6fbae}\label{structplayer_adfa7d386121c4c7dd78e6a3b19f6fbae}} 
+uint16\+\_\+t {\bfseries p3y}
+\item 
+\mbox{\Hypertarget{structplayer_a93e6353ab4b2c8e528bfe9789f7996ee}\label{structplayer_a93e6353ab4b2c8e528bfe9789f7996ee}} 
+uint8\+\_\+t {\bfseries shooting\+\_\+cooldown}
+\item 
+\mbox{\Hypertarget{structplayer_a26eb3b2626daf93d534a3504a6fc663b}\label{structplayer_a26eb3b2626daf93d534a3504a6fc663b}} 
+bool {\bfseries input\+\_\+accelerate}
+\item 
+\mbox{\Hypertarget{structplayer_a0ac2a27628c9f628fe4f01e522845372}\label{structplayer_a0ac2a27628c9f628fe4f01e522845372}} 
+bool {\bfseries input\+\_\+shooting}
+\item 
+\mbox{\Hypertarget{structplayer_a54480a9ce1ccb383229691dd88d55103}\label{structplayer_a54480a9ce1ccb383229691dd88d55103}} 
+float {\bfseries input\+\_\+direction\+\_\+delta}
+\item 
+\mbox{\Hypertarget{structplayer_ab517d54e430f914ee52f52813e1761cb}\label{structplayer_ab517d54e430f914ee52f52813e1761cb}} 
+uint16\+\_\+t {\bfseries hp}
+\end{DoxyCompactItemize}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+player.\+h\end{DoxyCompactItemize}
